@@ -23,11 +23,11 @@ Once this proof of concept is launched, we will begin packaging and testing OS s
 Example Use Cases
 ---
 
-1. You're at an event and you can't find your friend who is 10 feet away because you're looking in the wrong direction.  Use Facing with your friend to know exactly which way to look to find one other.
+1. You're at an event and you can't find your friend because you're looking in the wrong direction.  Use Facing with your friend to know exactly which way to look to find one other.
 
 2. You and your friend decide to meet up at a place that is half way between the two of you.  Use Facing to find out where that is.
 
-3. You're a mobile application developer that has a chat feature and know some users are chatting over long distances.  Help make a stronger emotional connection by allowing them to know they're looking at each other even though they are miles apart.
+3. You're a mobile application developer that has a social feature and know some users are talking over long distances.  Help make a stronger emotional connection by allowing them to know they're looking at each other even though they're hundreds of miles apart.
 
 License
 ---
