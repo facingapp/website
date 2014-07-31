@@ -1,0 +1,22 @@
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes.dex : \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/BuildConfig.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/HelloWorld.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$attr.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$drawable.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$string.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$xml.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor$WhereOptions.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessorSdk5.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactInfoDTO.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$2.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$3.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$4.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/devicemotion/AccelListener.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/deviceorientation/CompassListener.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/classes-25249d529e84d3ab8048897021052327.jar \
