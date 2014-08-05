@@ -26,8 +26,8 @@
       <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7559055" vertical-offset="1110" max-vertical-offset="2670">
-              <caret line="138" column="119" selection-start-line="138" selection-start-column="119" selection-end-line="138" selection-end-column="119" />
+            <state vertical-scroll-proportion="0.8385827" vertical-offset="1110" max-vertical-offset="2550">
+              <caret line="145" column="82" selection-start-line="145" selection-start-column="82" selection-end-line="145" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -336,8 +336,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7559055" vertical-offset="1110" max-vertical-offset="2670">
-          <caret line="138" column="119" selection-start-line="138" selection-start-column="119" selection-end-line="138" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.8385827" vertical-offset="1110" max-vertical-offset="2550">
+          <caret line="145" column="82" selection-start-line="145" selection-start-column="82" selection-end-line="145" selection-end-column="118" />
           <folding />
         </state>
       </provider>
