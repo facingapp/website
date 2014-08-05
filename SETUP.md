@@ -12,7 +12,9 @@ This documentation is for OSX developers as currently everyone on the team is us
 
 Before you can install Android Studio, you will need to make sure your Java Compiler is recent enough to work. Run the following command in terminal:
 
-    $ javac -version
+```bash
+$ javac -version
+```
 
 If you do not get a response, or you get a version lower than 1.6 ( Java calls this version 6 ), e.g. `javac 1.5.X_XX`, you will need to [download the latest](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
@@ -26,21 +28,29 @@ Download and Install [Android Studio](http://developer.android.com/sdk/installin
 
 In order to use the SDK contained in the Android Studio you will need to add it to your PATH.
 
-    $ nano ~/.bash_profile
+```bash
+$ nano ~/.bash_profile
+```bash
 
 Then add the following at the bottom of the file:
 
-    export ANDROID_SDK="/Applications/Android Studio.app/sdk/tools/"
-    export ANDROID_SDK_PLATFORM="/Applications/Android Studio.app/sdk/platform-tools/"
-    export PATH=$ANDROID_SDK:$ANDROID_SDK_PLATFORM:$PATH
+```bash
+export ANDROID_SDK="/Applications/Android Studio.app/sdk/tools/"
+export ANDROID_SDK_PLATFORM="/Applications/Android Studio.app/sdk/platform-tools/"
+export PATH=$ANDROID_SDK:$ANDROID_SDK_PLATFORM:$PATH
+```
 
 Now you will need to update your terminal with the new PATH info:
 
-    $ source ~/.bash_profile
+```bash
+$ source ~/.bash_profile
+```
 
 You will also need to have Ant installed, which you might not have.  Here is an easy way to install it using brew:
 
-    $ brew install ant
+```bash
+$ brew install ant
+```
 
 Finally, before you can use the Android Studio, you will need to update the SDK and install some tools / libraries:
 
@@ -58,7 +68,9 @@ Once you have the SDK Manager installed, make sure you have the following instal
 
 To install PhoneGap, [follow these instructions](http://phonegap.com/install/), here is a one line install command if you're in a hurry:
 
-    $ sudo npm install -g phonegap cordova
+```bash
+$ sudo npm install -g phonegap cordova
+```
 
 You will also want to install the native [PhoneGap Developer App](http://app.phonegap.com/) on any device you want to test on.
 
@@ -73,12 +85,16 @@ Open the Android Studio App and choose "Open Project" from the "Quick Start" Men
 
 In order to run the PhoneGap App on your physical device, you will need to run the following command in terminal:
 
-    $ cd ./app/facing
-    $ phonegap serve
+```bash
+$ cd ./app/facing
+$ phonegap serve
+```
 
 Now you can grap your physical device and launch the PhoneGap app. When you ran the command above, it should have spit out some output like:
 
-    listening on 10.0.1.100:3000
+```bash
+listening on 10.0.1.100:3000
+```
 
 When you launch the PhoneGap App on your device, just enter the IP Address and Port as it is listed in the output.
 
@@ -88,17 +104,23 @@ Once you've connected, any changes you make in Android Studio will be automatica
 
 You can also launch the application directly into local iOS and Android Emulators with ease.  First you'll need to install a quick tool:
 
-    $ npm install -g ios-sim
+```bash
+$ npm install -g ios-sim ios-deploy
+```
 
-Now you can launch the app with the iOS Simulator ( assuming you already have the XCode app installed ):
+Now you can launch the app with the iOS Simulator ( assuming you already have the [XCode](https://developer.apple.com/xcode/) app installed ):
 
-    $ cd ./app/facing
-    $ cordova emulate ios
+```bash
+$ cd ./app/facing
+$ cordova emulate ios
+```
 
 And to test it in Android, you can run the following:
 
-    $ cd ./app/facing
-    $ cordova emulate android
+```bash
+$ cd ./app/facing
+$ cordova emulate android
+```
 
 ### Using PhoneGap Command-Line Interface
 
