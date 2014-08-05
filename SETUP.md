@@ -30,7 +30,7 @@ In order to use the SDK contained in the Android Studio you will need to add it 
 
 ```bash
 $ nano ~/.bash_profile
-```bash
+```
 
 Then add the following at the bottom of the file:
 
