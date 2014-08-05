@@ -84,6 +84,22 @@ When you launch the PhoneGap App on your device, just enter the IP Address and P
 
 Once you've connected, any changes you make in Android Studio will be automatically pushed to your physical device.
 
+### Using PhoneGap Emulators
+
+You can also launch the application directly into local iOS and Android Emulators with ease.  First you'll need to install a quick tool:
+
+    $ npm install -g ios-sim
+
+Now you can launch the app with the iOS Simulator ( assuming you already have the XCode app installed ):
+
+    $ cd ./app/facing
+    $ cordova emulate ios
+
+And to test it in Android, you can run the following:
+
+    $ cd ./app/facing
+    $ cordova emulate android
+
 ### Using PhoneGap Command-Line Interface
 
 For more information on the PhoneGap Command-Line Interface, read their [online documentation](http://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html#The%20Command-Line%20Interface).

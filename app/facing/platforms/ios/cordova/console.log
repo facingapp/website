@@ -1,0 +1,21 @@
+objc[33343]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-05 04:49:23.009 Facing[33343:70b] Cannot find executable for CFBundle 0xa899b50 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-05 04:49:23.017 Facing[33343:70b] Cannot find executable for CFBundle 0xa8b5d30 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-05 04:49:23.081 Facing[33343:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-05 04:49:23.133 Facing[33343:70b] Unlimited access to network resources
+2014-08-05 04:49:23.137 Facing[33343:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-05 04:49:23.233 Facing[33343:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-08-05 04:49:23.234 Facing[33343:70b] [CDVTimer][splashscreen] 61.798036ms
+2014-08-05 04:49:23.234 Facing[33343:70b] [CDVTimer][TotalPluginStartup] 62.269986ms
+2014-08-05 04:49:23.245 Facing[33343:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-08-05 04:49:23.249 Facing[33343:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-08-05 04:49:23.251 Facing[33343:70b] WARNING: The splashscreen image named Default-Portrait was not found
+2014-08-05 04:49:23.593 Facing[33343:70b] Resetting plugins due to page load.
+2014-08-05 04:49:24.763 Facing[33343:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/582EFF6C-1578-401F-AEF3-F0DF2ACC25AE/Facing.app/www/index.html
+2014-08-05 04:49:25.031 Facing[33343:70b] Received Event: deviceready

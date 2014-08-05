@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id = "com.manifestinteractive.facing"
+        version = "0.0.1"
+        xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>Facing</name>
+
+    <description>
+        GPS & Compass Frameworks to Connect People to Each Other http://youfacing.me
+    </description>
+
+    <author href="http://manifestinteractive.com" email="hello@manifestinteractive.com">
+        Manifest Interactive
+    </author>
+
+    <!-- Bulk of this config.xml came from https://github.com/phonegap/phonegap-start -->
+
+    <!--
+        If you do not want any permissions to be added to your app, add the
+        following tag to your config.xml; you will still have the INTERNET
+        permission on your app, which PhoneGap requires.
+
+    <preference name="permissions"                value="none"/>
+    -->
+
+    <!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="target-device"  value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-translucent" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+    <!-- ================================================== -->
+
+    <!-- Camera -->
+    <!-- Documentation: https://build.phonegap.com/plugins/768 -->
+    <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
+
+    <!-- Console ( Better Support for console.log ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/624 -->
+    <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
+
+    <!-- Contacts ( access to the device contacts ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/930 -->
+    <gap:plugin name="org.apache.cordova.contacts" version="0.2.11" />
+
+    <!-- Device Info ( describes the device's hardware and software ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/628 -->
+    <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
+
+    <!-- Device Motion ( access to the device's accelerometer ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/623 -->
+    <gap:plugin name="org.apache.cordova.device-motion" version="0.2.6" />
+
+    <!-- Device Orientation ( access to the device's compass ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/629 -->
+    <gap:plugin name="org.apache.cordova.device-orientation" version="0.3.5" />
+
+    <!-- Geolocation ( information about the device's location, such as latitude and longitude ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/821 -->
+    <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
+
+    <!-- Network Information ( information about the device's cellular and wifi connection ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/626 -->
+    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+
+    <!-- Splashscreen ( support for loading a Splashscreen ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/620 -->
+    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
+
+    <!-- Third party plugins -->
+    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <!-- ================================================== -->
+
+    <!-- Custom URL Scheme Support ( facing:// ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/844 -->
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+        <param name="URL_SCHEME" value="facing" />
+    </gap:plugin>
+
+    <!-- Support to switch the Flashlight / Torch of your device on or off -->
+    <!-- Documentation: https://build.phonegap.com/plugins/871 -->
+    <gap:plugin name="nl.x-services.plugins.flashlight" version="2.0.0" />
+
+    <!-- Prevent the screen of the mobile device from falling asleep. -->
+    <!-- Documentation: https://build.phonegap.com/plugins/842 -->
+    <gap:plugin name="nl.x-services.plugins.insomnia" version="4.0.1" />
+
+    <!-- IOS Background Location Enabler -->
+    <!-- Documentation: https://build.phonegap.com/plugins/291 -->
+    <gap:plugin name="com.cleartag.plugins.enablebackgroundlocation" version="3.0" />
+
+
+    <!-- ================================================== -->
+
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+
+    <icon gap:platform="android" gap:qualifier="ldpi"  src="res/icon/android/icon-36-ldpi.png" />
+    <icon gap:platform="android" gap:qualifier="mdpi"  src="res/icon/android/icon-48-mdpi.png" />
+    <icon gap:platform="android" gap:qualifier="hdpi"  src="res/icon/android/icon-72-hdpi.png" />
+    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+
+    <icon gap:platform="ios" width="57"  height="57"  src="res/icon/ios/icon-57.png" />    <!-- iPhone Non-Retina (iOS 6.1 and Prior) -->
+    <icon gap:platform="ios" width="114" height="114" src="res/icon/ios/icon-57-2x.png" /> <!-- iPhone Retina (iOS 6.1 and Prior) -->
+    <icon gap:platform="ios" width="120" height="120" src="res/icon/ios/icon-120.png" />   <!-- iPhone Retina -->
+
+    <icon gap:platform="ios" width="72"  height="72"  src="res/icon/ios/icon-72.png" />    <!-- iPad Non-Retina (iOS 6.1 and Prior) -->
+    <icon gap:platform="ios" width="144" height="144" src="res/icon/ios/icon-72-2x.png" /> <!-- iPad Retina (iOS 6.1 and Prior) -->
+    <icon gap:platform="ios" width="76"  height="76"  src="res/icon/ios/icon-76.png" />    <!-- iPad Non-Retina -->
+    <icon gap:platform="ios" width="152" height="152" src="res/icon/ios/icon-76-2x.png" /> <!-- iPad Retina -->
+
+    <icon gap:platform="webos" src="res/icon/webos/icon-64.png" />
+    <icon gap:platform="winphone" src="res/icon/windows-phone/icon-48.png" />
+    <icon gap:platform="winphone" gap:role="background" src="res/icon/windows-phone/icon-173.png" />
+    <icon gap:platform="blackberry" src="res/icon/blackberry/icon-80.png" />
+    <icon gap:platform="blackberry" gap:state="hover" src="res/icon/blackberry/icon-80.png" />
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi"  src="res/screen/android/screen-ldpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi"  src="res/screen/android/screen-mdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi"  src="res/screen/android/screen-hdpi-portrait.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screen/android/screen-xhdpi-portrait.png" />
+
+    <gap:splash gap:platform="ios" width="320"  height="480"  src="res/screen/ios/screen-iphone-portrait.png" />         <!-- iPhone Non-Retina (iOS 6.1 and Prior) -->
+    <gap:splash gap:platform="ios" width="640"  height="960"  src="res/screen/ios/screen-iphone-portrait-2x.png" />      <!-- iPhone Retina -->
+    <gap:splash gap:platform="ios" width="640"  height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" /> <!-- iPhone Retina 4-inch -->
+    <gap:splash gap:platform="ios" width="768"  height="1004" src="res/screen/ios/screen-ipad-portrait.png" />           <!-- iPad Portrait Non-Retina (iOS 6.1 and Prior) -->
+    <gap:splash gap:platform="ios" width="1536" height="2008" src="res/screen/ios/screen-ipad-portrait.png" />           <!-- iPad Portrait Retina (iOS 6.1 and Prior) -->
+    <gap:splash gap:platform="ios" width="1024" height="748"  src="res/screen/ios/screen-ipad-landscape.png" />          <!-- iPad Landscape Non-Retina (iOS 6.1 and Prior) -->
+    <gap:splash gap:platform="ios" width="2048" height="1496" src="res/screen/ios/screen-ipad-landscape.png" />          <!-- iPad Landscape Retina (iOS 6.1 and Prior) -->
+    <gap:splash gap:platform="ios" width="768"  height="1024" src="res/screen/ios/screen-ipad-portrait.png" />           <!-- iPad Portrait Non-Retina -->
+    <gap:splash gap:platform="ios" width="1536" height="2048" src="res/screen/ios/screen-ipad-landscape.png" />          <!-- iPad Portrait Retina -->
+    <gap:splash gap:platform="ios" width="1024" height="768"  src="res/screen/ios/screen-ipad-landscape.png" />          <!-- iPad Landscape Non-Retina -->
+    <gap:splash gap:platform="ios" width="2048" height="1536" src="res/screen/ios/screen-ipad-landscape.png" />          <!-- iPad Landscape Retina -->
+
+    <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg"  />
+    <gap:splash gap:platform="blackberry" src="res/screen/blackberry/screen-225.png"  />
+
+    <!--
+        Define access to external domains.
+
+        <access />            - a blank access tag denies access to all external resources.
+        <access origin="*" /> - a wildcard access tag allows access to all external resource.
+
+        Otherwise, you can specify specific domains:
+    -->
+
+    <access origin="*"/>
+    <!--
+        <access origin="http://youfacing.me" />                    - allow any secure requests to http://youfacing.me/
+        <access origin="http://youfacing.me" subdomains="true" />  - same as above, but including subdomains, such as http://build.youfacing.me/
+        <access origin="http://youfacing.me" browserOnly="true" /> - only allows http://youfacing.me to be opened by the child browser.
+    -->
+
+</widget>

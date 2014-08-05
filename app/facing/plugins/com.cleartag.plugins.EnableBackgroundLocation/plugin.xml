@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.cleartag.plugins.EnableBackgroundLocation"
+        version="3.1">
+
+  <name>IOS Background Location Enabler</name>
+
+  <description>
+    IOS Background Location Enabler
+  </description>
+
+  <license>MIT</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <!-- ios -->
+  <platform name="ios">
+    <js-module src="www/backgroundLocationEnabler.js" name="backgroundlocationenabler">
+      <clobbers target="window.BackgroundLocationEnabler" />
+    </js-module>
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="BackgroundLocationEnabler">
+        <param name="ios-package" value="CDVBackgroundLocationEnabler" />
+      </feature>
+    </config-file>
+    <header-file src="src/ios/CDVBackgroundLocationEnabler.h" />
+    <source-file src="src/ios/CDVBackgroundLocationEnabler.m" />
+  </platform>
+
+</plugin>

@@ -1,38 +1,31 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
-        "id": "org.apache.cordova.device-motion.Acceleration",
+        "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
+        "id": "org.apache.cordova.camera.Camera",
         "clobbers": [
-            "Acceleration"
+            "Camera"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
-        "id": "org.apache.cordova.device-motion.accelerometer",
+        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
+        "id": "org.apache.cordova.camera.CameraPopoverOptions",
         "clobbers": [
-            "navigator.accelerometer"
+            "CameraPopoverOptions"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.device-orientation/www/CompassError.js",
-        "id": "org.apache.cordova.device-orientation.CompassError",
+        "file": "plugins/org.apache.cordova.camera/www/Camera.js",
+        "id": "org.apache.cordova.camera.camera",
         "clobbers": [
-            "CompassError"
+            "navigator.camera"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.device-orientation/www/CompassHeading.js",
-        "id": "org.apache.cordova.device-orientation.CompassHeading",
+        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverHandle.js",
+        "id": "org.apache.cordova.camera.CameraPopoverHandle",
         "clobbers": [
-            "CompassHeading"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device-orientation/www/compass.js",
-        "id": "org.apache.cordova.device-orientation.compass",
-        "clobbers": [
-            "navigator.compass"
+            "CameraPopoverHandle"
         ]
     },
     {
@@ -94,16 +87,109 @@ module.exports = [
     {
         "file": "plugins/org.apache.cordova.contacts/www/ContactFieldType.js",
         "id": "org.apache.cordova.contacts.ContactFieldType"
+    },
+    {
+        "file": "plugins/org.apache.cordova.device/www/device.js",
+        "id": "org.apache.cordova.device.device",
+        "clobbers": [
+            "device"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
+        "id": "org.apache.cordova.device-motion.Acceleration",
+        "clobbers": [
+            "Acceleration"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
+        "id": "org.apache.cordova.device-motion.accelerometer",
+        "clobbers": [
+            "navigator.accelerometer"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-orientation/www/CompassError.js",
+        "id": "org.apache.cordova.device-orientation.CompassError",
+        "clobbers": [
+            "CompassError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-orientation/www/CompassHeading.js",
+        "id": "org.apache.cordova.device-orientation.CompassHeading",
+        "clobbers": [
+            "CompassHeading"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.device-orientation/www/compass.js",
+        "id": "org.apache.cordova.device-orientation.compass",
+        "clobbers": [
+            "navigator.compass"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/network.js",
+        "id": "org.apache.cordova.network-information.network",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+        "id": "org.apache.cordova.network-information.Connection",
+        "clobbers": [
+            "Connection"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.splashscreen/www/splashscreen.js",
+        "id": "org.apache.cordova.splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.launchmyapp/www/android/LaunchMyApp.js",
+        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
+        "clobbers": [
+            "window.plugins.launchmyapp"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.flashlight/www/Flashlight.js",
+        "id": "nl.x-services.plugins.flashlight.Flashlight",
+        "clobbers": [
+            "window.plugins.flashlight"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
+        "id": "nl.x-services.plugins.insomnia.Insomnia",
+        "clobbers": [
+            "window.plugins.insomnia"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.device-motion": "0.2.8",
-    "org.apache.cordova.device-orientation": "0.3.7",
-    "org.apache.cordova.geolocation": "0.3.8",
+    "org.apache.cordova.camera": "0.2.9",
+    "org.apache.cordova.console": "0.2.7",
     "org.apache.cordova.contacts": "0.2.11",
-    "org.apache.cordova.console": "0.2.9"
+    "org.apache.cordova.device": "0.2.8",
+    "org.apache.cordova.device-motion": "0.2.6",
+    "org.apache.cordova.device-orientation": "0.3.5",
+    "org.apache.cordova.geolocation": "0.3.7",
+    "org.apache.cordova.network-information": "0.2.7",
+    "org.apache.cordova.splashscreen": "0.2.7",
+    "nl.x-services.plugins.launchmyapp": "3.2.0",
+    "nl.x-services.plugins.flashlight": "2.0.2",
+    "nl.x-services.plugins.insomnia": "4.0.1",
+    "com.cleartag.plugins.EnableBackgroundLocation": "3.1"
 }
 // BOTTOM OF METADATA
 });
