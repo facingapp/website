@@ -22,7 +22,7 @@ var app = {
     geolocation: null,
     acceleration: null,
 
-    compassSettings: { filter: 5, frequency: 3000 },
+    compassSettings: { frequency: 3000 },
     geolocationSettings: { maximumAge: 3000, timeout: 30000, enableHighAccuracy: true },
     accSettings: { frequency: 3000 },
 
@@ -98,8 +98,7 @@ var app = {
     {
         var htmlList = '' +
             '<li><strong>Direction</strong>:&nbsp; ' + app.compassGetDirection(heading.magneticHeading) + '</li>' +
-            '<li><strong>Magnetic Heading</strong>:&nbsp; ' + heading.magneticHeading + ' &deg;</li>' +
-            '<li><strong>Heading Accuracy</strong>:&nbsp; ' + heading.headingAccuracy + ' &deg;</li>';
+            '<li><strong>Magnetic Heading</strong>:&nbsp; ' + heading.magneticHeading + ' &deg;</li>';
 
         $('#compass ul').html(htmlList);
     },
@@ -190,7 +189,6 @@ var app = {
             '<li><strong>Longitude</strong>:&nbsp; ' + position.coords.longitude + ' &deg;</li>' +
             '<li><strong>Altitude</strong>:&nbsp; ' + app.geolocationDistance( position.coords.altitude ) + '</li>' +
             '<li><strong>Accuracy</strong>:&nbsp; ' + app.geolocationDistance( position.coords.accuracy ) + '</li>' +
-            '<li><strong>Altitude Accuracy</strong>:&nbsp; ' + app.geolocationDistance( position.coords.altitudeAccuracy ) + '</li>' +
             '<li><strong>Heading</strong>:&nbsp; ' + app.compassGetDirection(position.coords.heading) + '</li>' +
             '<li><strong>Speed</strong>:&nbsp; ' + app.geolocationSpeed( position.coords.speed ) + '</li>';
 
