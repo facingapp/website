@@ -17,6 +17,13 @@
  * under the License.
  */
 var app = {
+
+    geolocation: null,
+    acceleration: null,
+
+    geoSettings: { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true },
+    accSettings: { frequency: 3000 },
+
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -34,16 +41,78 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        setTimeout(function() {
+            navigator.splashscreen.hide();
+        }, 2000);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        if(id == 'deviceready')
+        {
+            app.startWatchers();
+        }
 
         console.log('Received Event: ' + id);
+    },
+    clearWatchers: function()
+    {
+        navigator.geolocation.clearWatch(app.geolocation);
+        navigator.accelerometer.clearWatch(app.acceleration);
+
+        console.log('Stopped Watching');
+    },
+    startWatchers: function()
+    {
+        app.watchGeolocation();
+        app.watchAcceleration();
+    },
+    watchGeolocation: function()
+    {
+        app.geolocation = navigator.geolocation.watchPosition(app.geoSuccess, app.geoError, app.geoSettings);
+
+        console.log('Started Watching Geolocation');
+    },
+    watchAcceleration: function()
+    {
+        app.acceleration = navigator.accelerometer.watchAcceleration(app.accSuccess, app.accError, app.accSettings);
+
+        console.log('Started Watching Acceleration');
+    },
+    geoSuccess: function(position)
+    {
+        var htmlList = '' +
+            '<li><b>Latitude</b>: ' + position.coords.latitude + '</li>' +
+            '<li><b>Longitude</b>: ' + position.coords.longitude + '</li>' +
+            '<li><b>Altitude</b>: ' + position.coords.altitude + '</li>' +
+            '<li><b>Accuracy</b>: ' + position.coords.accuracy + '</li>' +
+            '<li><b>Altitude Accuracy</b>: ' + position.coords.altitudeAccuracy + '</li>' +
+            '<li><b>Heading</b>: ' + position.coords.heading + '</li>' +
+            '<li><b>Speed</b>: ' + position.coords.speed + '</li>';
+
+        $('#geolocation ul').html(htmlList);
+
+       //console.table(position.coords);
+    },
+    geoError: function(error)
+    {
+        alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+    },
+    accSuccess: function(acceleration)
+    {
+        var htmlList = '' +
+            '<li><b>Acceleration X</b>: ' + acceleration.x + '</li>' +
+            '<li><b>Acceleration X</b>: ' + acceleration.y + '</li>' +
+            '<li><b>Acceleration X</b>: ' + acceleration.z + '</li>' +
+            '<li><b>Timestamp</b>: ' + acceleration.timestamp + '</li>';
+
+        $('#acceleration ul').html(htmlList);
+
+        console.table(acceleration);
+    },
+    accError: function(error)
+    {
+        alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
     }
 };

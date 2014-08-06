@@ -31,13 +31,19 @@
     </head>
     <body>
         <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+            <h1>Facing</h1>
+            <div id="geolocation">
+                <h3>Geolocation</h3>
+                <ul class="data"></ul>
+            </div>
+
+            <div id="acceleration">
+                <h3>Acceleration</h3>
+                <ul class="data"></ul>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
