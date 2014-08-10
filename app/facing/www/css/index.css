@@ -1,142 +1,165 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+#status
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #FFF;
+    font-weight: normal;
+    opacity: 0.25;
 }
-
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
-}
-
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#333333;
-    background-image:linear-gradient(top, #222222 0%, #444444 51%);
-    background-image:-webkit-linear-gradient(top, #222222 0%, #444444 51%);
-    background-image:-ms-linear-gradient(top, #222222 0%, #444444 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #222222),
-        color-stop(0.51, #444444)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:20px;
-    text-transform:uppercase;
-    width:100%;
-    color: #AAA;
-}
-
-/* Portrait layout (default) */
-h1.header {
-    background: url('../img/header.png') center center no-repeat;
-    width: 189px;
-    height: 65px;
-    text-indent: -1000px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 40px;
-}
-.app {
-    background: url('../img/logo.png') center 100px no-repeat;
+body,html,.content,.container
+{
     width: 100%;
     height: 100%;
-    min-height: 400px;
 }
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-
-    }
+.panel
+{
+    display: none;
+    padding: 20px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
-
-h3 {
+.panel.active
+{
+    display: block;
+}
+.panel h1
+{
+    font-size: 24px;
+    color: #FFF;
+}
+.panel h3 {
     font-size:20px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
     text-align:center;
-    color: #CCC;
+    color: #FFF;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-ul
+.panel ul
 {
     max-width: 300px;
     margin: 0 auto;
+    color: #FFF
 }
-
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
-}
-
-.event.listening {
-    background-color:#333333;
-    display:block;
-}
-
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
-
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
-}
-li.error
+ul.menu li:last-child
 {
-    color: red;
-    list-style: none;
+    margin-right: 30px;
+}
+ul.menu a
+{
+    text-transform: uppercase;
+}
+
+
+
+.find-a-friend {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: url(../img/default-user.jpg) no-repeat;
+    background-size: 180px 180px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 3;
+
+    -webkit-box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+    -moz-box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+    box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /* border-radius: 50% has issues on some mobile browsers */
+}
+
+.pulse1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+    opacity: 0;
+    border: 3px solid rgba(255,255,255,.1);
+
+    -webkit-animation: pulse1 4s linear infinite;
+    -moz-animation: pulse1 4s linear infinite;
+    animation: pulse1 4s linear infinite;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pulse2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 2;
+    opacity: 0;
+    border: 1px solid rgba(255,255,255,0);
+
+    -webkit-animation: pulse2 4s linear infinite;
+    -moz-animation: pulse2 4s linear infinite;
+    animation: pulse2 4s linear infinite;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a.tooltip > span
+{
+    width: 200px;
+    height: 60px;
+    opacity: 1;
+    z-index: 10;
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    line-height: 60px;
     text-align: center;
+    font-size: 20px;
+    border-radius: 6px;
+
+    color: #FFFFFF;
+    background: #222222;
 }
-strong
-{
-    font-weight: bold;
+
+a.tooltip span b {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 15px 0 15px;
+    border-color: #222222 transparent transparent transparent;
 }

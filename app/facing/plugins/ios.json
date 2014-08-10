@@ -60,6 +60,12 @@
                             "xml": "true",
                             "count": 1
                         }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "true",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -112,6 +118,10 @@
                         },
                         {
                             "xml": "<feature name=\"BackgroundLocationEnabler\"><param name=\"ios-package\" value=\"CDVBackgroundLocationEnabler\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"ios-package\" value=\"CDVNotification\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -168,6 +178,12 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "com.cleartag.plugins.EnableBackgroundLocation": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.ququplay.websocket.WebSocket": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

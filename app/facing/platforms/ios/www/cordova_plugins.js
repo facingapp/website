@@ -235,6 +235,13 @@ module.exports = [
         "clobbers": [
             "window.BackgroundLocationEnabler"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+        "id": "org.apache.cordova.dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -252,7 +259,9 @@ module.exports.metadata =
     "nl.x-services.plugins.launchmyapp": "3.2.0",
     "nl.x-services.plugins.flashlight": "2.0.2",
     "nl.x-services.plugins.insomnia": "4.0.1",
-    "com.cleartag.plugins.EnableBackgroundLocation": "3.1"
+    "com.cleartag.plugins.EnableBackgroundLocation": "3.1",
+    "com.ququplay.websocket.WebSocket": "0.1.0",
+    "org.apache.cordova.dialogs": "0.2.8"
 }
 // BOTTOM OF METADATA
 });

@@ -58,6 +58,9 @@
 		7C263F1CFA994BB8A147D6B0 /* Flashlight.m in Sources */ = {isa = PBXBuildFile; fileRef = B66BEBE91D654AD5BCFC0326 /* Flashlight.m */; };
 		857660083C50477C92DEBE19 /* Insomnia.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F689FE255E478FAC946C76 /* Insomnia.m */; };
 		F8F5348D584E45D9A91EA6D0 /* CDVBackgroundLocationEnabler.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB55C707AE2400FBCBEC79F /* CDVBackgroundLocationEnabler.m */; };
+		7377EBEB6F974098B946C850 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = E72C9E3A78594AB6A742A1B8 /* CDVNotification.m */; };
+		E7127A2E331841B0940BE699 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB3F696494B9BB08BFCB3 /* CDVNotification.bundle */; };
+		B318E5D1BF124306A55EC17C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89657B235B34E1D91AB0ACF /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +161,10 @@
 		AC8ABC59FCE94381AE5C3D17 /* Insomnia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Insomnia.h"; path = "nl.x-services.plugins.insomnia/Insomnia.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		5FB55C707AE2400FBCBEC79F /* CDVBackgroundLocationEnabler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVBackgroundLocationEnabler.m"; path = "com.cleartag.plugins.EnableBackgroundLocation/CDVBackgroundLocationEnabler.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		12FE8798A3334C159D6C25D6 /* CDVBackgroundLocationEnabler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVBackgroundLocationEnabler.h"; path = "com.cleartag.plugins.EnableBackgroundLocation/CDVBackgroundLocationEnabler.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E72C9E3A78594AB6A742A1B8 /* CDVNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVNotification.m"; path = "org.apache.cordova.dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		D249BBADAF004B1A83D071E1 /* CDVNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVNotification.h"; path = "org.apache.cordova.dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8CACB3F696494B9BB08BFCB3 /* CDVNotification.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; };
+		B89657B235B34E1D91AB0ACF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +182,7 @@
 				11A576C6118C4F478093B2A9 /* AddressBookUI.framework in Frameworks */,
 				E17E80E9B15F480295947CE5 /* CoreMotion.framework in Frameworks */,
 				9A9949B3D7264451B4E1595E /* SystemConfiguration.framework in Frameworks */,
+				B318E5D1BF124306A55EC17C /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +264,7 @@
 				308D052D1370CCF300D202BF /* icons */,
 				308D05311370CCF300D202BF /* splash */,
 				8D1107310486CEB800E47090 /* Facing-Info.plist */,
+				8CACB3F696494B9BB08BFCB3 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "Facing/Resources";
@@ -273,6 +282,7 @@
 				186C3FF81CFA48589F5AB3C3 /* AddressBookUI.framework */,
 				9847369BD0DC435980E499E3 /* CoreMotion.framework */,
 				073FE634373242F18263DB48 /* SystemConfiguration.framework */,
+				B89657B235B34E1D91AB0ACF /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,6 +329,8 @@
 				AC8ABC59FCE94381AE5C3D17 /* Insomnia.h */,
 				5FB55C707AE2400FBCBEC79F /* CDVBackgroundLocationEnabler.m */,
 				12FE8798A3334C159D6C25D6 /* CDVBackgroundLocationEnabler.h */,
+				E72C9E3A78594AB6A742A1B8 /* CDVNotification.m */,
+				D249BBADAF004B1A83D071E1 /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "Facing/Plugins";
@@ -482,6 +494,7 @@
 				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
 				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
 				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+				E7127A2E331841B0940BE699 /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +541,7 @@
 				7C263F1CFA994BB8A147D6B0 /* Flashlight.m in Sources */,
 				857660083C50477C92DEBE19 /* Insomnia.m in Sources */,
 				F8F5348D584E45D9A91EA6D0 /* CDVBackgroundLocationEnabler.m in Sources */,
+				7377EBEB6F974098B946C850 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

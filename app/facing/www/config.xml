@@ -84,6 +84,10 @@
     <!-- Documentation: https://build.phonegap.com/plugins/620 -->
     <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
 
+    <!-- Notification ( support for loading a Splashscreen ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/622 -->
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!-- ================================================== -->

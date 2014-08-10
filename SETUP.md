@@ -69,7 +69,7 @@ Once you have the SDK Manager installed, make sure you have the following instal
 To install PhoneGap, [follow these instructions](http://phonegap.com/install/), here is a one line install command if you're in a hurry:
 
 ```bash
-$ sudo npm install -g phonegap cordova
+$ sudo npm install -g phonegap cordova ionic
 ```
 
 You will also want to install the native [PhoneGap Developer App](http://app.phonegap.com/) on any device you want to test on.

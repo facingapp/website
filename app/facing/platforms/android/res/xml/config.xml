@@ -100,4 +100,10 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape-default.png" width="1024" />
     <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/screen-ipad-landscape-default-2x.png" width="2048" />
     <access origin="*" />
+    <feature name="WebSocket">
+        <param name="android-package" value="com.ququplay.websocket.WebSocket" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
 </widget>
