@@ -4,35 +4,95 @@
         <meta charset="utf-8">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-        <link rel="stylesheet" type="text/css" href="lib/ionic/css/ionic.css">
+        <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/trunk.css">
+        <link rel="stylesheet" type="text/css" href="css/animations.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>Facing</title>
     </head>
     <body>
-        <div class="ionic-body">
-            <div class="bar bar-header bar-dark">
-                <button class="button button-icon icon ion-navicon"></button>
-                <div class="h1 title">Facing</div>
-                <button class="button button-clear button-positive find-friend">Find Friend</button>
+        <div class="container">
+            <header class="slide">
+                <ul id="navToggle" class="burger slide">
+                    <li></li><li></li><li></li>
+                </ul>
+                <h1>
+                    <div class="label"><i class="fa fa-map-marker"></i> Facing</a>
+                    <div id="status"><i class="fa fa-circle-o-notch fa-spin"></i></div>
+                </h1>
+
+            </header>
+
+            <nav class="slide">
+                <ul class="menu">
+                    <li><a href="#" data-panel="home" class="active" ><i class="fa fa-map-marker fa-fw"></i> Facing</a></li>
+                    <li><a href="#" data-panel="my-data"><i class="fa fa-crosshairs fa-fw"></i> My Data</a></li>
+                    <li><a href="#" data-panel="friends-data"><i class="fa fa-crosshairs fa-fw"></i> Friends Data</a></li>
+                </ul>
+            </nav>
+
+            <div class="content slide">
+                <div class="header-section"></div>
+
+                <div id="home" class="panel active">
+                    <div class="pulse1"></div>
+                    <div class="pulse2"></div>
+                    <a href="#" class="find-a-friend tooltip animated flipInX">
+                        <span class="animated bounceInDown hideme">
+                            <b></b>
+                            <i class="fa fa-search fa-fw"></i>&nbsp; Find a Friend
+                        </span>
+                    </a>
+                </div>
+
+                <div id="my-data" class="panel">
+                    <div class="me">
+                        <div class="compass">
+                            <h3>My Compass</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+
+                        <div class="geolocation">
+                            <h3>My Geolocation</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+
+                        <div class="acceleration">
+                            <h3>My Acceleration</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="friends-data" class="panel">
+                    <div class="friend">
+                        <div class="compass">
+                            <h3>Friends Compass</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+
+                        <div class="geolocation">
+                            <h3>Friends Geolocation</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+
+                        <div class="acceleration">
+                            <h3>Friends Acceleration</h3>
+                            <ul class="data"><li>Loading Data ...</li></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="content has-header padding">
-                <a class="contacts" href="#">Contacts</a>
-            </div>
+
         </div>
-        <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+        <script src="http://app.youfacing.me/socket.io/socket.io.js"></script>
         <script src="cordova.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
-        <script>
-        $(function() {
-            $('.find-friend').click(function(){
-                navigator.contacts.pickContact(function(contact){
-                    console.log('The following contact has been selected:' + JSON.stringify(contact));
-                },function(err){
-                    console.log('Error: ' + err);
-                });
-            });
-        });
-        </script>
+        <script src="js/app.js"></script>
+        <script src="js/gui.js"></script>
+        <script>app.initialize();</script>
     </body>
 </html>

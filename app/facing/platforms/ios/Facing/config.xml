@@ -19,8 +19,14 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="Camera">
-        <param name="ios-package" value="CDVCamera" />
+    <feature name="BackgroundLocationEnabler">
+        <param name="ios-package" value="CDVBackgroundLocationEnabler" />
+    </feature>
+    <feature name="Flashlight">
+        <param name="ios-package" value="Flashlight" />
+    </feature>
+    <feature name="Insomnia">
+        <param name="ios-package" value="Insomnia" />
     </feature>
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
@@ -37,6 +43,9 @@
     <feature name="Compass">
         <param name="ios-package" value="CDVCompass" />
     </feature>
+    <feature name="Notification">
+        <param name="ios-package" value="CDVNotification" />
+    </feature>
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
     </feature>
@@ -46,15 +55,6 @@
     <feature name="SplashScreen">
         <param name="ios-package" value="CDVSplashScreen" />
         <param name="onload" value="true" />
-    </feature>
-    <feature name="Flashlight">
-        <param name="ios-package" value="Flashlight" />
-    </feature>
-    <feature name="Insomnia">
-        <param name="ios-package" value="Insomnia" />
-    </feature>
-    <feature name="BackgroundLocationEnabler">
-        <param name="ios-package" value="CDVBackgroundLocationEnabler" />
     </feature>
     <name>Facing</name>
     <description>
@@ -78,7 +78,6 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
     <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.contacts" version="0.2.11" />
     <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
@@ -87,6 +86,7 @@
     <gap:plugin name="org.apache.cordova.geolocation" version="0.3.7" />
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
     <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
         <param name="URL_SCHEME" value="facing" />
     </gap:plugin>
@@ -129,7 +129,4 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape-default.png" width="1024" />
     <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/screen-ipad-landscape-default-2x.png" width="2048" />
     <access origin="*" />
-    <feature name="Notification">
-        <param name="ios-package" value="CDVNotification" />
-    </feature>
 </widget>

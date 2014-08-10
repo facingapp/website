@@ -1,31 +1,24 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/org.apache.cordova.camera/www/CameraConstants.js",
-        "id": "org.apache.cordova.camera.Camera",
+        "file": "plugins/com.cleartag.plugins.EnableBackgroundLocation/www/backgroundLocationEnabler.js",
+        "id": "com.cleartag.plugins.EnableBackgroundLocation.backgroundlocationenabler",
         "clobbers": [
-            "Camera"
+            "window.BackgroundLocationEnabler"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.camera/www/CameraPopoverOptions.js",
-        "id": "org.apache.cordova.camera.CameraPopoverOptions",
+        "file": "plugins/nl.x-services.plugins.flashlight/www/Flashlight.js",
+        "id": "nl.x-services.plugins.flashlight.Flashlight",
         "clobbers": [
-            "CameraPopoverOptions"
+            "window.plugins.flashlight"
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.camera/www/Camera.js",
-        "id": "org.apache.cordova.camera.camera",
+        "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
+        "id": "nl.x-services.plugins.insomnia.Insomnia",
         "clobbers": [
-            "navigator.camera"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.camera/www/ios/CameraPopoverHandle.js",
-        "id": "org.apache.cordova.camera.CameraPopoverHandle",
-        "clobbers": [
-            "CameraPopoverHandle"
+            "window.plugins.insomnia"
         ]
     },
     {
@@ -159,6 +152,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+        "id": "org.apache.cordova.dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
         "id": "org.apache.cordova.geolocation.Coordinates",
         "clobbers": [
@@ -214,54 +214,25 @@ module.exports = [
         "clobbers": [
             "window.plugins.launchmyapp"
         ]
-    },
-    {
-        "file": "plugins/nl.x-services.plugins.flashlight/www/Flashlight.js",
-        "id": "nl.x-services.plugins.flashlight.Flashlight",
-        "clobbers": [
-            "window.plugins.flashlight"
-        ]
-    },
-    {
-        "file": "plugins/nl.x-services.plugins.insomnia/www/Insomnia.js",
-        "id": "nl.x-services.plugins.insomnia.Insomnia",
-        "clobbers": [
-            "window.plugins.insomnia"
-        ]
-    },
-    {
-        "file": "plugins/com.cleartag.plugins.EnableBackgroundLocation/www/backgroundLocationEnabler.js",
-        "id": "com.cleartag.plugins.EnableBackgroundLocation.backgroundlocationenabler",
-        "clobbers": [
-            "window.BackgroundLocationEnabler"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
-        "id": "org.apache.cordova.dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.camera": "0.2.9",
+    "com.cleartag.plugins.EnableBackgroundLocation": "3.1",
+    "com.ququplay.websocket.WebSocket": "0.1.0",
+    "nl.x-services.plugins.flashlight": "2.0.2",
+    "nl.x-services.plugins.insomnia": "4.0.1",
     "org.apache.cordova.console": "0.2.7",
     "org.apache.cordova.contacts": "0.2.11",
     "org.apache.cordova.device": "0.2.8",
     "org.apache.cordova.device-motion": "0.2.6",
     "org.apache.cordova.device-orientation": "0.3.5",
+    "org.apache.cordova.dialogs": "0.2.8",
     "org.apache.cordova.geolocation": "0.3.7",
     "org.apache.cordova.network-information": "0.2.7",
     "org.apache.cordova.splashscreen": "0.2.7",
-    "nl.x-services.plugins.launchmyapp": "3.2.0",
-    "nl.x-services.plugins.flashlight": "2.0.2",
-    "nl.x-services.plugins.insomnia": "4.0.1",
-    "com.cleartag.plugins.EnableBackgroundLocation": "3.1",
-    "com.ququplay.websocket.WebSocket": "0.1.0",
-    "org.apache.cordova.dialogs": "0.2.8"
+    "nl.x-services.plugins.launchmyapp": "3.2.0"
 }
 // BOTTOM OF METADATA
 });

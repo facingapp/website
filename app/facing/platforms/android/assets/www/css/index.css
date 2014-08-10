@@ -1,115 +1,165 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+#status
+{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #FFF;
+    font-weight: normal;
+    opacity: 0.25;
 }
-
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+body,html,.content,.container
+{
+    width: 100%;
+    height: 100%;
 }
-
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+.panel
+{
+    display: none;
+    padding: 20px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
-
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+.panel.active
+{
+    display: block;
 }
-
-h1 {
-    font-size:24px;
+.panel h1
+{
+    font-size: 24px;
+    color: #FFF;
+}
+.panel h3 {
+    font-size:20px;
     font-weight:normal;
     margin:0px;
     overflow:visible;
     padding:0px;
     text-align:center;
+    color: #FFF;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.panel ul
+{
+    max-width: 300px;
+    margin: 0 auto;
+    color: #FFF
+}
+ul.menu li:last-child
+{
+    margin-right: 30px;
+}
+ul.menu a
+{
+    text-transform: uppercase;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+
+
+.find-a-friend {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: url(../img/default-user.jpg) no-repeat;
+    background-size: 180px 180px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 3;
+
+    -webkit-box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+    -moz-box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+    box-shadow:
+      0 0 0 10px  rgba(255,255,255,.2),
+      0 0 5px 2px rgba(0,0,0,.3),
+      inset 0 0 0 10px  rgba(0,0,0,.2);
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    /* border-radius: 50% has issues on some mobile browsers */
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.pulse1 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 1;
+    opacity: 0;
+    border: 3px solid rgba(255,255,255,.1);
+
+    -webkit-animation: pulse1 4s linear infinite;
+    -moz-animation: pulse1 4s linear infinite;
+    animation: pulse1 4s linear infinite;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+.pulse2 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 2;
+    opacity: 0;
+    border: 1px solid rgba(255,255,255,0);
+
+    -webkit-animation: pulse2 4s linear infinite;
+    -moz-animation: pulse2 4s linear infinite;
+    animation: pulse2 4s linear infinite;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+a.tooltip > span
+{
+    width: 200px;
+    height: 60px;
+    opacity: 1;
+    z-index: 10;
+    position: absolute;
+    top: -100px;
+    left: -10px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 6px;
+
+    color: #FFFFFF;
+    background: #222222;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+a.tooltip span b {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 85px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 15px 0 15px;
+    border-color: #222222 transparent transparent transparent;
 }

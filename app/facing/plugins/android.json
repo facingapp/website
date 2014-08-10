@@ -9,10 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Camera\"><param name=\"android-package\" value=\"org.apache.cordova.camera.CameraLauncher\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Contacts\"><param name=\"android-package\" value=\"org.apache.cordova.contacts.ContactManager\" /></feature>",
                             "count": 1
                         },
@@ -37,10 +33,6 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Flashlight\"><param name=\"android-package\" value=\"nl.xservices.plugins.Flashlight\" /></feature>",
                             "count": 1
                         },
@@ -55,6 +47,10 @@
                         {
                             "xml": "<feature name=\"Notification\"><param name=\"android-package\" value=\"org.apache.cordova.dialogs.Notification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -62,10 +58,6 @@
             "AndroidManifest.xml": {
                 "parents": {
                     "/*": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
-                        },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.READ_CONTACTS\" />",
                             "count": 1
@@ -108,9 +100,6 @@
         }
     },
     "installed_plugins": {
-        "org.apache.cordova.camera": {
-            "PACKAGE_NAME": "com.manifestinteractive.facing"
-        },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
@@ -135,10 +124,6 @@
         "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
-        "nl.x-services.plugins.launchmyapp": {
-            "URL_SCHEME": "facing",
-            "PACKAGE_NAME": "com.manifestinteractive.facing"
-        },
         "nl.x-services.plugins.flashlight": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
@@ -152,6 +137,10 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "nl.x-services.plugins.launchmyapp": {
+            "URL_SCHEME": "facing",
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

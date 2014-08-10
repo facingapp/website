@@ -48,10 +48,6 @@
     <!-- Core plugins -->
     <!-- ================================================== -->
 
-    <!-- Camera -->
-    <!-- Documentation: https://build.phonegap.com/plugins/768 -->
-    <gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
-
     <!-- Console ( Better Support for console.log ) -->
     <!-- Documentation: https://build.phonegap.com/plugins/624 -->
     <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
