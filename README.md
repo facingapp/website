@@ -26,9 +26,7 @@ Example Use Cases
 Server
 ---
 
-If you would like to know what is running in the back-end, checkout the our server repository:
-
-[https://github.com/manifestinteractive/facing-server](https://github.com/manifestinteractive/facing-server)
+If you would like to know what is running in the back-end, checkout our [facing-server](https://github.com/manifestinteractive/facing-server) repository:
 
 License
 ---
