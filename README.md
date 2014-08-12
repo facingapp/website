@@ -1,4 +1,4 @@
-![Facing Logo](https://raw.githubusercontent.com/manifestinteractive/facing/master/assets/logo/exports/main/rectangle/logo_rectangle_github.png)
+![Facing Logo](https://raw.githubusercontent.com/manifestinteractive/facing/master/assets/logo/rectangle/logo_rectangle.jpg)
 
 
 
@@ -22,6 +22,13 @@ Example Use Cases
 2. You and your friend decide to meet up at a place that is half way between the two of you.  Use Facing to find out where that is.
 
 3. You're a mobile application developer.  Launch **Facing** using our custom facing:// protocol to allow your users to find one another.
+
+Server
+---
+
+If you would like to know what is running in the back-end, checkout the our server repository:
+
+[https://github.com/manifestinteractive/facing-server](https://github.com/manifestinteractive/facing-server)
 
 License
 ---
