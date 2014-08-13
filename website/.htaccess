@@ -3,7 +3,7 @@ AddEncoding gzip svgz
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.youfacing\.me$
-RewriteRule ^/?$ "http\:\/\/youfacing\.me\/" [R=301,L]
+RewriteRule ^/?$ "https\:\/\/youfacing\.me\/" [R=301,L]
 
 RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
 RewriteRule .* – [F,L]
