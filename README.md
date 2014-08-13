@@ -1,7 +1,5 @@
 ![Facing Logo](https://raw.githubusercontent.com/manifestinteractive/facing/master/assets/logo/rectangle/logo_rectangle.jpg)
 
-
-
 Facing _( a work in progress )_
 ===
 
@@ -26,7 +24,7 @@ Example Use Cases
 Server
 ---
 
-If you would like to know what is running in the back-end, checkout our [facing-server](https://github.com/manifestinteractive/facing-server) repository:
+If you would like to know what is running in the back-end, checkout our [facing-server](https://github.com/manifestinteractive/facing-server) repository.
 
 License
 ---
