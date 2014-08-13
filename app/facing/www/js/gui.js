@@ -73,5 +73,23 @@ $(function() {
 
     timeout = setTimeout(function(){
         $('span.hideme').addClass('animated fadeOutUp');
+        $('.logo').fadeIn('slow');
     }, 6000);
+
+    var user_shuffle = 0;
+    setInterval(function(){
+        var $friends = $('.find-a-friend');
+        var width = $friends.width();
+
+        user_shuffle++;
+
+        if(user_shuffle > 9)
+        {
+            user_shuffle = 0;
+        }
+
+        var position = -(user_shuffle * width);
+
+        $friends.css({ 'background-position': position + 'px 0' });
+    }, 4000);
 });
