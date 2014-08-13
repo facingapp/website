@@ -1,7 +1,3 @@
 User-agent: *
-Disallow: /_oldsite/
-Disallow: /downloads/
-Disallow: /responsive/
-Disallow: /zuma/
 
-Sitemap: http://www.peterschmalfeldt.com/sitemap.xml
+Sitemap: https://youfacing.me/sitemap.xml
