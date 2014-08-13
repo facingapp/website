@@ -1,6 +1,4 @@
-![Facing Logo](https://raw.githubusercontent.com/manifestinteractive/facing/master/assets/logo/exports/main/rectangle/logo_rectangle_github.png)
-
-
+![Facing Logo](https://raw.githubusercontent.com/manifestinteractive/facing/master/assets/logo/rectangle/logo_rectangle.jpg)
 
 Developer Documentation
 ===
