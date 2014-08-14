@@ -1,6 +1,6 @@
 var app = {
 
-    socket: io.connect('http://app.youfacing.me:80'),
+    socket: io.connect('https://app.youfacing.me:443'),
     my_name: null,
     my_space: 'Main',
     initialized: false,
@@ -9,6 +9,8 @@ var app = {
     compass: null,
     geolocation: null,
     acceleration: null,
+
+	enable_debug: true,
 
     location_data: {},
 
@@ -28,6 +30,32 @@ var app = {
     {
         app.receivedEvent('deviceready');
     },
+	debug: function(level, message)
+	{
+		if(app.enable_debug)
+		{
+			switch(level)
+			{
+				case 'log':
+					console.log(message);
+					break;
+
+				case 'warn':
+					console.warn(message);
+					break;
+
+				case 'debug':
+					console.debug(message);
+					break;
+
+				case 'error':
+					console.error(message);
+					break;
+			}
+		}
+
+		$('#dev-log .output ul').append('<li class="'+ level +'">' + message + '</li>');
+	},
     receivedEvent: function(id)
     {
         if(id == 'deviceready' && app.initialized === false)
@@ -44,6 +72,8 @@ var app = {
             }, 2000);
 
             app.startWatchers();
+
+	        setupGUI();
         }
     },
     clearWatchers: function()
@@ -94,8 +124,11 @@ var app = {
     },
     compassError: function(error)
     {
-        console.error('Compass Error: ' + error.message);
-        $('.me .compass ul').html('<li class="error">'+ error.message +'</li>');
+        if(error.message)
+        {
+	        app.debug('error', 'Compass Error: ' + error.message);
+	        $('.me .compass ul').html('<li class="error">'+ error.message +'</li>');
+        }
     },
     compassGetDirection: function(headingDegrees)
     {
@@ -185,7 +218,7 @@ var app = {
     },
     geolocationError: function(error)
     {
-        console.error('Geolocation Error: ' + error.message);
+        app.debug('error', 'Geolocation Error: ' + error.message);
         $('.me .geolocation ul').html('<li class="error">'+ error.message +'</li>');
     },
     geolocationDistance: function(value, use_metric)
@@ -222,7 +255,7 @@ var app = {
     },
     accelerationError: function()
     {
-        console.error('Failed to use acceleration');
+        app.debug('error', 'Failed to use acceleration');
         $('.me .acceleration ul').html('<li class="error">Failed to use acceleration</li>');
     },
     renderMyData: function()
@@ -320,4 +353,39 @@ function switchSpace(space)
     {
         app.socket.emit('switchSpace', space);
     }
+}
+
+function setupGUI()
+{
+	app.debug('log', 'Setting up GUI');
+
+	$('.find-a-friend').click(function(){
+
+		app.debug('log', 'Find a Friend');
+
+		navigator.contacts.pickContact(function(contact){
+
+			$contact = $('.find-a-friend');
+			$contact.removeClass('default');
+			$contact.css('background-image', 'url("'+ contact.photos[0].value +'")');
+			$contact.addClass('contact');
+			$contact.css('background-position', '0px 0px');
+
+			var number = '3149209201';
+			var message = 'Your friend would like you to use Facing: https://app.youfacing.me/invite/code';
+			var intent = '';
+			var success = function()
+			{
+				alert('Message sent successfully');
+			};
+			var error = function(e)
+			{
+				alert('Message Failed:' + e);
+			};
+			sms.send(number, message, intent, success, error);
+
+		},function(err){
+			app.debug('log', 'Error: ' + err);
+		});
+	});
 }

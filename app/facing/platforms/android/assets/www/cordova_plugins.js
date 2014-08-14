@@ -165,6 +165,13 @@ module.exports = [
         "clobbers": [
             "window.plugins.launchmyapp"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.plugin.sms/www/sms.js",
+        "id": "org.apache.cordova.plugin.sms.Sms",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -183,7 +190,8 @@ module.exports.metadata =
     "com.cleartag.plugins.EnableBackgroundLocation": "3.1",
     "com.ququplay.websocket.WebSocket": "0.1.0",
     "org.apache.cordova.dialogs": "0.2.8",
-    "nl.x-services.plugins.launchmyapp": "3.2.0"
+    "nl.x-services.plugins.launchmyapp": "3.2.0",
+    "org.apache.cordova.plugin.sms": "0.1.0"
 }
 // BOTTOM OF METADATA
 });

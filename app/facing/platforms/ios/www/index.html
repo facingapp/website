@@ -28,24 +28,32 @@
             <nav class="slide">
                 <ul class="menu">
                     <li><a href="#" data-panel="home" class="active" ><i class="fa fa-map-marker fa-fw"></i> Facing</a></li>
+	                <li><a href="#" data-panel="map"><i class="fa fa-crosshairs fa-fw"></i> Map</a></li>
                     <li><a href="#" data-panel="my-data"><i class="fa fa-crosshairs fa-fw"></i> My Data</a></li>
                     <li><a href="#" data-panel="friends-data"><i class="fa fa-crosshairs fa-fw"></i> Friends Data</a></li>
+	                <li><a href="#" data-panel="dev-log"><i class="fa fa-terminal fa-fw"></i> Console</a></li>
                 </ul>
             </nav>
 
             <div class="content slide">
-                <div class="header-section"></div>
+                <div class="logo"></div>
 
                 <div id="home" class="panel active">
+                    <div class="location-marker self"></div>
+                    <div class="location-marker friend"></div>
                     <div class="pulse1"></div>
                     <div class="pulse2"></div>
-                    <a href="#" class="find-a-friend tooltip animated flipInX">
+                    <a href="#" class="find-a-friend tooltip animated flipInX default">
                         <span class="animated bounceInDown hideme">
                             <b></b>
                             <i class="fa fa-search fa-fw"></i>&nbsp; Find a Friend
                         </span>
                     </a>
                 </div>
+
+	            <div id="map" class="panel">
+		            <div class="header-section"></div>
+	            </div>
 
                 <div id="my-data" class="panel">
                     <div class="me">
@@ -84,11 +92,21 @@
                         </div>
                     </div>
                 </div>
+
+	            <div id="dev-log" class="panel">
+		            <div class="header-section"></div>
+		            <div class="output">
+			            <div><a href="#" class="clear-log"><i class="fa fa-eraser"></i> Clear Console</a></div>
+		                <ul></ul>
+			            <div class="push"></div>
+	                </div>
+	            </div>
+
             </div>
 
         </div>
 
-        <script src="http://app.youfacing.me/socket.io/socket.io.js"></script>
+        <script src="https://app.youfacing.me/socket.io/socket.io.js"></script>
         <script src="cordova.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/app.js"></script>
