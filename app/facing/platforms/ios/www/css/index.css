@@ -154,6 +154,10 @@ ul.menu a
     width: 100%;
     left: 0;
 }
+.push-header
+{
+    margin-top: 60px;
+}
 #dev-log .output
 {
     width: 100%;
@@ -209,7 +213,7 @@ ul.menu a
     background-position: 0 0;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 5;
+    z-index: 5 !important;
     background-size: 200px 200px;
 
     -webkit-box-shadow:
@@ -250,7 +254,7 @@ ul.menu a
     height: 220px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 1;
+    z-index: 1 !important;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
 
@@ -274,7 +278,7 @@ ul.menu a
     height: 220px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 2;
+    z-index: 2 !important;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);
 
@@ -425,7 +429,21 @@ a.tooltip span b {
         text-align: center;
         bottom: 100px;
         height: 200px;
-        background-color: red;
         line-height: 30px;
+    }
+    #home .information .contact-options
+    {
+        margin-top: 20px;
+    }
+    #home .information .contact-option
+    {
+        font-size: 45px;
+        line-height: 45px;
+        width: 100px;
+    }
+    #home .information .contact-option span
+    {
+        width: 100px;
+        font-size: 14px;
     }
 }

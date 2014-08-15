@@ -141,13 +141,11 @@ var gui = {
 
 			if(panel == 'home')
 			{
-				jQuery('.find-a-friend').addClass('animated flipInX');
-				jQuery('.logo').fadeIn('slow');
+				gui.reset();
 			}
 			else
 			{
 				jQuery('.logo').fadeOut('fast');
-				jQuery('span.hideme').remove();
 			}
 
 			if(panel == 'my-data' || panel == 'friends-data')

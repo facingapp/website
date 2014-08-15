@@ -213,7 +213,7 @@ ul.menu a
     background-position: 0 0;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 5;
+    z-index: 5 !important;
     background-size: 200px 200px;
 
     -webkit-box-shadow:
@@ -233,6 +233,10 @@ ul.menu a
     -moz-border-radius: 50%;
     border-radius: 50%;
     /* border-radius: 50% has issues on some mobile browsers */
+
+    -webkit-animation: nopulse 4s linear infinite;
+    -moz-animation: nopulse 4s linear infinite;
+    animation: nopulse 4s linear infinite;
 }
 .find-a-friend.default
 {
@@ -254,16 +258,16 @@ ul.menu a
     height: 220px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 1;
+    z-index: 1 !important;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
 
     -webkit-animation: pulse1 4s linear infinite;
     -moz-animation: pulse1 4s linear infinite;
     animation: pulse1 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
@@ -278,16 +282,16 @@ ul.menu a
     height: 220px;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 2;
+    z-index: 2 !important;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);
 
     -webkit-animation: pulse2 4s linear infinite;
     -moz-animation: pulse2 4s linear infinite;
     animation: pulse2 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
