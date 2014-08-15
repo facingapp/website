@@ -38,9 +38,6 @@
     <feature name="LaunchMyApp">
         <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
     </feature>
-    <feature name="Sms">
-        <param name="android-package" value="org.apache.cordova.plugin.sms.Sms" />
-    </feature>
     <name>Facing</name>
     <description>
         GPS &amp; Compass Frameworks to Connect People to Each Other http://youfacing.me

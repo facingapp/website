@@ -216,10 +216,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/org.apache.cordova.plugin.sms/www/sms.js",
-        "id": "org.apache.cordova.plugin.sms.Sms",
+        "file": "plugins/com.phonegap.plugin.statusbar/www/statusbar.js",
+        "id": "com.phonegap.plugin.statusbar.statusbar",
         "clobbers": [
-            "window.sms"
+            "window.StatusBar"
         ]
     }
 ];
@@ -240,7 +240,7 @@ module.exports.metadata =
     "org.apache.cordova.network-information": "0.2.7",
     "org.apache.cordova.splashscreen": "0.2.7",
     "nl.x-services.plugins.launchmyapp": "3.2.0",
-    "org.apache.cordova.plugin.sms": "0.1.0"
+    "com.phonegap.plugin.statusbar": "1.1.0"
 }
 // BOTTOM OF METADATA
 });

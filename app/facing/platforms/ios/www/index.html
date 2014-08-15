@@ -18,11 +18,9 @@
                 <ul id="navToggle" class="burger slide">
                     <li></li><li></li><li></li>
                 </ul>
-                <h1>
-                    <div class="label"><i class="fa fa-map-marker"></i> Facing</a>
-                    <div id="status"><i class="fa fa-circle-o-notch fa-spin"></i></div>
-                </h1>
-
+	            <div class="reset-gui">
+		            <a href="#" class="force-reset-gui"><i class="fa fa-times"></i></a>
+	            </div>
             </header>
 
             <nav class="slide">
@@ -36,19 +34,36 @@
             </nav>
 
             <div class="content slide">
-                <div class="logo"></div>
+                <div class="logo animated fadeInDown"></div>
 
                 <div id="home" class="panel active">
+
                     <div class="location-marker self"></div>
                     <div class="location-marker friend"></div>
                     <div class="pulse1"></div>
                     <div class="pulse2"></div>
-                    <a href="#" class="find-a-friend tooltip animated flipInX default">
-                        <span class="animated bounceInDown hideme">
-                            <b></b>
-                            <i class="fa fa-search fa-fw"></i>&nbsp; Find a Friend
-                        </span>
-                    </a>
+                    <a href="#" class="find-a-friend tooltip animated flipInX default"></a>
+	                <div class="information">
+		                <div class="welcome">
+			                <i class="fa fa-chevron-up"></i>&nbsp; Tap to Choose a Friend &nbsp;<i class="fa fa-chevron-up"></i>
+		                </div>
+		                <div class="status">
+			                <div class="message">
+				                <i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Loading
+			                </div>
+		                </div>
+		                <div class="contact-options">
+			                <a href="#" id="sms" class="contact-option">
+				                <i class="fa fa-comment fa-fw"></i> <span>SMS</span>
+			                </a>
+			                <a href="#" id="email" class="contact-option">
+				                <i class="fa fa-envelope fa-fw"></i> <span>Email</span>
+			                </a>
+			                <a href="#" id="clipboard" class="contact-option">
+				                <i class="fa fa-external-link-square fa-fw"></i> <span>Link</span>
+			                </a>
+		                </div>
+	                </div>
                 </div>
 
 	            <div id="map" class="panel">
@@ -105,12 +120,15 @@
             </div>
 
         </div>
-
         <script src="https://app.youfacing.me/socket.io/socket.io.js"></script>
         <script src="cordova.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/geo.js"></script>
         <script src="js/app.js"></script>
         <script src="js/gui.js"></script>
-        <script>app.initialize();</script>
+        <script>
+	        app.initialize();
+	        gui.initialize();
+        </script>
     </body>
 </html>

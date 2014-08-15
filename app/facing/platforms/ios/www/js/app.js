@@ -1,6 +1,7 @@
 var app = {
 
-    socket: io.connect('https://app.youfacing.me:443'),
+	platform: (typeof device != 'undefined') ? device.platform : 'desktop',
+    socket: (typeof io != 'undefined') ? io.connect('https://app.youfacing.me:443') : null,
     my_name: null,
     my_space: 'Main',
     initialized: false,
@@ -34,8 +35,6 @@ var app = {
             }, 2000);
 
             app.hardware.start();
-
-	        setupGUI();
         }
     },
 	hardware:
@@ -50,16 +49,30 @@ var app = {
 				app.hardware.geolocation.start();
 
 				app.hardware.timer = setInterval(function(){
-					app.sendData();
-					app.renderMyData();
+
+					if(typeof app.location_data.accelerometer !== 'undefined' && typeof app.location_data.compass !== 'undefined' && typeof app.location_data.geolocation !== 'undefined')
+					{
+						app.sendData();
+						gui.render.self();
+					}
+
 				}, 1000);
 			}
 		},
 		stop: function()
 		{
-			app.hardware.accelerometer.stop();
-			app.hardware.compass.stop();
-			app.hardware.geolocation.stop();
+			if(app.hardware.accelerometer.obj)
+			{
+				app.hardware.accelerometer.stop();
+			}
+			if(app.hardware.compass.obj)
+			{
+				app.hardware.compass.stop();
+			}
+			if(app.hardware.geolocation.obj)
+			{
+				app.hardware.geolocation.stop();
+			}
 
 			clearInterval(app.hardware.timer);
 			app.hardware.timer = null;
@@ -72,6 +85,11 @@ var app = {
 			},
 			start: function()
 			{
+				if(typeof navigator.compass == 'undefined')
+				{
+					return false;
+				}
+
 				try
 				{
 					app.hardware.compass.obj = navigator.compass.watchHeading(
@@ -109,7 +127,7 @@ var app = {
 				if(error.message)
 				{
 					app.util.debug('error', 'Compass Error: ' + error.message);
-					$('.me .compass ul').html('<li class="error">'+ error.message +'</li>');
+					jQuery('.me .compass ul').html('<li class="error">'+ error.message +'</li>');
 				}
 			},
 			direction: function(headingDegrees)
@@ -199,6 +217,11 @@ var app = {
 			},
 			start: function()
 			{
+				if(typeof navigator.geolocation == 'undefined')
+				{
+					return false;
+				}
+
 				try
 				{
 					app.hardware.geolocation.obj = navigator.geolocation.watchPosition(
@@ -238,7 +261,7 @@ var app = {
 			error: function(error)
 			{
 				app.util.debug('error', 'Geolocation Error: ' + error.message);
-				$('.me .geolocation ul').html('<li class="error">'+ error.message +'</li>');
+				jQuery('.me .geolocation ul').html('<li class="error">'+ error.message +'</li>');
 			},
 			distance: function(value, use_metric)
 			{
@@ -279,6 +302,11 @@ var app = {
 			},
 			start: function()
 			{
+				if(typeof navigator.accelerometer == 'undefined')
+				{
+					return false;
+				}
+
 				try
 				{
 					app.hardware.accelerometer.obj = navigator.accelerometer.watchAcceleration(
@@ -315,80 +343,10 @@ var app = {
 			error: function()
 			{
 				app.util.debug('error', 'Failed to use acceleration');
-				$('.me .acceleration ul').html('<li class="error">Failed to use acceleration</li>');
+				jQuery('.me .acceleration ul').html('<li class="error">Failed to use acceleration</li>');
 			}
 		}
 	},
-    renderMyData: function()
-    {
-        if(typeof app.location_data.acceleration != 'undefined')
-        {
-	        var acceleration = '' +
-		        '<li><strong>X</strong>:&nbsp; ' + app.location_data.acceleration.x + '</li>' +
-		        '<li><strong>Y</strong>:&nbsp; ' + app.location_data.acceleration.y + '</li>' +
-		        '<li><strong>Z</strong>:&nbsp; ' + app.location_data.acceleration.z + '</li>';
-
-	        $('.me .acceleration ul').html(acceleration);
-        }
-
-        if(typeof app.location_data.geolocation != 'undefined')
-        {
-	        var geolocation = '' +
-		        '<li><strong>Latitude</strong>:&nbsp; ' + app.location_data.geolocation.latitude + ' &deg;</li>' +
-		        '<li><strong>Longitude</strong>:&nbsp; ' + app.location_data.geolocation.longitude + ' &deg;</li>' +
-		        '<li><strong>Altitude</strong>:&nbsp; ' + app.location_data.geolocation.altitude + '</li>' +
-		        '<li><strong>Accuracy</strong>:&nbsp; ' + app.location_data.geolocation.accuracy + '</li>' +
-		        '<li><strong>Heading</strong>:&nbsp; ' + app.location_data.geolocation.heading + '</li>' +
-		        '<li><strong>Speed</strong>:&nbsp; ' + app.location_data.geolocation.speed + '</li>';
-
-	        $('.me .geolocation ul').html(geolocation);
-        }
-
-	    if(typeof app.location_data.compass != 'undefined')
-	    {
-		    var compass = '' +
-			    '<li><strong>Direction</strong>:&nbsp; ' + app.location_data.compass.direction + '</li>' +
-			    '<li><strong>Magnetic Heading</strong>:&nbsp; ' + app.location_data.compass.magnetic_heading + ' &deg;</li>';
-
-		    $('.me .compass ul').html(compass);
-	    }
-    },
-    renderFriendsData: function(data)
-    {
-        var location_data = JSON.parse(data);
-
-	    if(typeof location_data.acceleration != 'undefined')
-	    {
-		    var acceleration = '' +
-			    '<li><strong>X</strong>:&nbsp; ' + location_data.acceleration.x + '</li>' +
-			    '<li><strong>Y</strong>:&nbsp; ' + location_data.acceleration.y + '</li>' +
-			    '<li><strong>Z</strong>:&nbsp; ' + location_data.acceleration.z + '</li>';
-
-		    $('.friend .acceleration ul').html(acceleration);
-	    }
-
-	    if(typeof location_data.geolocation != 'undefined')
-	    {
-		    var geolocation = '' +
-			    '<li><strong>Latitude</strong>:&nbsp; ' + location_data.geolocation.latitude + ' &deg;</li>' +
-			    '<li><strong>Longitude</strong>:&nbsp; ' + location_data.geolocation.longitude + ' &deg;</li>' +
-			    '<li><strong>Altitude</strong>:&nbsp; ' + location_data.geolocation.altitude + '</li>' +
-			    '<li><strong>Accuracy</strong>:&nbsp; ' + location_data.geolocation.accuracy + '</li>' +
-			    '<li><strong>Heading</strong>:&nbsp; ' + location_data.geolocation.heading + '</li>' +
-			    '<li><strong>Speed</strong>:&nbsp; ' + location_data.geolocation.speed + '</li>';
-
-		    $('.friend .geolocation ul').html(geolocation);
-	    }
-
-	    if(typeof location_data.compass != 'undefined')
-	    {
-		    var compass = '' +
-			    '<li><strong>Direction</strong>:&nbsp; ' + location_data.compass.direction + '</li>' +
-			    '<li><strong>Magnetic Heading</strong>:&nbsp; ' + location_data.compass.magnetic_heading + ' &deg;</li>';
-
-		    $('.friend .compass ul').html(compass);
-	    }
-    },
     sendData: function()
     {
         app.socket.emit('sendData', JSON.stringify(app.location_data));
@@ -425,7 +383,7 @@ var app = {
 				message = JSON.stringify(message);
 			}
 
-			$('#dev-log .output ul').append('<li class="'+ level +'"><i class="fa fa-angle-right"></i>&nbsp; ' + message + '</li>');
+			jQuery('#dev-log .output ul').append('<li class="'+ level +'"><i class="fa fa-angle-right"></i>&nbsp; ' + message + '</li>');
 		},
 		generateUID: function()
 		{
@@ -444,32 +402,32 @@ var app = {
 
 
 app.socket.on('connect', function () {
-    $('#status').html('<i class="fa fa-check"></i>').show().fadeOut('slow');
+    jQuery('#home .message').html('<i class="fa fa-check"></i>').show().fadeOut('slow');
     app.socket.emit('addFriend', app.my_name);
 });
 
 app.socket.on('reconnect', function () {
-    $('#status').html('<i class="fa fa-history"></i>').show().fadeOut('slow');
+    jQuery('#home .message').html('<i class="fa fa-history"></i>').show().fadeOut('slow');
 });
 
 app.socket.on('disconnect', function () {
-    $('#status').html('<i class="fa fa-times"></i>').show().fadeOut('slow');
+    jQuery('#home .message').html('<i class="fa fa-times"></i>').show().fadeOut('slow');
 });
 
 app.socket.on('reconnecting', function () {
-    $('#status').html('<i class="fa fa-circle-o-notch fa-spin"></i>').show().fadeOut('slow');
+    jQuery('#home .message').html('<i class="fa fa-circle-o-notch fa-spin"></i>').show().fadeOut('slow');
 });
 
 app.socket.on('error', function () {
-    $('#status').html('<i class="fa fa-exclamation-triangle"></i>').show().fadeOut('slow');
+    jQuery('#home .message').html('<i class="fa fa-exclamation-triangle"></i>').show().fadeOut('slow');
 });
 
 app.socket.on('receiveData', function(name, data)
 {
     if(name != app.my_name)
     {
-        app.renderFriendsData(data);
-        $('#status').html('<i class="fa fa-map-marker"></i>').show();
+        gui.render.friend(data);
+        jQuery('#status').html('<i class="fa fa-map-marker"></i>').show();
     }
 });
 
@@ -479,53 +437,6 @@ function switchSpace(space)
     {
         app.socket.emit('switchSpace', space);
     }
-}
-
-function setupGUI()
-{
-	app.util.debug('log', 'Setting up GUI');
-
-	$('.find-a-friend').click(function(){
-
-		app.util.debug('log', 'Find a Friend');
-
-		navigator.contacts.pickContact(function(contact){
-
-			$contact = $('.find-a-friend');
-			$contact.removeClass('no-image default');
-
-			if(contact && contact.photos && contact.photos[0].value != '')
-			{
-				$contact.css('background-image', 'url("'+ contact.photos[0].value +'")');
-			}
-			else
-			{
-				$contact.css('background-image', '');
-				$contact.addClass('no-image');
-			}
-
-			$contact.addClass('contact');
-			$contact.css('background-position', '0px 0px');
-
-			var number = '1-314-920-9201';
-			var message = 'Your friend would like you to use Facing: https://app.youfacing.me/invite/code';
-			var intent = '';
-
-			var success = function()
-			{
-				alert('Message sent successfully');
-			};
-			var error = function(e)
-			{
-				alert('Message Failed:' + e);
-			};
-
-			sms.send(number, message, intent, success, error);
-
-		},function(err){
-			app.util.debug('log', 'Error: ' + err);
-		});
-	});
 }
 
 window.onerror = function(errorMsg, url, lineNumber) {

@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		043E1217B56941F5841BF494 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = A90B6D067E7E49178BD1D4B0 /* CDVContact.m */; };
 		0BC598000EA64A3DAD1567B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 008D5292199943CFB77E7D17 /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -14,7 +13,6 @@
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F766FE113BBADB100FB74C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F766FDC13BBADB100FB74C0 /* Localizable.strings */; };
-		276A0D37AF6247E8931E6442 /* Sms.m in Sources */ = {isa = PBXBuildFile; fileRef = 694FB0E24A9D4082AD83BFF6 /* Sms.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		2CD7877B1997821600AA852C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD7877A1997821600AA852C /* Images.xcassets */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
@@ -32,7 +30,6 @@
 		30A0434814DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434314DC770100060A13 /* Localizable.strings */; };
 		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
 		3BC6A7C75D3C4A4395144D97 /* Insomnia.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD57F3B08E404FA081B4BE /* Insomnia.m */; };
-		4D03C2D972A84A2F91264552 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F04B5A9DB27E43CEABE36FAF /* MessageUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		50FE25C682D74764B06A5F8B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E590EE51424C91A7CAD384 /* AddressBookUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
@@ -61,6 +58,7 @@
 		D76D6DF406EB47ECA36F5223 /* CDVAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 705B6EC863AD47A8A0697E3F /* CDVAccelerometer.m */; };
 		DB93B3D44C9A4821950ACD53 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782317829C44A2399CBB86B /* CDVLogger.m */; };
 		FFFE86A5C70D4A1183A7A9D4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32892FA3DFCC480F83C6A11A /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D91811B6B8E14A60B967D069 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +169,8 @@
 		F04B5A9DB27E43CEABE36FAF /* MessageUI.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		F2F7F9C4FD6641EB8296437F /* MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapKit.m; path = com.phonegap.plugins.mapkit/MapKit.m; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Facing/config.xml; sourceTree = "<group>"; };
+		F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		835E595AD78640B1A6413703 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +188,6 @@
 				8AFE9D76BDF1440E98BCB4C8 /* CoreMotion.framework in Frameworks */,
 				D4D0FF326F014DB99AD2CD4E /* AudioToolbox.framework in Frameworks */,
 				0BC598000EA64A3DAD1567B9 /* SystemConfiguration.framework in Frameworks */,
-				4D03C2D972A84A2F91264552 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +342,8 @@
 				97770CAD1C8D4C01874EE2EE /* MapKit.h */,
 				694FB0E24A9D4082AD83BFF6 /* Sms.m */,
 				B2CD9E00235B4161AE4B9B3C /* Sms.h */,
+				F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */,
+				835E595AD78640B1A6413703 /* CDVStatusBar.h */,
 			);
 			name = Plugins;
 			path = Facing/Plugins;
@@ -557,7 +558,7 @@
 				9C02FDC05AC244F9AB4B9855 /* CDVConnection.m in Sources */,
 				0D3961F02B0D4E27BA93DDDF /* CDVReachability.m in Sources */,
 				70F70ADB91BC4A3C9DAC5663 /* CDVSplashScreen.m in Sources */,
-				276A0D37AF6247E8931E6442 /* Sms.m in Sources */,
+				D91811B6B8E14A60B967D069 /* CDVStatusBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +624,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Facing/Facing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -657,7 +658,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Facing/Facing-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,

@@ -57,7 +57,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
                             "count": 1
                         }
                     ]
@@ -102,12 +110,7 @@
                         }
                     ],
                     "MapKit.framework": [],
-                    "MessageUI.framework": [
-                        {
-                            "xml": "true",
-                            "count": 1
-                        }
-                    ]
+                    "MessageUI.framework": []
                 }
             },
             "*-Info.plist": {
@@ -166,7 +169,7 @@
             "URL_SCHEME": "facing",
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
-        "org.apache.cordova.plugin.sms": {
+        "com.phonegap.plugin.statusbar": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },
