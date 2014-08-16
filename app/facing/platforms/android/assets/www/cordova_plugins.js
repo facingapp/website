@@ -165,6 +165,27 @@ module.exports = [
         "clobbers": [
             "window.plugins.launchmyapp"
         ]
+    },
+    {
+        "file": "plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js",
+        "id": "com.danielcwilson.plugins.googleanalytics.UniversalAnalytics",
+        "clobbers": [
+            "analytics"
+        ]
+    },
+    {
+        "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
+        "id": "com.verso.cordova.clipboard.Clipboard",
+        "clobbers": [
+            "cordova.plugins.clipboard"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.plugin.sms/www/sms.js",
+        "id": "org.apache.cordova.plugin.sms.Sms",
+        "clobbers": [
+            "window.sms"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -184,7 +205,10 @@ module.exports.metadata =
     "com.ququplay.websocket.WebSocket": "0.1.0",
     "org.apache.cordova.dialogs": "0.2.8",
     "nl.x-services.plugins.launchmyapp": "3.2.0",
-    "com.phonegap.plugin.statusbar": "1.1.0"
+    "com.phonegap.plugin.statusbar": "1.1.0",
+    "com.danielcwilson.plugins.googleanalytics": "0.6.0",
+    "com.verso.cordova.clipboard": "0.1.0",
+    "org.apache.cordova.plugin.sms": "0.1.0"
 }
 // BOTTOM OF METADATA
 });

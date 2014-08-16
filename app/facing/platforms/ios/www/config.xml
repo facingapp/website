@@ -164,6 +164,6 @@
     <gap:splash gap:platform="ios" width="1024" height="768"  src="www/res/screen/ios/Default-Landscape.png" />    <!-- [ ] iPad Landscape Non-Retina -->
     <gap:splash gap:platform="ios" width="2048" height="1536" src="www/res/screen/ios/Default-Landscape@2x.png" /> <!-- [ ] iPad Landscape Retina -->
 
-    <access origin="https://youfacing.me" subdomains="true" />
+    <access origin="*" />
 
 </widget>

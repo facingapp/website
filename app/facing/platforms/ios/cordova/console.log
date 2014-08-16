@@ -7163,3 +7163,825 @@ You could find it at the following address https://developer.apple.com/icloud/do
 2014-08-15 04:18:05.702 Facing[72813:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
 2014-08-15 04:18:05.703 Facing[72813:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
 2014-08-15 04:18:06.021 Facing[72813:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 04:38:31.220 Facing[72813:70b] Find a Friend
+2014-08-15 04:38:31.221 Facing[72813:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 04:38:31.270 Facing[72813:70b] THREAD WARNING: ['Contacts'] took '49.410889' ms. Plugin should use a background thread.
+2014-08-15 04:38:32.610 Facing[72813:70b] name: Peter Schmalfeldt
+2014-08-15 04:38:32.611 Facing[72813:70b] string
+2014-08-15 04:38:36.222 Facing[72813:70b] Resetting GUI ...
+2014-08-15 04:38:36.222 Facing[72813:70b] GUI Reset
+objc[75853]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 04:39:03.896 Facing[75853:70b] Cannot find executable for CFBundle 0xa8372a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 04:39:03.905 Facing[75853:70b] Cannot find executable for CFBundle 0xa94d100 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 04:39:03.951 Facing[75853:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 04:39:03.966 Facing[75853:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 04:39:04.006 Facing[75853:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 04:39:04.006 Facing[75853:70b] [CDVTimer][splashscreen] 17.379999ms
+2014-08-15 04:39:04.010 Facing[75853:70b] [CDVTimer][statusbar] 2.644002ms
+2014-08-15 04:39:04.010 Facing[75853:70b] [CDVTimer][TotalPluginStartup] 21.098018ms
+2014-08-15 04:39:04.012 Facing[75853:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 04:39:04.015 Facing[75853:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 04:39:04.017 Facing[75853:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 04:39:04.363 Facing[75853:70b] Resetting plugins due to page load.
+2014-08-15 04:39:04.424 Facing[75853:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 04:39:04.425 Facing[75853:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 04:39:04.425 Facing[75853:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 04:39:04.635 Facing[75853:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 04:41:21.279 Facing[75853:70b] Find a Friend
+2014-08-15 04:41:21.279 Facing[75853:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 04:41:21.299 Facing[75853:70b] THREAD WARNING: ['Contacts'] took '19.541992' ms. Plugin should use a background thread.
+2014-08-15 04:41:23.336 Facing[75853:70b] name: Peter Schmalfeldt
+2014-08-15 04:41:23.336 Facing[75853:70b] string
+2014-08-15 04:41:29.390 Facing[75853:70b] Find a Friend
+2014-08-15 04:41:29.391 Facing[75853:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 04:41:32.535 Facing[75853:70b] Resetting GUI ...
+2014-08-15 04:41:32.536 Facing[75853:70b] GUI Reset
+2014-08-15 04:41:42.075 Facing[75853:70b] GUI Reset
+2014-08-15 04:41:45.152 Facing[75853:70b] GUI Reset
+2014-08-15 04:41:47.655 Facing[75853:70b] GUI Reset
+2014-08-15 04:41:51.390 Facing[75853:70b] GUI Reset
+objc[20491]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 16:25:00.408 Facing[20491:70b] Cannot find executable for CFBundle 0xcb5bb70 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 16:25:00.421 Facing[20491:70b] Cannot find executable for CFBundle 0xcb6f470 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 16:25:00.501 Facing[20491:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 16:25:00.516 Facing[20491:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 16:25:00.551 Facing[20491:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:25:00.551 Facing[20491:70b] [CDVTimer][splashscreen] 15.502989ms
+2014-08-15 16:25:00.554 Facing[20491:70b] [CDVTimer][statusbar] 2.607048ms
+2014-08-15 16:25:00.555 Facing[20491:70b] [CDVTimer][TotalPluginStartup] 19.145012ms
+2014-08-15 16:25:00.557 Facing[20491:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:25:00.561 Facing[20491:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:25:00.563 Facing[20491:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:25:00.859 Facing[20491:70b] Resetting plugins due to page load.
+2014-08-15 16:25:00.892 Facing[20491:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:25:00.893 Facing[20491:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:25:00.894 Facing[20491:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:25:01.221 Facing[20491:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[21219]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 16:28:28.477 Facing[21219:70b] Cannot find executable for CFBundle 0xac5ec50 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 16:28:28.485 Facing[21219:70b] Cannot find executable for CFBundle 0xa98d970 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 16:28:28.629 Facing[21219:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 16:28:28.643 Facing[21219:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 16:28:28.701 Facing[21219:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:28:28.702 Facing[21219:70b] [CDVTimer][splashscreen] 14.006019ms
+2014-08-15 16:28:28.705 Facing[21219:70b] [CDVTimer][statusbar] 2.806008ms
+2014-08-15 16:28:28.706 Facing[21219:70b] [CDVTimer][TotalPluginStartup] 18.158019ms
+2014-08-15 16:28:28.708 Facing[21219:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:28:28.712 Facing[21219:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:28:28.714 Facing[21219:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:28:29.074 Facing[21219:70b] Resetting plugins due to page load.
+2014-08-15 16:28:29.111 Facing[21219:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:28:29.112 Facing[21219:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:28:29.114 Facing[21219:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:28:29.306 Facing[21219:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 16:28:41.770 Facing[21219:70b] Find a Friend
+objc[21841]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 16:29:53.111 Facing[21841:70b] Cannot find executable for CFBundle 0xae788f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 16:29:53.126 Facing[21841:70b] Cannot find executable for CFBundle 0xae9f8d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 16:29:53.269 Facing[21841:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 16:29:53.286 Facing[21841:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 16:29:53.342 Facing[21841:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:29:53.343 Facing[21841:70b] [CDVTimer][splashscreen] 15.662014ms
+2014-08-15 16:29:53.347 Facing[21841:70b] [CDVTimer][statusbar] 3.017008ms
+2014-08-15 16:29:53.347 Facing[21841:70b] [CDVTimer][TotalPluginStartup] 20.043015ms
+2014-08-15 16:29:53.349 Facing[21841:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:29:53.354 Facing[21841:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:29:53.356 Facing[21841:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:29:53.742 Facing[21841:70b] Resetting plugins due to page load.
+2014-08-15 16:29:53.773 Facing[21841:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:29:53.774 Facing[21841:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:29:53.775 Facing[21841:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:29:54.230 Facing[21841:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 16:31:05.429 Facing[21841:70b] Find a Friend
+2014-08-15 16:31:05.430 Facing[21841:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 16:31:05.458 Facing[21841:70b] THREAD WARNING: ['Contacts'] took '28.196045' ms. Plugin should use a background thread.
+2014-08-15 16:31:07.055 Facing[21841:70b] name: Peter Schmalfeldt
+2014-08-15 16:31:07.055 Facing[21841:70b] string
+2014-08-15 16:31:10.533 Facing[21841:70b] Resetting GUI ...
+2014-08-15 16:31:10.534 Facing[21841:70b] GUI Reset
+objc[22630]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 16:34:29.368 Facing[22630:70b] Cannot find executable for CFBundle 0xa84f0a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 16:34:29.388 Facing[22630:70b] Cannot find executable for CFBundle 0xac207b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 16:34:29.577 Facing[22630:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 16:34:29.602 Facing[22630:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 16:34:29.649 Facing[22630:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:34:29.650 Facing[22630:70b] [CDVTimer][splashscreen] 19.138038ms
+2014-08-15 16:34:29.655 Facing[22630:70b] [CDVTimer][statusbar] 3.938019ms
+2014-08-15 16:34:29.656 Facing[22630:70b] [CDVTimer][TotalPluginStartup] 25.219977ms
+2014-08-15 16:34:29.658 Facing[22630:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:34:29.667 Facing[22630:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:34:29.669 Facing[22630:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 16:34:30.066 Facing[22630:70b] Resetting plugins due to page load.
+2014-08-15 16:34:30.111 Facing[22630:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:34:30.112 Facing[22630:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:34:30.113 Facing[22630:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 16:34:30.426 Facing[22630:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 16:34:31.764 Facing[22630:70b] Find a Friend
+2014-08-15 16:34:31.766 Facing[22630:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 16:34:31.795 Facing[22630:70b] THREAD WARNING: ['Contacts'] took '29.555908' ms. Plugin should use a background thread.
+2014-08-15 16:34:32.783 Facing[22630:70b] Find a Friend
+2014-08-15 16:34:32.783 Facing[22630:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 16:34:32.789 Facing[22630:70b] Warning: Attempt to present <CDVContactsPicker: 0xac1d540> on <MainViewController: 0xae18260> whose view is not in the window hierarchy!
+2014-08-15 16:34:35.056 Facing[22630:70b] Find a Friend
+2014-08-15 16:34:35.056 Facing[22630:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 16:34:37.858 Facing[22630:70b] Resetting GUI ...
+2014-08-15 16:34:37.858 Facing[22630:70b] GUI Reset
+2014-08-15 16:34:39.103 Facing[22630:70b] Find a Friend
+2014-08-15 16:34:39.103 Facing[22630:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 16:34:40.560 Facing[22630:70b] name: Peter Schmalfeldt
+2014-08-15 16:34:40.560 Facing[22630:70b] string
+2014-08-15 16:34:52.195 Facing[22630:70b] Resetting GUI ...
+2014-08-15 16:34:52.196 Facing[22630:70b] GUI Reset
+2014-08-15 16:35:24.753 Facing[22630:70b] ERROR: Geolocation Error: Position retrieval timed out.
+2014-08-15 16:35:53.842 Facing[22630:70b] GUI Reset
+2014-08-15 16:35:56.344 Facing[22630:70b] GUI Reset
+2014-08-15 16:35:56.580 Facing[22630:70b] GUI Reset
+objc[30316]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 18:37:44.703 Facing[30316:70b] Cannot find executable for CFBundle 0xae24ff0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 18:37:44.714 Facing[30316:70b] Cannot find executable for CFBundle 0xac34400 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 18:37:44.870 Facing[30316:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 18:37:44.889 Facing[30316:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 18:37:44.940 Facing[30316:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 18:37:44.941 Facing[30316:70b] [CDVTimer][splashscreen] 24.062991ms
+2014-08-15 18:37:44.945 Facing[30316:70b] [CDVTimer][statusbar] 3.040969ms
+2014-08-15 18:37:44.946 Facing[30316:70b] [CDVTimer][TotalPluginStartup] 28.503001ms
+2014-08-15 18:37:44.948 Facing[30316:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 18:37:44.951 Facing[30316:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 18:37:44.953 Facing[30316:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 18:37:45.360 Facing[30316:70b] Resetting plugins due to page load.
+2014-08-15 18:37:45.443 Facing[30316:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 18:37:45.444 Facing[30316:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 18:37:45.445 Facing[30316:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 18:37:45.688 Facing[30316:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 18:37:46.200 Facing[30316:70b] THREAD WARNING: ['UniversalAnalytics'] took '11.407227' ms. Plugin should use a background thread.
+2014-08-15 18:37:51.047 Facing[30316:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 18:37:51.079 Facing[30316:70b] THREAD WARNING: ['Contacts'] took '31.603027' ms. Plugin should use a background thread.
+2014-08-15 18:37:55.615 Facing[30316:70b] ERROR: Uncaught error TypeError: 'null' is not an object (evaluating 'contact.name.formatted') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 203
+2014-08-15 18:38:05.821 Facing[30316:70b] GUI Reset
+2014-08-15 18:38:08.730 Facing[30316:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 18:38:08.740 Facing[30316:70b] THREAD WARNING: ['Contacts'] took '10.022217' ms. Plugin should use a background thread.
+2014-08-15 18:38:18.884 Facing[30316:70b] Resetting GUI ...
+2014-08-15 18:38:18.885 Facing[30316:70b] GUI Reset
+2014-08-15 18:38:19.112 Facing[30316:70b] Resetting GUI ...
+2014-08-15 18:38:19.112 Facing[30316:70b] GUI Reset
+objc[33109]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 19:16:44.385 Facing[33109:70b] Cannot find executable for CFBundle 0xad97840 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 19:16:44.396 Facing[33109:70b] Cannot find executable for CFBundle 0xadb5aa0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 19:16:44.575 Facing[33109:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 19:16:44.590 Facing[33109:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 19:16:44.647 Facing[33109:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:16:44.648 Facing[33109:70b] [CDVTimer][splashscreen] 33.451021ms
+2014-08-15 19:16:44.652 Facing[33109:70b] [CDVTimer][statusbar] 3.113985ms
+2014-08-15 19:16:44.653 Facing[33109:70b] [CDVTimer][TotalPluginStartup] 37.925959ms
+2014-08-15 19:16:44.655 Facing[33109:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:16:44.659 Facing[33109:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:16:44.661 Facing[33109:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:16:44.975 Facing[33109:70b] Resetting plugins due to page load.
+2014-08-15 19:16:45.087 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:16:45.088 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:16:45.089 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:16:45.311 Facing[33109:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 19:16:58.547 Facing[33109:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 19:16:58.577 Facing[33109:70b] THREAD WARNING: ['Contacts'] took '31.237793' ms. Plugin should use a background thread.
+2014-08-15 19:17:50.075 Facing[33109:70b] Resetting plugins due to page load.
+2014-08-15 19:17:50.197 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:17:50.198 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:17:50.198 Facing[33109:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:17:50.306 Facing[33109:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 19:17:54.982 Facing[33109:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+objc[33731]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 19:18:17.529 Facing[33731:70b] Cannot find executable for CFBundle 0xa984cc0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 19:18:17.543 Facing[33731:70b] Cannot find executable for CFBundle 0xa9ac250 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 19:18:17.696 Facing[33731:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 19:18:17.723 Facing[33731:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 19:18:17.768 Facing[33731:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:18:17.769 Facing[33731:70b] [CDVTimer][splashscreen] 17.098963ms
+2014-08-15 19:18:17.773 Facing[33731:70b] [CDVTimer][statusbar] 3.122985ms
+2014-08-15 19:18:17.774 Facing[33731:70b] [CDVTimer][TotalPluginStartup] 21.737993ms
+2014-08-15 19:18:17.776 Facing[33731:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:18:17.780 Facing[33731:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:18:17.782 Facing[33731:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:18:18.172 Facing[33731:70b] Resetting plugins due to page load.
+2014-08-15 19:18:18.259 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:18:18.260 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:18:18.261 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:18:18.444 Facing[33731:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 19:18:25.205 Facing[33731:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 19:18:25.240 Facing[33731:70b] THREAD WARNING: ['Contacts'] took '35.368408' ms. Plugin should use a background thread.
+2014-08-15 19:19:11.189 Facing[33731:70b] Resetting plugins due to page load.
+2014-08-15 19:19:11.265 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:11.265 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:11.266 Facing[33731:3f03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:11.363 Facing[33731:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 19:19:13.591 Facing[33731:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 19:19:13.606 Facing[33731:70b] THREAD WARNING: ['Contacts'] took '15.083984' ms. Plugin should use a background thread.
+objc[34343]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 19:19:29.459 Facing[34343:70b] Cannot find executable for CFBundle 0xaf82a50 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 19:19:29.469 Facing[34343:70b] Cannot find executable for CFBundle 0xaf9e6c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 19:19:29.606 Facing[34343:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 19:19:29.631 Facing[34343:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 19:19:29.672 Facing[34343:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:19:29.672 Facing[34343:70b] [CDVTimer][splashscreen] 13.687015ms
+2014-08-15 19:19:29.676 Facing[34343:70b] [CDVTimer][statusbar] 3.006995ms
+2014-08-15 19:19:29.677 Facing[34343:70b] [CDVTimer][TotalPluginStartup] 17.970979ms
+2014-08-15 19:19:29.679 Facing[34343:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:19:29.682 Facing[34343:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:19:29.684 Facing[34343:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 19:19:30.041 Facing[34343:70b] Resetting plugins due to page load.
+2014-08-15 19:19:30.127 Facing[34343:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:30.128 Facing[34343:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:30.128 Facing[34343:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 19:19:30.292 Facing[34343:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 19:19:35.973 Facing[34343:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 19:19:35.994 Facing[34343:70b] THREAD WARNING: ['Contacts'] took '21.595947' ms. Plugin should use a background thread.
+2014-08-15 19:19:37.493 Facing[34343:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_fg1JT","type":"url"}],"categories":null,"urls":null}
+objc[43858]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 21:16:10.446 Facing[43858:70b] Cannot find executable for CFBundle 0xafa9260 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 21:16:10.463 Facing[43858:70b] Cannot find executable for CFBundle 0xa8a2ad0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 21:16:10.583 Facing[43858:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 21:16:10.604 Facing[43858:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 21:16:10.681 Facing[43858:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:16:10.683 Facing[43858:70b] [CDVTimer][splashscreen] 46.430945ms
+2014-08-15 21:16:10.688 Facing[43858:70b] [CDVTimer][statusbar] 3.394961ms
+2014-08-15 21:16:10.689 Facing[43858:70b] [CDVTimer][TotalPluginStartup] 52.715003ms
+2014-08-15 21:16:10.691 Facing[43858:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:16:10.696 Facing[43858:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:16:10.698 Facing[43858:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:16:11.177 Facing[43858:70b] Resetting plugins due to page load.
+2014-08-15 21:16:11.354 Facing[43858:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:16:11.356 Facing[43858:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:16:11.357 Facing[43858:390f] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:16:11.524 Facing[43858:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 21:16:23.664 Facing[43858:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 21:16:23.697 Facing[43858:70b] THREAD WARNING: ['Contacts'] took '33.064941' ms. Plugin should use a background thread.
+2014-08-15 21:16:25.412 Facing[43858:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_H8T69","type":"url"}],"categories":null,"urls":null}
+2014-08-15 21:16:33.283 Facing[43858:70b] Resetting GUI ...
+2014-08-15 21:16:33.284 Facing[43858:70b] GUI Reset
+2014-08-15 21:16:35.736 Facing[43858:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 21:16:38.755 Facing[43858:70b] {"id":2,"rawId":null,"displayName":null,"name":{"givenName":"Karen","formatted":"Karen Gillan","middleName":null,"familyName":"Gillan","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_eYmuc","type":"url"}],"categories":null,"urls":null}
+2014-08-15 21:16:38.756 Facing[43858:70b] ERROR: Uncaught error TypeError: 'null' is not an object (evaluating 'contact.phoneNumbers.length') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 316
+objc[44861]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 21:22:53.205 Facing[44861:70b] Cannot find executable for CFBundle 0xa983f00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 21:22:53.222 Facing[44861:70b] Cannot find executable for CFBundle 0xaf941e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 21:22:53.326 Facing[44861:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 21:22:53.360 Facing[44861:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 21:22:53.423 Facing[44861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:22:53.424 Facing[44861:70b] [CDVTimer][splashscreen] 35.152018ms
+2014-08-15 21:22:53.428 Facing[44861:70b] [CDVTimer][statusbar] 3.466964ms
+2014-08-15 21:22:53.432 Facing[44861:70b] [CDVTimer][TotalPluginStartup] 43.489039ms
+2014-08-15 21:22:53.434 Facing[44861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:22:53.439 Facing[44861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:22:53.441 Facing[44861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:22:53.843 Facing[44861:70b] Resetting plugins due to page load.
+2014-08-15 21:22:53.939 Facing[44861:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:22:53.940 Facing[44861:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:22:53.942 Facing[44861:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:22:54.200 Facing[44861:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[45507]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 21:24:43.946 Facing[45507:70b] Cannot find executable for CFBundle 0xab0ee60 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 21:24:43.957 Facing[45507:70b] Cannot find executable for CFBundle 0xab3fd60 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 21:24:44.116 Facing[45507:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 21:24:44.140 Facing[45507:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 21:24:44.174 Facing[45507:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:24:44.175 Facing[45507:70b] [CDVTimer][splashscreen] 12.463987ms
+2014-08-15 21:24:44.178 Facing[45507:70b] [CDVTimer][statusbar] 2.857983ms
+2014-08-15 21:24:44.179 Facing[45507:70b] [CDVTimer][TotalPluginStartup] 16.557038ms
+2014-08-15 21:24:44.180 Facing[45507:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:24:44.184 Facing[45507:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:24:44.187 Facing[45507:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 21:24:44.547 Facing[45507:70b] Resetting plugins due to page load.
+2014-08-15 21:24:44.619 Facing[45507:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:24:44.619 Facing[45507:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:24:44.620 Facing[45507:3e03] ERROR whitelist rejection: url='https://app.youfacing.me/socket.io/socket.io.js'
+2014-08-15 21:24:44.817 Facing[45507:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[48702]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:08:17.722 Facing[48702:70b] Cannot find executable for CFBundle 0xaf8ce70 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:08:17.743 Facing[48702:70b] Cannot find executable for CFBundle 0xaaad760 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:08:17.918 Facing[48702:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:08:17.940 Facing[48702:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:08:17.985 Facing[48702:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:08:17.986 Facing[48702:70b] [CDVTimer][splashscreen] 17.123997ms
+2014-08-15 22:08:17.989 Facing[48702:70b] [CDVTimer][statusbar] 2.541959ms
+2014-08-15 22:08:17.990 Facing[48702:70b] [CDVTimer][TotalPluginStartup] 21.103024ms
+2014-08-15 22:08:17.992 Facing[48702:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:08:17.996 Facing[48702:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:08:17.997 Facing[48702:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:08:18.404 Facing[48702:70b] Resetting plugins due to page load.
+2014-08-15 22:08:18.506 Facing[48702:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:08:18.506 Facing[48702:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:08:18.507 Facing[48702:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:08:18.718 Facing[48702:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:08:22.437 Facing[48702:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:08:22.473 Facing[48702:70b] THREAD WARNING: ['Contacts'] took '36.419678' ms. Plugin should use a background thread.
+2014-08-15 22:08:26.144 Facing[48702:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_KhK8Q","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:08:26.145 Facing[48702:70b] ERROR: Uncaught error TypeError: 'null' is not an object (evaluating 'app.socket.emit') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/app.js, line 129
+2014-08-15 22:08:48.254 Facing[48702:70b] Resetting GUI ...
+2014-08-15 22:08:48.255 Facing[48702:70b] GUI Reset
+2014-08-15 22:08:50.470 Facing[48702:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:08:50.482 Facing[48702:70b] THREAD WARNING: ['Contacts'] took '11.732910' ms. Plugin should use a background thread.
+2014-08-15 22:08:52.197 Facing[48702:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_wv3Ll","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:08:52.198 Facing[48702:70b] ERROR: Uncaught error TypeError: 'null' is not an object (evaluating 'app.socket.emit') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/app.js, line 129
+objc[49418]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:11:16.146 Facing[49418:70b] Cannot find executable for CFBundle 0xaea7ce0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:11:16.165 Facing[49418:70b] Cannot find executable for CFBundle 0xac61910 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:11:16.385 Facing[49418:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:11:16.405 Facing[49418:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:11:16.450 Facing[49418:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:11:16.451 Facing[49418:70b] [CDVTimer][splashscreen] 16.553998ms
+2014-08-15 22:11:16.455 Facing[49418:70b] [CDVTimer][statusbar] 3.504038ms
+2014-08-15 22:11:16.456 Facing[49418:70b] [CDVTimer][TotalPluginStartup] 21.955013ms
+2014-08-15 22:11:16.459 Facing[49418:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:11:16.463 Facing[49418:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:11:16.466 Facing[49418:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:11:16.888 Facing[49418:70b] Resetting plugins due to page load.
+2014-08-15 22:11:16.993 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:16.994 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:16.995 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:17.209 Facing[49418:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:11:27.622 Facing[49418:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:11:27.652 Facing[49418:70b] THREAD WARNING: ['Contacts'] took '30.535889' ms. Plugin should use a background thread.
+2014-08-15 22:11:30.681 Facing[49418:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_d18he","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:11:30.682 Facing[49418:70b] ERROR: Uncaught error TypeError: 'null' is not an object (evaluating 'app.socket.emit') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/app.js, line 131
+2014-08-15 22:11:37.383 Facing[49418:70b] Resetting plugins due to page load.
+2014-08-15 22:11:37.496 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:37.496 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:37.497 Facing[49418:3e03] ERROR whitelist rejection: url='http://10.0.1.100:4000/socket.io/socket.io.js'
+2014-08-15 22:11:37.675 Facing[49418:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[50064]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:12:49.123 Facing[50064:70b] Cannot find executable for CFBundle 0xa826800 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:12:49.142 Facing[50064:70b] Cannot find executable for CFBundle 0xaa3cb00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:12:49.259 Facing[50064:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:12:49.273 Facing[50064:70b] Unlimited access to network resources
+2014-08-15 22:12:49.296 Facing[50064:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:12:49.339 Facing[50064:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:12:49.341 Facing[50064:70b] [CDVTimer][splashscreen] 16.373992ms
+2014-08-15 22:12:49.346 Facing[50064:70b] [CDVTimer][statusbar] 3.486037ms
+2014-08-15 22:12:49.349 Facing[50064:70b] [CDVTimer][TotalPluginStartup] 24.626017ms
+2014-08-15 22:12:49.353 Facing[50064:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:12:49.360 Facing[50064:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:12:49.362 Facing[50064:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:12:49.747 Facing[50064:70b] Resetting plugins due to page load.
+2014-08-15 22:12:49.955 Facing[50064:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:12:50.276 Facing[50064:70b] Socket Initialized
+2014-08-15 22:12:50.298 Facing[50064:70b] Socket Connected
+2014-08-15 22:13:22.673 Facing[50064:70b] Resetting plugins due to page load.
+2014-08-15 22:13:23.009 Facing[50064:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:13:23.346 Facing[50064:70b] Socket Initialized
+2014-08-15 22:13:23.473 Facing[50064:70b] Socket Connected
+2014-08-15 22:13:32.667 Facing[50064:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:13:32.691 Facing[50064:70b] THREAD WARNING: ['Contacts'] took '24.184814' ms. Plugin should use a background thread.
+2014-08-15 22:13:39.398 Facing[50064:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_nhNMH","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:13:53.243 Facing[50064:70b] Failed to load webpage with error: The URL can’t be shown
+2014-08-15 22:13:56.454 Facing[50064:70b] Failed to load webpage with error: The URL can’t be shown
+2014-08-15 22:15:45.143 Facing[50064:70b] GUI Reset
+objc[51996]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:33:09.866 Facing[51996:70b] Cannot find executable for CFBundle 0xae4de10 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:33:09.876 Facing[51996:70b] Cannot find executable for CFBundle 0xae6ed70 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:33:09.994 Facing[51996:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:33:10.018 Facing[51996:70b] Unlimited access to network resources
+2014-08-15 22:33:10.022 Facing[51996:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:33:10.081 Facing[51996:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:33:10.082 Facing[51996:70b] [CDVTimer][splashscreen] 30.438006ms
+2014-08-15 22:33:10.086 Facing[51996:70b] [CDVTimer][statusbar] 3.089011ms
+2014-08-15 22:33:10.087 Facing[51996:70b] [CDVTimer][TotalPluginStartup] 35.329044ms
+2014-08-15 22:33:10.090 Facing[51996:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:33:10.095 Facing[51996:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:33:10.097 Facing[51996:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:33:10.503 Facing[51996:70b] Resetting plugins due to page load.
+2014-08-15 22:33:10.762 Facing[51996:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:33:11.198 Facing[51996:70b] Socket Initialized
+2014-08-15 22:33:11.375 Facing[51996:70b] Socket Connected
+2014-08-15 22:33:18.199 Facing[51996:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:33:18.227 Facing[51996:70b] THREAD WARNING: ['Contacts'] took '28.628174' ms. Plugin should use a background thread.
+2014-08-15 22:33:19.374 Facing[51996:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_TMkfD","type":"url"}],"categories":null,"urls":null}
+objc[52658]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:35:07.588 Facing[52658:70b] Cannot find executable for CFBundle 0xaf68eb0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:35:07.604 Facing[52658:70b] Cannot find executable for CFBundle 0xaa70560 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:35:07.748 Facing[52658:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:35:07.761 Facing[52658:70b] Unlimited access to network resources
+2014-08-15 22:35:07.765 Facing[52658:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:35:07.809 Facing[52658:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:35:07.810 Facing[52658:70b] [CDVTimer][splashscreen] 16.099036ms
+2014-08-15 22:35:07.814 Facing[52658:70b] [CDVTimer][statusbar] 3.055990ms
+2014-08-15 22:35:07.814 Facing[52658:70b] [CDVTimer][TotalPluginStartup] 20.573974ms
+2014-08-15 22:35:07.817 Facing[52658:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:35:07.821 Facing[52658:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:35:07.823 Facing[52658:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:35:08.201 Facing[52658:70b] Resetting plugins due to page load.
+2014-08-15 22:35:08.470 Facing[52658:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:35:08.998 Facing[52658:70b] Socket Initialized
+2014-08-15 22:35:09.011 Facing[52658:70b] Socket Connected
+2014-08-15 22:35:09.787 Facing[52658:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:35:09.815 Facing[52658:70b] THREAD WARNING: ['Contacts'] took '28.620850' ms. Plugin should use a background thread.
+2014-08-15 22:35:11.310 Facing[52658:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_gBjGF","type":"url"}],"categories":null,"urls":null}
+objc[53468]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:39:39.132 Facing[53468:70b] Cannot find executable for CFBundle 0xaf465e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:39:39.145 Facing[53468:70b] Cannot find executable for CFBundle 0xab71ce0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:39:39.370 Facing[53468:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:39:39.398 Facing[53468:70b] Unlimited access to network resources
+2014-08-15 22:39:39.403 Facing[53468:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:39:39.449 Facing[53468:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:39:39.451 Facing[53468:70b] [CDVTimer][splashscreen] 17.844021ms
+2014-08-15 22:39:39.455 Facing[53468:70b] [CDVTimer][statusbar] 3.120005ms
+2014-08-15 22:39:39.455 Facing[53468:70b] [CDVTimer][TotalPluginStartup] 22.476017ms
+2014-08-15 22:39:39.458 Facing[53468:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:39:39.463 Facing[53468:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:39:39.466 Facing[53468:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:39:39.853 Facing[53468:70b] Resetting plugins due to page load.
+2014-08-15 22:39:40.511 Facing[53468:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:39:41.249 Facing[53468:70b] Socket Initialized
+2014-08-15 22:39:41.258 Facing[53468:70b] Socket Connected
+2014-08-15 22:39:43.839 Facing[53468:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:39:43.873 Facing[53468:70b] THREAD WARNING: ['Contacts'] took '35.090820' ms. Plugin should use a background thread.
+2014-08-15 22:39:45.095 Facing[53468:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_Bxbb6","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:39:46.709 Facing[53468:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 298
+2014-08-15 22:40:08.596 Facing[53468:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 298
+2014-08-15 22:40:10.429 Facing[53468:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 298
+2014-08-15 22:40:10.430 Facing[53468:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 298
+objc[54325]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:44:46.765 Facing[54325:70b] Cannot find executable for CFBundle 0xaba74a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:44:46.776 Facing[54325:70b] Cannot find executable for CFBundle 0xad90410 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:44:46.900 Facing[54325:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:44:46.917 Facing[54325:70b] Unlimited access to network resources
+2014-08-15 22:44:46.921 Facing[54325:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:44:46.973 Facing[54325:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:44:46.974 Facing[54325:70b] [CDVTimer][splashscreen] 24.803042ms
+2014-08-15 22:44:46.977 Facing[54325:70b] [CDVTimer][statusbar] 3.108978ms
+2014-08-15 22:44:46.978 Facing[54325:70b] [CDVTimer][TotalPluginStartup] 29.340982ms
+2014-08-15 22:44:46.980 Facing[54325:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:44:46.985 Facing[54325:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:44:46.986 Facing[54325:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:44:47.310 Facing[54325:70b] Resetting plugins due to page load.
+2014-08-15 22:44:47.813 Facing[54325:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:44:48.040 Facing[54325:70b] Socket Initialized
+2014-08-15 22:44:48.047 Facing[54325:70b] Socket Connected
+2014-08-15 22:44:51.005 Facing[54325:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:44:51.031 Facing[54325:70b] THREAD WARNING: ['Contacts'] took '26.520996' ms. Plugin should use a background thread.
+2014-08-15 22:44:52.239 Facing[54325:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_IwGGH","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:44:53.949 Facing[54325:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 301
+2014-08-15 22:45:05.459 Facing[54325:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 301
+2014-08-15 22:45:05.983 Facing[54325:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 301
+2014-08-15 22:45:06.229 Facing[54325:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 301
+objc[54964]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:46:27.907 Facing[54964:70b] Cannot find executable for CFBundle 0xaf27760 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:46:27.924 Facing[54964:70b] Cannot find executable for CFBundle 0xaa651f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:46:28.038 Facing[54964:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:46:28.051 Facing[54964:70b] Unlimited access to network resources
+2014-08-15 22:46:28.055 Facing[54964:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:46:28.101 Facing[54964:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:46:28.102 Facing[54964:70b] [CDVTimer][splashscreen] 17.931998ms
+2014-08-15 22:46:28.105 Facing[54964:70b] [CDVTimer][statusbar] 2.417028ms
+2014-08-15 22:46:28.106 Facing[54964:70b] [CDVTimer][TotalPluginStartup] 21.524012ms
+2014-08-15 22:46:28.108 Facing[54964:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:46:28.113 Facing[54964:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:46:28.115 Facing[54964:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:46:28.426 Facing[54964:70b] Resetting plugins due to page load.
+2014-08-15 22:46:28.830 Facing[54964:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:46:29.013 Facing[54964:70b] Socket Initialized
+2014-08-15 22:46:29.028 Facing[54964:70b] Socket Connected
+2014-08-15 22:46:32.001 Facing[54964:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:46:32.023 Facing[54964:70b] THREAD WARNING: ['Contacts'] took '23.175049' ms. Plugin should use a background thread.
+2014-08-15 22:46:33.308 Facing[54964:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_EMykQ","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:46:34.662 Facing[54964:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 299
+2014-08-15 22:46:35.435 Facing[54964:70b] ERROR: Uncaught error TypeError: 'undefined' is not a function (evaluating 'window.plugins.copy(text)') in file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/js/gui.js, line 299
+2014-08-15 22:47:36.150 Facing[54964:70b] THREAD WARNING: ['Notification'] took '48.997070' ms. Plugin should use a background thread.
+2014-08-15 22:48:15.852 Facing[54964:70b] THREAD WARNING: ['Notification'] took '39.448975' ms. Plugin should use a background thread.
+Terminating in response to SpringBoard's termination.
+objc[55831]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:52:10.831 Facing[55831:70b] Cannot find executable for CFBundle 0xaf83670 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:52:10.844 Facing[55831:70b] Cannot find executable for CFBundle 0xae9e0f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:52:10.969 Facing[55831:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:52:10.984 Facing[55831:70b] Unlimited access to network resources
+2014-08-15 22:52:10.989 Facing[55831:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:52:11.048 Facing[55831:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:52:11.049 Facing[55831:70b] [CDVTimer][splashscreen] 21.530986ms
+2014-08-15 22:52:11.054 Facing[55831:70b] [CDVTimer][statusbar] 4.213035ms
+2014-08-15 22:52:11.055 Facing[55831:70b] [CDVTimer][TotalPluginStartup] 27.734995ms
+2014-08-15 22:52:11.057 Facing[55831:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:52:11.062 Facing[55831:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:52:11.064 Facing[55831:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:52:11.476 Facing[55831:70b] Resetting plugins due to page load.
+2014-08-15 22:52:11.823 Facing[55831:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:52:12.596 Facing[55831:70b] Socket Initialized
+2014-08-15 22:52:12.607 Facing[55831:70b] Socket Connected
+2014-08-15 22:52:31.543 Facing[55831:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:52:31.569 Facing[55831:70b] THREAD WARNING: ['Contacts'] took '26.072021' ms. Plugin should use a background thread.
+2014-08-15 22:52:32.738 Facing[55831:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_VI6fd","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:52:34.316 Facing[55831:70b] THREAD WARNING: ['Notification'] took '52.090820' ms. Plugin should use a background thread.
+objc[58134]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-15 22:58:30.017 Facing[58134:70b] Cannot find executable for CFBundle 0xab8f990 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-15 22:58:30.027 Facing[58134:70b] Cannot find executable for CFBundle 0xabaf2b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-15 22:58:30.181 Facing[58134:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-15 22:58:30.193 Facing[58134:70b] Unlimited access to network resources
+2014-08-15 22:58:30.198 Facing[58134:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-15 22:58:30.247 Facing[58134:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:58:30.248 Facing[58134:70b] [CDVTimer][splashscreen] 14.937997ms
+2014-08-15 22:58:30.252 Facing[58134:70b] [CDVTimer][statusbar] 3.116012ms
+2014-08-15 22:58:30.252 Facing[58134:70b] [CDVTimer][TotalPluginStartup] 19.403040ms
+2014-08-15 22:58:30.255 Facing[58134:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:58:30.259 Facing[58134:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:58:30.261 Facing[58134:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-15 22:58:30.630 Facing[58134:70b] Resetting plugins due to page load.
+2014-08-15 22:58:30.864 Facing[58134:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-15 22:58:31.126 Facing[58134:70b] Socket Initialized
+2014-08-15 22:58:31.420 Facing[58134:70b] Socket Connected
+2014-08-15 22:58:36.565 Facing[58134:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-15 22:58:36.593 Facing[58134:70b] THREAD WARNING: ['Contacts'] took '28.847900' ms. Plugin should use a background thread.
+2014-08-15 22:58:38.106 Facing[58134:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_uZac1","type":"url"}],"categories":null,"urls":null}
+2014-08-15 22:58:40.422 Facing[58134:70b] THREAD WARNING: ['Notification'] took '49.125244' ms. Plugin should use a background thread.
+objc[62341]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-16 00:00:38.467 Facing[62341:70b] Cannot find executable for CFBundle 0xa856cb0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-16 00:00:38.473 Facing[62341:70b] Cannot find executable for CFBundle 0xa860e50 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-16 00:00:38.621 Facing[62341:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-16 00:00:38.633 Facing[62341:70b] Unlimited access to network resources
+2014-08-16 00:00:38.638 Facing[62341:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-16 00:00:38.680 Facing[62341:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:00:38.681 Facing[62341:70b] [CDVTimer][splashscreen] 16.054988ms
+2014-08-16 00:00:38.685 Facing[62341:70b] [CDVTimer][statusbar] 3.093958ms
+2014-08-16 00:00:38.686 Facing[62341:70b] [CDVTimer][TotalPluginStartup] 20.466983ms
+2014-08-16 00:00:38.688 Facing[62341:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:00:38.692 Facing[62341:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:00:38.693 Facing[62341:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:00:39.016 Facing[62341:70b] Resetting plugins due to page load.
+2014-08-16 00:00:39.223 Facing[62341:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[63050]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-16 00:03:06.249 Facing[63050:70b] Cannot find executable for CFBundle 0xada2470 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-16 00:03:06.268 Facing[63050:70b] Cannot find executable for CFBundle 0xabaf160 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-16 00:03:06.378 Facing[63050:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-16 00:03:06.395 Facing[63050:70b] Unlimited access to network resources
+2014-08-16 00:03:06.402 Facing[63050:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-16 00:03:06.443 Facing[63050:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:03:06.444 Facing[63050:70b] [CDVTimer][splashscreen] 15.865982ms
+2014-08-16 00:03:06.447 Facing[63050:70b] [CDVTimer][statusbar] 3.078997ms
+2014-08-16 00:03:06.448 Facing[63050:70b] [CDVTimer][TotalPluginStartup] 20.519972ms
+2014-08-16 00:03:06.450 Facing[63050:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:03:06.454 Facing[63050:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:03:06.456 Facing[63050:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:03:06.698 Facing[63050:70b] Resetting plugins due to page load.
+2014-08-16 00:03:06.926 Facing[63050:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-16 00:03:36.317 Facing[63050:70b] Resetting plugins due to page load.
+2014-08-16 00:03:36.470 Facing[63050:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html#
+objc[63864]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-16 00:07:29.856 Facing[63864:70b] Cannot find executable for CFBundle 0xa828980 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-16 00:07:29.868 Facing[63864:70b] Cannot find executable for CFBundle 0xa84be90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-16 00:07:30.012 Facing[63864:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-16 00:07:30.027 Facing[63864:70b] Unlimited access to network resources
+2014-08-16 00:07:30.031 Facing[63864:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-16 00:07:30.073 Facing[63864:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:07:30.074 Facing[63864:70b] [CDVTimer][splashscreen] 15.175045ms
+2014-08-16 00:07:30.079 Facing[63864:70b] [CDVTimer][statusbar] 3.664017ms
+2014-08-16 00:07:30.079 Facing[63864:70b] [CDVTimer][TotalPluginStartup] 21.033049ms
+2014-08-16 00:07:30.082 Facing[63864:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:07:30.087 Facing[63864:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:07:30.089 Facing[63864:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:07:30.494 Facing[63864:70b] Resetting plugins due to page load.
+2014-08-16 00:07:30.789 Facing[63864:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-16 00:07:44.872 Facing[63864:70b] Resetting plugins due to page load.
+2014-08-16 00:07:45.045 Facing[63864:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[64482]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-16 00:08:32.519 Facing[64482:70b] Cannot find executable for CFBundle 0xa9540c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-16 00:08:32.535 Facing[64482:70b] Cannot find executable for CFBundle 0xad8ab20 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-16 00:08:32.654 Facing[64482:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-16 00:08:32.667 Facing[64482:70b] Unlimited access to network resources
+2014-08-16 00:08:32.683 Facing[64482:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-16 00:08:32.722 Facing[64482:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:08:32.723 Facing[64482:70b] [CDVTimer][splashscreen] 15.019953ms
+2014-08-16 00:08:32.726 Facing[64482:70b] [CDVTimer][statusbar] 2.738953ms
+2014-08-16 00:08:32.727 Facing[64482:70b] [CDVTimer][TotalPluginStartup] 18.839955ms
+2014-08-16 00:08:32.728 Facing[64482:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:08:32.732 Facing[64482:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:08:32.733 Facing[64482:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:08:32.988 Facing[64482:70b] Resetting plugins due to page load.
+2014-08-16 00:08:34.538 Facing[64482:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-16 00:08:34.754 Facing[64482:70b] Socket Connected
+2014-08-16 00:08:42.670 Facing[64482:70b] Picking a Friend ...
+2014-08-16 00:08:42.671 Facing[64482:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-16 00:08:42.702 Facing[64482:70b] THREAD WARNING: ['Contacts'] took '31.415039' ms. Plugin should use a background thread.
+2014-08-16 00:08:44.189 Facing[64482:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_Gagk2","type":"url"}],"categories":null,"urls":null}
+2014-08-16 00:08:47.780 Facing[64482:70b] CDVPlugin class Sms (pluginName: Sms) does not exist.
+2014-08-16 00:08:47.780 Facing[64482:70b] ERROR: Plugin 'Sms' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-08-16 00:08:47.780 Facing[64482:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "INVALID",
+  "Sms",
+  "send",
+  [
+    [
+      "314) 920-9201"
+    ],
+    "Hey%20Peter%2C%20can%20you%20hop%20on%20Facing%20so%20I%20can%20find%20you%3F%20http%3A%2F%2F10.0.1.100%3A4000%2Finvite%2Fv5OsHvdHn9",
+    ""
+  ]
+]
+2014-08-16 00:09:25.354 Facing[64482:70b] CDVPlugin class Sms (pluginName: Sms) does not exist.
+2014-08-16 00:09:25.354 Facing[64482:70b] ERROR: Plugin 'Sms' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-08-16 00:09:25.354 Facing[64482:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "INVALID",
+  "Sms",
+  "send",
+  [
+    [
+      "3149209201"
+    ],
+    "testmessage",
+    ""
+  ]
+]
+2014-08-16 00:12:48.918 Facing[64482:70b] locationManager::didFailWithError (null)
+objc[66539]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-16 00:13:08.028 Facing[66539:70b] Cannot find executable for CFBundle 0xab89cd0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-16 00:13:08.049 Facing[66539:70b] Cannot find executable for CFBundle 0xabb0ba0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-16 00:13:08.261 Facing[66539:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-16 00:13:08.281 Facing[66539:70b] Unlimited access to network resources
+2014-08-16 00:13:08.293 Facing[66539:70b] 
+
+Started backup to iCloud! Please be careful.
+Your application might rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines"
+You could find it at the following address https://developer.apple.com/icloud/documentation/data-storage/ .
+
+2014-08-16 00:13:08.340 Facing[66539:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:13:08.341 Facing[66539:70b] [CDVTimer][splashscreen] 18.144011ms
+2014-08-16 00:13:08.346 Facing[66539:70b] [CDVTimer][statusbar] 4.052997ms
+2014-08-16 00:13:08.347 Facing[66539:70b] [CDVTimer][TotalPluginStartup] 23.992956ms
+2014-08-16 00:13:08.349 Facing[66539:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:13:08.355 Facing[66539:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:13:08.358 Facing[66539:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-16 00:13:08.805 Facing[66539:70b] Resetting plugins due to page load.
+2014-08-16 00:13:09.171 Facing[66539:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-16 00:13:09.800 Facing[66539:70b] Socket Connected
+2014-08-16 00:13:38.699 Facing[66539:70b] Picking a Friend ...
+2014-08-16 00:13:38.700 Facing[66539:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-16 00:13:38.740 Facing[66539:70b] THREAD WARNING: ['Contacts'] took '41.124023' ms. Plugin should use a background thread.
+2014-08-16 00:13:40.049 Facing[66539:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_cdgjM","type":"url"}],"categories":null,"urls":null}
+2014-08-16 00:13:41.387 Facing[66539:70b] CDVPlugin class Sms (pluginName: Sms) does not exist.
+2014-08-16 00:13:41.387 Facing[66539:70b] ERROR: Plugin 'Sms' not found, or is not a CDVPlugin. Check your plugin mapping in config.xml.
+2014-08-16 00:13:41.388 Facing[66539:70b] -[CDVCommandQueue executePending] [Line 158] FAILED pluginJSON = [
+  "INVALID",
+  "Sms",
+  "send",
+  [
+    [
+      "3149209201"
+    ],
+    "Hey%20Peter%2C%20can%20you%20hop%20on%20Facing%20so%20I%20can%20find%20you%3F%20http%3A%2F%2F10.0.1.100%3A4000%2Finvite%2FVjgHGjTbwt",
+    ""
+  ]
+]
+2014-08-16 00:13:48.982 Facing[66539:70b] Picking a Friend ...
+2014-08-16 00:13:48.983 Facing[66539:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array

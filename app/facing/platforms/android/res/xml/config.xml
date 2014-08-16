@@ -38,6 +38,9 @@
     <feature name="LaunchMyApp">
         <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
     </feature>
+    <feature name="UniversalAnalytics">
+        <param name="android-package" value="com.danielcwilson.plugins.analytics.UniversalAnalyticsPlugin" />
+    </feature>
     <name>Facing</name>
     <description>
         GPS &amp; Compass Frameworks to Connect People to Each Other http://youfacing.me
@@ -46,20 +49,20 @@
         Manifest Interactive
     </author>
     <preference name="phonegap-version" value="3.5.0" />
-    <preference name="orientation" value="portrait" />
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="Fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-translucent" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="false" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackgroundColor" value="0xff222222" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <gap:config-file parent="UIStatusBarHidden" platform="ios">
+        <true />
+    </gap:config-file>
+    <gap:config-file parent="UIViewControllerBasedStatusBarAppearance" platform="ios">
+        <false />
+    </gap:config-file>
     <gap:plugin name="org.apache.cordova.console" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.contacts" version="0.2.11" />
     <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
@@ -69,6 +72,7 @@
     <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
     <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
         <param name="URL_SCHEME" value="facing" />
     </gap:plugin>
@@ -108,4 +112,10 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/Default-Landscape.png" width="1024" />
     <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/Default-Landscape@2x.png" width="2048" />
     <access origin="*" />
+    <feature name="Clipboard">
+        <param name="android-package" value="com.verso.cordova.clipboard.Clipboard" />
+    </feature>
+    <feature name="Sms">
+        <param name="android-package" value="org.apache.cordova.plugin.sms.Sms" />
+    </feature>
 </widget>

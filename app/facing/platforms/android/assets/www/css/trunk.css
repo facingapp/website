@@ -51,7 +51,7 @@ header h1
 	position: absolute;
 	float: left;
 	padding: 10px;
-	top: 20px;
+	top: 10px;
 	left: 10px;
 	display: none;
 }
@@ -140,10 +140,6 @@ nav li a:hover
 	{
 		display: block;
 		float: none;
-	}
-	nav li:first-child
-	{
-		margin-top: 20px;
 	}
 	nav li a
 	{

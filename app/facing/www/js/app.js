@@ -1,15 +1,32 @@
 var app = {
 
 	platform: (typeof device != 'undefined') ? device.platform : 'desktop',
-    socket: (typeof io != 'undefined') ? io.connect('https://app.youfacing.me:443') : null,
-    my_name: null,
-    my_space: 'Main',
+    socket: null,
+    uuid: null,
     initialized: false,
-    location_data: {},
-
+    user_data: {
+	    app: {
+		    device: this.platform,
+		    dataType: 'stream'
+	    }
+    },
     initialize: function()
     {
         this.bindEvents();
+
+	    if(app.socket == null && typeof io != 'undefined')
+	    {
+		    var io_url = (config.app.env == 'dev')
+			    ? config.app.dev.socket.io
+			    : config.app.prod.socket.io;
+
+		    app.socket = io.connect(io_url);
+		    app.io.init();
+
+		    app.util.debug('debug', 'Connecting to Socket on ' + io_url);
+	    }
+
+	    app.stats.init();
     },
     bindEvents: function()
     {
@@ -27,7 +44,7 @@ var app = {
 
             if(device)
             {
-                app.my_name = device.uuid;
+                app.uuid = device.uuid;
             }
 
             setTimeout(function() {
@@ -37,6 +54,91 @@ var app = {
             app.hardware.start();
         }
     },
+	stats: {
+		init: function()
+		{
+			if(typeof analytics !== 'undefined')
+			{
+				analytics.startTrackerWithId(config.google.analytics);
+				analytics.trackView(config.app.title);
+				analytics.setUserId('my-user-id');
+			}
+		},
+		event: function(category, action, label, value)
+		{
+			if(typeof analytics !== 'undefined')
+			{
+				analytics.trackEvent(category, action, label, value);
+			}
+
+			app.util.debug('debug', 'Event: ' + category + ' | ' + action + ' | ' + label);
+		}
+	},
+	io:
+	{
+		init: function()
+		{
+			app.util.debug('log', 'Socket Initialized');
+
+			app.socket.on('connect', function(){
+				gui.render.status('<i class="fa fa-check"></i>', true);
+				app.util.debug('log', 'Socket Connected');
+
+				app.stats.event('Socket', 'Status', 'Connected');
+			});
+
+			app.socket.on('reconnect', function () {
+				gui.render.status('<i class="fa fa-history"></i>', true);
+				app.util.debug('log', 'Socket Reconnected');
+
+				app.stats.event('Socket', 'Status', 'Reconnected');
+			});
+
+			app.socket.on('disconnect', function () {
+				gui.render.status('<i class="fa fa-times"></i>', true);
+				app.util.debug('log', 'Socket Disconnected');
+
+				app.stats.event('Socket', 'Status', 'Disconnected');
+			});
+
+			app.socket.on('reconnecting', function () {
+				gui.render.status('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
+				app.util.debug('log', 'Socket Reconnecting');
+
+				app.stats.event('Socket', 'Status', 'Reconnecting');
+			});
+
+			app.socket.on('error', function () {
+				gui.render.status('<i class="fa fa-exclamation-triangle"></i>', true);
+				app.util.debug('error', 'Socket Error');
+
+				app.stats.event('Socket', 'Status', 'Error');
+			});
+
+			app.socket.on('receiveData', function(name, data)
+			{
+				if(name != app.uuid)
+				{
+					gui.render.friend(data);
+					gui.render.status('<i class="fa fa-map-marker"></i>', true);
+					app.util.debug('log', 'Socket Received Data');
+					app.util.debug('log', data);
+				}
+			});
+		},
+		createSpace: function(invite_code)
+		{
+			app.socket.emit('createSpace', invite_code, app.uuid);
+
+			app.stats.event('Socket', 'Create', 'New Space ' + invite_code + ' created by ' + app.uuid);
+		},
+		joinSpace: function(invite_code)
+		{
+			app.socket.emit('switchSpace', invite_code, app.uuid);
+
+			app.stats.event('Socket', 'Join', app.uuid + ' joined ' + invite_code);
+		}
+	},
 	hardware:
 	{
 		timer: null,
@@ -50,11 +152,12 @@ var app = {
 
 				app.hardware.timer = setInterval(function(){
 
-					if(typeof app.location_data.accelerometer !== 'undefined' && typeof app.location_data.compass !== 'undefined' && typeof app.location_data.geolocation !== 'undefined')
+					if(typeof app.user_data.accelerometer !== 'undefined' && typeof app.user_data.compass !== 'undefined' && typeof app.user_data.geolocation !== 'undefined')
 					{
 						app.sendData();
-						gui.render.self();
 					}
+
+					gui.render.self.debug();
 
 				}, 1000);
 			}
@@ -87,6 +190,8 @@ var app = {
 			{
 				if(typeof navigator.compass == 'undefined')
 				{
+					app.util.debug('warn', 'No Compass Found');
+					app.stats.event('Hardware', 'Missing', 'No Compass Found');
 					return false;
 				}
 
@@ -97,10 +202,13 @@ var app = {
 						app.hardware.compass.error,
 						app.hardware.compass.settings
 					);
+
+					app.stats.event('Hardware', 'Watching', 'Compass');
 				}
 				catch(err)
 				{
 					app.util.debug('error', err.message);
+					app.stats.event('Hardware', 'Error', ' Failed to Watch Compass');
 				}
 			},
 			stop: function()
@@ -109,6 +217,8 @@ var app = {
 				{
 					navigator.compass.clearWatch(app.hardware.compass.obj);
 					app.hardware.compass.obj = null;
+
+					app.stats.event('Hardware', 'Stop Watching', 'Compass');
 				}
 				catch(err)
 				{
@@ -117,7 +227,7 @@ var app = {
 			},
 			success: function(heading)
 			{
-				app.location_data.compass = {
+				app.user_data.compass = {
 					direction: app.hardware.compass.direction(heading.magneticHeading),
 					magnetic_heading: heading.magneticHeading
 				};
@@ -127,7 +237,7 @@ var app = {
 				if(error.message)
 				{
 					app.util.debug('error', 'Compass Error: ' + error.message);
-					jQuery('.me .compass ul').html('<li class="error">'+ error.message +'</li>');
+					app.stats.event('Hardware', 'Error', 'Compass Error: ' + error.message);
 				}
 			},
 			direction: function(headingDegrees)
@@ -219,6 +329,8 @@ var app = {
 			{
 				if(typeof navigator.geolocation == 'undefined')
 				{
+					app.util.debug('warn', 'No GPS Found');
+					app.stats.event('Hardware', 'Missing', 'No GPS Found');
 					return false;
 				}
 
@@ -229,10 +341,13 @@ var app = {
 						app.hardware.geolocation.error,
 						app.hardware.geolocation.settings
 					);
+
+					app.stats.event('Hardware', 'Watching', 'GPS');
 				}
 				catch(err)
 				{
 					app.util.debug('error', err.message);
+					app.stats.event('Hardware', 'Error', 'Failed to Watch GPS');
 				}
 			},
 			stop: function()
@@ -241,6 +356,8 @@ var app = {
 				{
 					navigator.geolocation.clearWatch(app.hardware.geolocation.obj);
 					app.hardware.geolocation.obj = null;
+
+					app.stats.event('Hardware', 'Stop Watching', 'GPS');
 				}
 				catch(err)
 				{
@@ -249,7 +366,7 @@ var app = {
 			},
 			success: function(position)
 			{
-				app.location_data.geolocation = {
+				app.user_data.geolocation = {
 					latitude: position.coords.latitude,
 					longitude: position.coords.longitude,
 					altitude: app.hardware.geolocation.distance( position.coords.altitude ),
@@ -261,7 +378,7 @@ var app = {
 			error: function(error)
 			{
 				app.util.debug('error', 'Geolocation Error: ' + error.message);
-				jQuery('.me .geolocation ul').html('<li class="error">'+ error.message +'</li>');
+				app.stats.event('Hardware', 'Error', 'Geolocation Error: ' + error.message);
 			},
 			distance: function(value, use_metric)
 			{
@@ -304,6 +421,8 @@ var app = {
 			{
 				if(typeof navigator.accelerometer == 'undefined')
 				{
+					app.util.debug('warn', 'No Accelerometer Found');
+					app.stats.event('Hardware', 'Missing', 'No Accelerometer Found');
 					return false;
 				}
 
@@ -314,10 +433,13 @@ var app = {
 						app.hardware.accelerometer.error,
 						app.hardware.accelerometer.settings
 					);
+
+					app.stats.event('Hardware', 'Watching', 'Accelerometer');
 				}
 				catch(err)
 				{
 					app.util.debug('error', err.message);
+					app.stats.event('Hardware', 'Error', 'Failed to Watch Accelerometer');
 				}
 			},
 			stop: function()
@@ -326,6 +448,8 @@ var app = {
 				{
 					navigator.accelerometer.clearWatch(app.hardware.accelerometer.obj);
 					app.hardware.accelerometer.obj = null;
+
+					app.stats.event('Hardware', 'Stop Watching', 'Accelerometer');
 				}
 				catch(err)
 				{
@@ -334,7 +458,7 @@ var app = {
 			},
 			success: function(acceleration)
 			{
-				app.location_data.acceleration = {
+				app.user_data.acceleration = {
 					x: acceleration.x,
 					y: acceleration.y,
 					z: acceleration.z
@@ -342,38 +466,50 @@ var app = {
 			},
 			error: function()
 			{
-				app.util.debug('error', 'Failed to use acceleration');
-				jQuery('.me .acceleration ul').html('<li class="error">Failed to use acceleration</li>');
+				app.util.debug('error', 'Failed to use Accelerometer');
+				app.stats.event('Hardware', 'Error', 'Failed to use Accelerometer');
 			}
 		}
 	},
     sendData: function()
     {
-        app.socket.emit('sendData', JSON.stringify(app.location_data));
+        app.socket.emit('sendData', JSON.stringify(app.user_data));
     },
 	util:
 	{
-		enable_debug: true,
+		enableDebug: true,
 		debug: function(level, message)
 		{
-			if(app.util.enable_debug)
+			if(app.util.enableDebug)
 			{
+				var Debug = Error;
+
+				Debug.prototype.warn = function(){
+					var args = Array.prototype.slice.call(arguments,0),suffix=this.lineNumber?'line: '+this.lineNumber:"\n"+this.stack;
+					console.warn.apply(console, args.concat([suffix]));
+				};
+
+				Debug.prototype.error = function(){
+					var args = Array.prototype.slice.call(arguments,0),suffix=this.lineNumber?'line: '+this.lineNumber:"\n"+this.stack;
+					console.error.apply(console, args.concat([suffix]));
+				};
+
 				switch(level)
 				{
 					case 'log':
 						console.log(message);
 						break;
 
-					case 'warn':
-						console.warn(message);
-						break;
-
 					case 'debug':
 						console.debug(message);
 						break;
 
+					case 'warn':
+						Debug().warn(message);
+						break;
+
 					case 'error':
-						console.error(message);
+						Debug().error(message);
 						break;
 				}
 			}
@@ -383,7 +519,7 @@ var app = {
 				message = JSON.stringify(message);
 			}
 
-			jQuery('#dev-log .output ul').append('<li class="'+ level +'"><i class="fa fa-angle-right"></i>&nbsp; ' + message + '</li>');
+			gui.render.debug(level, message);
 		},
 		generateUID: function()
 		{
@@ -400,45 +536,6 @@ var app = {
 	}
 };
 
-
-app.socket.on('connect', function () {
-    jQuery('#home .message').html('<i class="fa fa-check"></i>').show().fadeOut('slow');
-    app.socket.emit('addFriend', app.my_name);
-});
-
-app.socket.on('reconnect', function () {
-    jQuery('#home .message').html('<i class="fa fa-history"></i>').show().fadeOut('slow');
-});
-
-app.socket.on('disconnect', function () {
-    jQuery('#home .message').html('<i class="fa fa-times"></i>').show().fadeOut('slow');
-});
-
-app.socket.on('reconnecting', function () {
-    jQuery('#home .message').html('<i class="fa fa-circle-o-notch fa-spin"></i>').show().fadeOut('slow');
-});
-
-app.socket.on('error', function () {
-    jQuery('#home .message').html('<i class="fa fa-exclamation-triangle"></i>').show().fadeOut('slow');
-});
-
-app.socket.on('receiveData', function(name, data)
-{
-    if(name != app.my_name)
-    {
-        gui.render.friend(data);
-        jQuery('#status').html('<i class="fa fa-map-marker"></i>').show();
-    }
-});
-
-function switchSpace(space)
-{
-    if(app.socket && app.socket.connected)
-    {
-        app.socket.emit('switchSpace', space);
-    }
-}
-
 window.onerror = function(errorMsg, url, lineNumber) {
-	app.util.debug('error', "Uncaught error " + errorMsg + " in " + url + ", line " + lineNumber);
+	console.error("Uncaught error " + errorMsg + " in " + url + ", line " + lineNumber);
 };

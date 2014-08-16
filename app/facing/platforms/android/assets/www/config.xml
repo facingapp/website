@@ -28,20 +28,32 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version" value="3.5.0" />
-    <preference name="orientation" value="portrait" />
-    <preference name="target-device"  value="universal" />
-    <preference name="fullscreen" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <!--<preference name="target-device"  value="universal" /> -->
+    <preference name="Fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-translucent" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="false" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
-    <preference name="android-installLocation" value="auto" />
+    <!--<preference name="stay-in-webview" value="false" /> -->
+    <!--<preference name="ios-statusbarstyle" value="black-translucent" /> -->
+    <!--<preference name="detect-data-types" value="true" /> -->
+    <!--<preference name="exit-on-suspend" value="false" /> -->
+    <!--<preference name="show-splash-screen-spinner" value="true" /> -->
+    <!--<preference name="auto-hide-splash-screen" value="false" /> -->
+    <!--<preference name="disable-cursor" value="false" /> -->
+    <!--<preference name="android-minSdkVersion" value="7" /> -->
+    <!--<preference name="android-installLocation" value="auto" /> -->
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="BackgroundColor" value="0xff222222" />
+    <preference name="HideKeyboardFormAccessoryBar" value="true"/>
+    <preference name="StatusBarOverlaysWebView" value="false" />
+
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+        <true/>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+        <false/>
+    </gap:config-file>
 
     <!-- Plugins -->
 
@@ -83,6 +95,9 @@
     <!-- Notification ( support for loading a Splashscreen ) -->
     <!-- Documentation: https://build.phonegap.com/plugins/622 -->
     <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+
+
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
@@ -149,20 +164,6 @@
     <gap:splash gap:platform="ios" width="1024" height="768"  src="www/res/screen/ios/Default-Landscape.png" />    <!-- [ ] iPad Landscape Non-Retina -->
     <gap:splash gap:platform="ios" width="2048" height="1536" src="www/res/screen/ios/Default-Landscape@2x.png" /> <!-- [ ] iPad Landscape Retina -->
 
-    <!--
-        Define access to external domains.
-
-        <access />            - a blank access tag denies access to all external resources.
-        <access origin="*" /> - a wildcard access tag allows access to all external resource.
-
-        Otherwise, you can specify specific domains:
-    -->
-
-    <access origin="*"/>
-    <!--
-        <access origin="http://youfacing.me" />                    - allow any secure requests to http://youfacing.me/
-        <access origin="http://youfacing.me" subdomains="true" />  - same as above, but including subdomains, such as http://build.youfacing.me/
-        <access origin="http://youfacing.me" browserOnly="true" /> - only allows http://youfacing.me to be opened by the child browser.
-    -->
+    <access origin="*" />
 
 </widget>

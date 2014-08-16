@@ -1,14 +1,3 @@
-body,html,.content,.container
-{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.logo svg #FacingText
-{
-    stroke: #006600;
-    fill  : #00cc00;
-}
 #home .information
 {
     font-size: 14px;
@@ -100,7 +89,6 @@ body,html,.content,.container
     position: absolute;
     top: 12%;
     opacity: 0.75;
-    display: none;
     z-index: 500;
 }
 .panel
@@ -136,6 +124,10 @@ body,html,.content,.container
     max-width: 300px;
     margin: 0 auto;
     color: #FFF
+}
+#dev-log .panel ul
+{
+    max-width: 100%;
 }
 ul.menu li:last-child
 {

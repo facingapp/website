@@ -1,14 +1,3 @@
-body,html,.content,.container
-{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.logo svg #FacingText
-{
-    stroke: #006600;
-    fill  : #00cc00;
-}
 #home .information
 {
     font-size: 14px;
@@ -100,7 +89,6 @@ body,html,.content,.container
     position: absolute;
     top: 12%;
     opacity: 0.75;
-    display: none;
     z-index: 500;
 }
 .panel
@@ -136,6 +124,10 @@ body,html,.content,.container
     max-width: 300px;
     margin: 0 auto;
     color: #FFF
+}
+#dev-log .panel ul
+{
+    max-width: 100%;
 }
 ul.menu li:last-child
 {
@@ -233,6 +225,10 @@ ul.menu a
     -moz-border-radius: 50%;
     border-radius: 50%;
     /* border-radius: 50% has issues on some mobile browsers */
+
+    -webkit-animation: nopulse 4s linear infinite;
+    -moz-animation: nopulse 4s linear infinite;
+    animation: nopulse 4s linear infinite;
 }
 .find-a-friend.default
 {
@@ -261,9 +257,9 @@ ul.menu a
     -webkit-animation: pulse1 4s linear infinite;
     -moz-animation: pulse1 4s linear infinite;
     animation: pulse1 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
@@ -285,9 +281,9 @@ ul.menu a
     -webkit-animation: pulse2 4s linear infinite;
     -moz-animation: pulse2 4s linear infinite;
     animation: pulse2 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);

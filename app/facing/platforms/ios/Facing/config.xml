@@ -60,6 +60,15 @@
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <preference name="StatusBarBackgroundColor" value="#000000" />
+    <feature name="UniversalAnalytics">
+        <param name="ios-package" value="UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="Clipboard">
+        <param name="ios-package" value="CDVClipboard" />
+    </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
     <name>Facing</name>
     <description>
         GPS &amp; Compass Frameworks to Connect People to Each Other http://youfacing.me
@@ -130,5 +139,5 @@
     <gap:splash gap:platform="ios" height="2048" src="www/res/screen/ios/Default-Portrait@2x.png" width="1536" />
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/Default-Landscape.png" width="1024" />
     <gap:splash gap:platform="ios" height="1536" src="www/res/screen/ios/Default-Landscape@2x.png" width="2048" />
-    <access origin="https://youfacing.me" subdomains="true" />
+    <access origin="*" />
 </widget>

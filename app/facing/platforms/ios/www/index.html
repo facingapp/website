@@ -125,15 +125,26 @@
             </div>
 
         </div>
-        <script src="https://app.youfacing.me/socket.io/socket.io.js"></script>
         <script src="cordova.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/config.js"></script>
         <script src="js/geo.js"></script>
         <script src="js/app.js"></script>
         <script src="js/gui.js"></script>
         <script>
-	        app.initialize();
-	        gui.initialize();
+	    (function(d, script){
+		    script = d.createElement('script');
+		    script.type = 'text/javascript';
+		    script.src = (config.app.env == 'dev')
+				? config.app.dev.socket.js
+				: config.app.prod.socket.js;
+		    script.async = true;
+		    script.onload = function(){
+		        app.initialize();
+		        gui.initialize();
+	        };
+	        d.getElementsByTagName('head')[0].appendChild(script);
+        }(document));
         </script>
     </body>
 </html>

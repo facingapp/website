@@ -59,6 +59,12 @@
 		DB93B3D44C9A4821950ACD53 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7782317829C44A2399CBB86B /* CDVLogger.m */; };
 		FFFE86A5C70D4A1183A7A9D4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32892FA3DFCC480F83C6A11A /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D91811B6B8E14A60B967D069 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */; };
+		D37CE535D6A244C5B98AA5C3 /* UniversalAnalyticsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 962265D1F4474A9CBF32E343 /* UniversalAnalyticsPlugin.m */; };
+		9226487471A84CF5BE1A46E2 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FFD67E366647B28BFD3FBB /* libGoogleAnalyticsServices.a */; };
+		8BDBD74BE31C419B9B700A49 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32136D30930E4692B73FD819 /* CoreData.framework */; };
+		76CCC341DD19474BB0F4FDE2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAB285D03B948A580D21D97 /* libz.dylib */; };
+		99397D55B51B41C3892AF8F8 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC8244335E944D9B74805D4 /* libsqlite3.0.dylib */; };
+		EEBA323F4AC742408E074D2F /* CDVClipboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE8F8B03A64A7BA2B3426D /* CDVClipboard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +177,20 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = Facing/config.xml; sourceTree = "<group>"; };
 		F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		835E595AD78640B1A6413703 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "com.phonegap.plugin.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		962265D1F4474A9CBF32E343 /* UniversalAnalyticsPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UniversalAnalyticsPlugin.m"; path = "com.danielcwilson.plugins.googleanalytics/UniversalAnalyticsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		55FFD67E366647B28BFD3FBB /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGoogleAnalyticsServices.a"; path = "Facing/Plugins/com.danielcwilson.plugins.googleanalytics/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		3C2AC028EBB6403586F6B8B9 /* UniversalAnalyticsPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UniversalAnalyticsPlugin.h"; path = "com.danielcwilson.plugins.googleanalytics/UniversalAnalyticsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C36C75DFC8294AC8BDBE9B78 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAIDictionaryBuilder.h"; path = "com.danielcwilson.plugins.googleanalytics/GAIDictionaryBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		986DDE43456A4571B5A3B7C9 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAIFields.h"; path = "com.danielcwilson.plugins.googleanalytics/GAIFields.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A66B2B35520447E5A2E8F492 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAILogger.h"; path = "com.danielcwilson.plugins.googleanalytics/GAILogger.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A494E3098BC74E9398002406 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAITrackedViewController.h"; path = "com.danielcwilson.plugins.googleanalytics/GAITrackedViewController.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1FB36059811E4088A80A1ADD /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAI.h"; path = "com.danielcwilson.plugins.googleanalytics/GAI.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		EF3D10267A374E4CB22C496F /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GAITracker.h"; path = "com.danielcwilson.plugins.googleanalytics/GAITracker.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		32136D30930E4692B73FD819 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreData.framework"; path = "System/Library/Frameworks/CoreData.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		AAAB285D03B948A580D21D97 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		EDC8244335E944D9B74805D4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsqlite3.0.dylib"; path = "usr/lib/libsqlite3.0.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		2BEE8F8B03A64A7BA2B3426D /* CDVClipboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVClipboard.m"; path = "com.verso.cordova.clipboard/CDVClipboard.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		703C91D244C7455EBB55AF1F /* CDVClipboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVClipboard.h"; path = "com.verso.cordova.clipboard/CDVClipboard.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +208,10 @@
 				8AFE9D76BDF1440E98BCB4C8 /* CoreMotion.framework in Frameworks */,
 				D4D0FF326F014DB99AD2CD4E /* AudioToolbox.framework in Frameworks */,
 				0BC598000EA64A3DAD1567B9 /* SystemConfiguration.framework in Frameworks */,
+				9226487471A84CF5BE1A46E2 /* libGoogleAnalyticsServices.a in Frameworks */,
+				8BDBD74BE31C419B9B700A49 /* CoreData.framework in Frameworks */,
+				76CCC341DD19474BB0F4FDE2 /* libz.dylib in Frameworks */,
+				99397D55B51B41C3892AF8F8 /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +315,10 @@
 				008D5292199943CFB77E7D17 /* SystemConfiguration.framework */,
 				B9CBAAF09ED447819283AC6F /* MapKit.framework */,
 				F04B5A9DB27E43CEABE36FAF /* MessageUI.framework */,
+				55FFD67E366647B28BFD3FBB /* libGoogleAnalyticsServices.a */,
+				32136D30930E4692B73FD819 /* CoreData.framework */,
+				AAAB285D03B948A580D21D97 /* libz.dylib */,
+				EDC8244335E944D9B74805D4 /* libsqlite3.0.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,6 +372,16 @@
 				B2CD9E00235B4161AE4B9B3C /* Sms.h */,
 				F8A3AD29FDA54AEBAE0EDFCE /* CDVStatusBar.m */,
 				835E595AD78640B1A6413703 /* CDVStatusBar.h */,
+				962265D1F4474A9CBF32E343 /* UniversalAnalyticsPlugin.m */,
+				3C2AC028EBB6403586F6B8B9 /* UniversalAnalyticsPlugin.h */,
+				C36C75DFC8294AC8BDBE9B78 /* GAIDictionaryBuilder.h */,
+				986DDE43456A4571B5A3B7C9 /* GAIFields.h */,
+				A66B2B35520447E5A2E8F492 /* GAILogger.h */,
+				A494E3098BC74E9398002406 /* GAITrackedViewController.h */,
+				1FB36059811E4088A80A1ADD /* GAI.h */,
+				EF3D10267A374E4CB22C496F /* GAITracker.h */,
+				2BEE8F8B03A64A7BA2B3426D /* CDVClipboard.m */,
+				703C91D244C7455EBB55AF1F /* CDVClipboard.h */,
 			);
 			name = Plugins;
 			path = Facing/Plugins;
@@ -559,6 +597,8 @@
 				0D3961F02B0D4E27BA93DDDF /* CDVReachability.m in Sources */,
 				70F70ADB91BC4A3C9DAC5663 /* CDVSplashScreen.m in Sources */,
 				D91811B6B8E14A60B967D069 /* CDVStatusBar.m in Sources */,
+				D37CE535D6A244C5B98AA5C3 /* UniversalAnalyticsPlugin.m in Sources */,
+				EEBA323F4AC742408E074D2F /* CDVClipboard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +681,10 @@
 				);
 				PRODUCT_NAME = Facing;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Facing/Plugins/com.danielcwilson.plugins.googleanalytics\"",
+				);
 			};
 			name = Debug;
 		};
@@ -675,6 +719,10 @@
 				);
 				PRODUCT_NAME = Facing;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Facing/Plugins/com.danielcwilson.plugins.googleanalytics\"",
+				);
 			};
 			name = Release;
 		};

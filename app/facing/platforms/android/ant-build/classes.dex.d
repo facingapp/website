@@ -1,6 +1,9 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes.dex : \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/danielcwilson/plugins/analytics/UniversalAnalyticsPlugin.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/BuildConfig.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/Facing.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/Manifest$permission.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/Manifest.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$attr.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$drawable.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$string.class \
@@ -114,3 +117,4 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/java_websocket/WebSocketListener.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/java_websocket/WrappedByteChannel.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/classes-25249d529e84d3ab8048897021052327.jar \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/libGoogleAnalyticsServices-f7f6f12867eec09a5ade58d91d177e92.jar \
