@@ -256,6 +256,8 @@ ul.menu a
 .find-a-friend.no-image
 {
     background-image: url(../img/no-image-200.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .pulse1 {
     position: absolute;
@@ -414,12 +416,13 @@ a.tooltip span b {
     .find-a-friend.no-image
     {
         background-image: url(../img/no-image-350.jpg);
-        background-size: 350px 350px;
+        background-size: cover;
+        background-position: center center;
     }
     .find-a-friend.contact
     {
         background-size: cover;
-        background-position: 0px 0px;
+        background-position: center center;
     }
     .pulse1 {
         width: 370px;

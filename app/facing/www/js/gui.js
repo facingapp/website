@@ -196,13 +196,7 @@ var gui = {
 						"organizations": null,
 						"birthday"     : null,
 						"note"         : null,
-						"photos"       : [
-							{
-								"pref" : "false",
-								"value": "img/no-image-200.jpg",
-								"type" : "url"
-							}
-						],
+						"photos"       : null,
 						"categories"   : null,
 						"urls"         : null
 					};
