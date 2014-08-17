@@ -259,7 +259,7 @@ var gui = {
 	{
 		$('.reset-gui').fadeOut();
 		$('.logo').removeClass('animated fadeInDown fadeOut');
-		$('.find-a-friend').attr('style', '').removeClass('animated flipInX no-image');
+		$('.find-a-friend').attr('style', '').removeClass('animated flipInX no-image contact');
 		$('.contact-options').hide();
 		gui.render.status('', true);
 		$('.me .acceleration ul').html('');
