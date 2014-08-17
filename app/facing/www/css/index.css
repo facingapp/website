@@ -1,16 +1,83 @@
-#status
+#home .information
 {
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    text-align: center;
     position: absolute;
-    right: 10px;
-    top: 0;
+    bottom: 60px;
+    height: 100px;
+    left: 0;
+    line-height: 30px;
+}
+#home .welcome
+{
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
     color: #FFF;
-    font-weight: normal;
+    color: rgba(255, 255, 255, 0.75);
+}
+#home .welcome i
+{
     opacity: 0.25;
 }
-body,html,.content,.container
+#home .status
 {
+    height: 35px;
     width: 100%;
-    height: 100%;
+    line-height: 35px;
+}
+#home .status .message
+{
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.reset-gui
+{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+    opacity: 0.5;
+    display: none;
+}
+.reset-gui a
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #FFF;
+}
+.contact-options
+{
+    display: none;
+    margin-top: 10px;
+}
+.contact-option
+{
+    width: 60px;
+    height: 30px;
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+    display: inline-block;
+}
+.contact-option span
+{
+    font-size: 12px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    opacity: 0.3;
 }
 .logo
 {
@@ -20,9 +87,27 @@ body,html,.content,.container
     height: 63px;
     background-size: 210px 63px;
     position: absolute;
-    top: 85px;
-    opacity: 0.75;
-    display: none;
+    top: 80px;
+    z-index: 500;
+}
+.fadeLogo
+{
+    -webkit-animation: fadeLogo 2s;
+    -moz-animation: fadeLogo 2s;
+    animation: fadeLogo 2s;
+    opacity: 0.35;
+}
+.io
+{
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+    line-height: 14px;
+    opacity: 0.5;
 }
 .panel
 {
@@ -58,6 +143,10 @@ body,html,.content,.container
     margin: 0 auto;
     color: #FFF
 }
+#dev-log .panel ul
+{
+    max-width: 100%;
+}
 ul.menu li:last-child
 {
     margin-right: 30px;
@@ -66,20 +155,76 @@ ul.menu a
 {
     text-transform: uppercase;
 }
-
-
-
+.header-section
+{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    left: 0;
+}
+.push-header
+{
+    margin-top: 60px;
+}
+#dev-log .output
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    color: #fff;
+}
+#dev-log .output ul
+{
+    color: lime;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-left: 17px;
+    font-family: monospace;
+    font-size: 14px;
+}
+#dev-log .output li.log
+{
+    color: dodgerblue;
+}
+#dev-log .output li.warn
+{
+    color: darkorange;
+}
+#dev-log .output li.error
+{
+    color: red;
+}
+#dev-log .output li.debug
+{
+    color: lime;
+}
+#dev-log .output .push
+{
+    display: block;
+    width: 100%;
+    height: 100px;
+}
 .find-a-friend
 {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url(../img/default-user-200.jpg) no-repeat;
-    background-size: 2000px 200px;
     background-position: 0 0;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 3;
+    z-index: 999 !important;
+    background-size: 200px 200px;
 
     -webkit-box-shadow:
       0 0 0 10px  rgba(255,255,255,.2),
@@ -97,25 +242,42 @@ ul.menu a
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    /* border-radius: 50% has issues on some mobile browsers */
 }
-
+.find-a-friend.default
+{
+    background-image: url(../img/default-user-200.jpg);
+    background-size: 2000px 200px;
+}
+.find-a-friend.contact
+{
+    background-size: cover;
+    background-position: center center !important;
+}
+.find-a-friend.no-image
+{
+    background-image: url(../img/no-image-200.jpg);
+    background-size: cover;
+    background-position: center center;
+}
 .pulse1 {
     position: absolute;
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1 !important;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
 
     -webkit-animation: pulse1 4s linear infinite;
     -moz-animation: pulse1 4s linear infinite;
     animation: pulse1 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     -moz-box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
     box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, .6);
@@ -129,17 +291,20 @@ ul.menu a
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2 !important;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);
 
     -webkit-animation: pulse2 4s linear infinite;
     -moz-animation: pulse2 4s linear infinite;
     animation: pulse2 4s linear infinite;
-    -webkit-border-radius: 999px;
-    -moz-border-radius: 999px;
-    border-radius: 999px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     -webkit-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     -moz-box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
     box-shadow: inset 0px 0px 12px 5px rgba(255, 255, 255, .8);
@@ -193,6 +358,8 @@ a.tooltip span b {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+
+    display: none;
 }
 
 .location-marker.friend
@@ -201,7 +368,6 @@ a.tooltip span b {
     top: 45%;
     left: 45%;
     opacity: 0.5;
-    display: none;
 }
 .location-marker.self
 {
@@ -209,15 +375,54 @@ a.tooltip span b {
     top: 35%;
     left: 65%;
 }
+#map .google_map
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    margin-top: 60px;
+}
+.clear-log
+{
+    display: block;
+    color: #fff;
+    font-family: monospace;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    text-transform: uppercase;
+}
 
 @media only screen and (min-width: 600px)
 {
     .find-a-friend {
         width: 350px;
         height: 350px;
-        background: url(../img/default-user-350.jpg) no-repeat;
-        background-size: 3500px 350px;
         background-position: 0 0;
+        background-size: 350px 350px;
+    }
+    .find-a-friend.default
+    {
+        background-image: url(../img/default-user-350.jpg);
+        background-size: 3500px 350px;
+    }
+    .find-a-friend.no-image
+    {
+        background-image: url(../img/no-image-350.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .find-a-friend.contact
+    {
+        background-size: cover;
+        background-position: center center;
     }
     .pulse1 {
         width: 370px;
@@ -235,5 +440,28 @@ a.tooltip span b {
     {
         height: 125px;
         background-size: 420px 125px;
+    }
+    #home .information
+    {
+        font-size: 18px;
+        text-align: center;
+        bottom: 100px;
+        height: 200px;
+        line-height: 30px;
+    }
+    #home .information .contact-options
+    {
+        margin-top: 20px;
+    }
+    #home .information .contact-option
+    {
+        font-size: 45px;
+        line-height: 45px;
+        width: 100px;
+    }
+    #home .information .contact-option span
+    {
+        width: 100px;
+        font-size: 14px;
     }
 }

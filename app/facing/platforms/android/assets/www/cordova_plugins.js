@@ -165,6 +165,41 @@ module.exports = [
         "clobbers": [
             "window.plugins.launchmyapp"
         ]
+    },
+    {
+        "file": "plugins/com.danielcwilson.plugins.googleanalytics/www/analytics.js",
+        "id": "com.danielcwilson.plugins.googleanalytics.UniversalAnalytics",
+        "clobbers": [
+            "analytics"
+        ]
+    },
+    {
+        "file": "plugins/com.verso.cordova.clipboard/www/clipboard.js",
+        "id": "com.verso.cordova.clipboard.Clipboard",
+        "clobbers": [
+            "cordova.plugins.clipboard"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.plugin.sms/www/sms.js",
+        "id": "org.apache.cordova.plugin.sms.Sms",
+        "clobbers": [
+            "window.sms"
+        ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js",
+        "id": "de.appplant.cordova.plugin.email-composer.EmailComposer",
+        "clobbers": [
+            "plugin.email"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.battery-status/www/battery.js",
+        "id": "org.apache.cordova.battery-status.battery",
+        "clobbers": [
+            "navigator.battery"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -183,7 +218,13 @@ module.exports.metadata =
     "com.cleartag.plugins.EnableBackgroundLocation": "3.1",
     "com.ququplay.websocket.WebSocket": "0.1.0",
     "org.apache.cordova.dialogs": "0.2.8",
-    "nl.x-services.plugins.launchmyapp": "3.2.0"
+    "nl.x-services.plugins.launchmyapp": "3.2.0",
+    "com.phonegap.plugin.statusbar": "1.1.0",
+    "com.danielcwilson.plugins.googleanalytics": "0.6.0",
+    "com.verso.cordova.clipboard": "0.1.0",
+    "org.apache.cordova.plugin.sms": "0.1.0",
+    "de.appplant.cordova.plugin.email-composer": "0.8.1",
+    "org.apache.cordova.battery-status": "0.2.10"
 }
 // BOTTOM OF METADATA
 });

@@ -9,6 +9,18 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"UniversalAnalytics\"><param name=\"ios-package\" value=\"UniversalAnalyticsPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Clipboard\"><param name=\"ios-package\" value=\"CDVClipboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"BackgroundLocationEnabler\"><param name=\"ios-package\" value=\"CDVBackgroundLocationEnabler\" /></feature>",
                             "count": 1
                         },
@@ -55,6 +67,26 @@
                         {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"ios-package\" onload=\"true\" value=\"CDVStatusBar\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarOverlaysWebView\" value=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"ios-package\" value=\"APPEmailComposer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -94,6 +126,35 @@
                     "SystemConfiguration.framework": [
                         {
                             "xml": "true",
+                            "count": 1
+                        },
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "MapKit.framework": [],
+                    "MessageUI.framework": [
+                        {
+                            "xml": "true",
+                            "count": 2
+                        }
+                    ],
+                    "CoreData.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "libz.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "libsqlite3.0.dylib": [
+                        {
+                            "xml": "false",
                             "count": 1
                         }
                     ]
@@ -153,6 +214,24 @@
         },
         "nl.x-services.plugins.launchmyapp": {
             "URL_SCHEME": "facing",
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.phonegap.plugin.statusbar": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.danielcwilson.plugins.googleanalytics": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "org.apache.cordova.plugin.sms": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },
