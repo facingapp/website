@@ -46,6 +46,7 @@
     <preference name="BackgroundColor" value="0xff222222" />
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="BackupWebStorage" value="local" />
 
     <gap:config-file platform="ios" parent="UIStatusBarHidden">
         <true/>

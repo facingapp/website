@@ -63,6 +63,14 @@
                         {
                             "xml": "<feature name=\"Sms\"><param name=\"android-package\" value=\"org.apache.cordova.plugin.sms.Sms\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": []
@@ -120,7 +128,12 @@
                             "count": 1
                         }
                     ],
-                    "/manifest/application": []
+                    "/manifest/application": [
+                        {
+                            "xml": "<provider android:authorities=\"com.manifestinteractive.facing.plugin.emailcomposer.attachmentprovider\" android:name=\"de.appplant.cordova.plugin.emailcomposer.AttachmentProvider\"></provider>",
+                            "count": 1
+                        }
+                    ]
                 }
             }
         }
@@ -179,6 +192,12 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "org.apache.cordova.plugin.sms": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

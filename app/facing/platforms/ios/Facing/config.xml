@@ -19,6 +19,15 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
+    <feature name="UniversalAnalytics">
+        <param name="ios-package" value="UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="Clipboard">
+        <param name="ios-package" value="CDVClipboard" />
+    </feature>
+    <feature name="Sms">
+        <param name="ios-package" value="Sms" />
+    </feature>
     <feature name="BackgroundLocationEnabler">
         <param name="ios-package" value="CDVBackgroundLocationEnabler" />
     </feature>
@@ -60,14 +69,11 @@
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <preference name="StatusBarBackgroundColor" value="#000000" />
-    <feature name="UniversalAnalytics">
-        <param name="ios-package" value="UniversalAnalyticsPlugin" />
+    <feature name="EmailComposer">
+        <param name="ios-package" value="APPEmailComposer" />
     </feature>
-    <feature name="Clipboard">
-        <param name="ios-package" value="CDVClipboard" />
-    </feature>
-    <feature name="Sms">
-        <param name="ios-package" value="Sms" />
+    <feature name="Battery">
+        <param name="ios-package" value="CDVBattery" />
     </feature>
     <name>Facing</name>
     <description>
@@ -85,6 +91,7 @@
     <preference name="BackgroundColor" value="0xff222222" />
     <preference name="HideKeyboardFormAccessoryBar" value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="BackupWebStorage" value="local" />
     <gap:config-file parent="UIStatusBarHidden" platform="ios">
         <true />
     </gap:config-file>

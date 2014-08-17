@@ -91,6 +91,18 @@
     opacity: 0.75;
     z-index: 500;
 }
+.io
+{
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+    line-height: 14px;
+    opacity: 0.5;
+}
 .panel
 {
     display: none;

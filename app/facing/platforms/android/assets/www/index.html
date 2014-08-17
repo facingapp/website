@@ -41,6 +41,12 @@
                     <div class="location-marker self"></div>
                     <div class="location-marker friend"></div>
 
+	                <div class="io">
+		                <div class="status">
+			                <i class="fa fa-circle-o-notch fa-fw fa-spin"></i>
+		                </div>
+	                </div>
+
                     <a href="#" class="find-a-friend tooltip animated flipInX default"></a>
 	                <div class="information">
 		                <div class="welcome">
@@ -136,8 +142,8 @@
 		    script = d.createElement('script');
 		    script.type = 'text/javascript';
 		    script.src = (config.app.env == 'dev')
-				? config.app.socket.dev.js
-				: config.app.socket.prod.js;
+				? config.app.dev.socket.js
+				: config.app.prod.socket.js;
 		    script.async = true;
 		    script.onload = function(){
 		        app.initialize();

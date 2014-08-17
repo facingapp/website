@@ -186,6 +186,20 @@ module.exports = [
         "clobbers": [
             "window.sms"
         ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.email-composer/www/email_composer.js",
+        "id": "de.appplant.cordova.plugin.email-composer.EmailComposer",
+        "clobbers": [
+            "plugin.email"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.battery-status/www/battery.js",
+        "id": "org.apache.cordova.battery-status.battery",
+        "clobbers": [
+            "navigator.battery"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -208,7 +222,9 @@ module.exports.metadata =
     "com.phonegap.plugin.statusbar": "1.1.0",
     "com.danielcwilson.plugins.googleanalytics": "0.6.0",
     "com.verso.cordova.clipboard": "0.1.0",
-    "org.apache.cordova.plugin.sms": "0.1.0"
+    "org.apache.cordova.plugin.sms": "0.1.0",
+    "de.appplant.cordova.plugin.email-composer": "0.8.1",
+    "org.apache.cordova.battery-status": "0.2.10"
 }
 // BOTTOM OF METADATA
 });

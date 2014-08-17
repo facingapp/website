@@ -13,6 +13,20 @@ var app = {
     initialize: function()
     {
         this.bindEvents();
+
+	    if(app.socket == null && typeof io != 'undefined')
+	    {
+		    var io_url = (config.app.env == 'dev')
+			    ? config.app.dev.socket.io
+			    : config.app.prod.socket.io;
+
+		    app.socket = io.connect(io_url);
+		    app.io.init();
+
+		    app.util.debug('debug', 'Connecting to Socket on ' + io_url);
+	    }
+
+	    app.stats.init();
     },
     bindEvents: function()
     {
@@ -27,20 +41,6 @@ var app = {
         if(id == 'deviceready' && app.initialized === false)
         {
             app.initialized = true;
-
-	        if(app.socket == null && typeof io != 'undefined')
-	        {
-		        var io_url = (config.app.env == 'dev')
-			        ? config.app.socket.dev.io
-			        : config.app.socket.prod.io;
-
-		        app.socket = io.connect(io_url);
-		        app.io.init();
-
-		        app.util.debug('debug', 'Connecting to Socket on ' + io_url);
-	        }
-
-	        app.stats.init();
 
             if(device)
             {
@@ -81,35 +81,35 @@ var app = {
 			app.util.debug('log', 'Socket Initialized');
 
 			app.socket.on('connect', function(){
-				gui.render.status('<i class="fa fa-check"></i>', true);
+				gui.render.io('<i class="fa fa-check"></i>', true);
 				app.util.debug('log', 'Socket Connected');
 
 				app.stats.event('Socket', 'Status', 'Connected');
 			});
 
 			app.socket.on('reconnect', function () {
-				gui.render.status('<i class="fa fa-history"></i>', true);
+				gui.render.io('<i class="fa fa-history"></i>', true);
 				app.util.debug('log', 'Socket Reconnected');
 
 				app.stats.event('Socket', 'Status', 'Reconnected');
 			});
 
 			app.socket.on('disconnect', function () {
-				gui.render.status('<i class="fa fa-times"></i>', true);
+				gui.render.io('<i class="fa fa-times"></i>', true);
 				app.util.debug('log', 'Socket Disconnected');
 
 				app.stats.event('Socket', 'Status', 'Disconnected');
 			});
 
 			app.socket.on('reconnecting', function () {
-				gui.render.status('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
+				gui.render.io('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
 				app.util.debug('log', 'Socket Reconnecting');
 
 				app.stats.event('Socket', 'Status', 'Reconnecting');
 			});
 
 			app.socket.on('error', function () {
-				gui.render.status('<i class="fa fa-exclamation-triangle"></i>', true);
+				gui.render.io('<i class="fa fa-exclamation-triangle"></i>', true);
 				app.util.debug('error', 'Socket Error');
 
 				app.stats.event('Socket', 'Status', 'Error');
@@ -120,7 +120,7 @@ var app = {
 				if(name != app.uuid)
 				{
 					gui.render.friend(data);
-					gui.render.status('<i class="fa fa-map-marker"></i>', true);
+					gui.render.io('<i class="fa fa-map-marker"></i>', true);
 					app.util.debug('log', 'Socket Received Data');
 					app.util.debug('log', data);
 				}

@@ -87,9 +87,27 @@
     height: 63px;
     background-size: 210px 63px;
     position: absolute;
-    top: 12%;
-    opacity: 0.75;
+    top: 80px;
     z-index: 500;
+}
+.fadeLogo
+{
+    -webkit-animation: fadeLogo 2s;
+    -moz-animation: fadeLogo 2s;
+    animation: fadeLogo 2s;
+    opacity: 0.35;
+}
+.io
+{
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    bottom: 27px;
+    right: 20px;
+    line-height: 14px;
+    opacity: 0.5;
 }
 .panel
 {
@@ -205,7 +223,7 @@ ul.menu a
     background-position: 0 0;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 5 !important;
+    z-index: 999 !important;
     background-size: 200px 200px;
 
     -webkit-box-shadow:
@@ -224,11 +242,6 @@ ul.menu a
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    /* border-radius: 50% has issues on some mobile browsers */
-
-    -webkit-animation: nopulse 4s linear infinite;
-    -moz-animation: nopulse 4s linear infinite;
-    animation: nopulse 4s linear infinite;
 }
 .find-a-friend.default
 {
@@ -238,7 +251,7 @@ ul.menu a
 .find-a-friend.contact
 {
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: center center !important;
 }
 .find-a-friend.no-image
 {
@@ -249,7 +262,10 @@ ul.menu a
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1 !important;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
@@ -273,7 +289,10 @@ ul.menu a
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 2 !important;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);

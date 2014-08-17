@@ -2,6 +2,7 @@ var gui = {
 
 	timeout: {},
 	currentPanel: 'home',
+	base: (config.app.env == 'dev') ? config.app.dev.base : config.app.prod.base,
 	initialize: function()
 	{
 		app.util.debug('log', 'Setting up GUI');
@@ -13,6 +14,8 @@ var gui = {
 	},
 	prepareDevice: function()
 	{
+		app.util.debug('log', 'Preparing Device');
+
 		if(typeof StatusBar !== 'undefined')
 		{
 			StatusBar.hide();
@@ -25,6 +28,9 @@ var gui = {
 	handle:
 	{
 		navigation: function(){
+
+			app.util.debug('log', 'Setting up Navigation');
+
 			var items = $('.slide');
 			var content = $('.content');
 
@@ -103,8 +109,12 @@ var gui = {
 		},
 		contacts: function()
 		{
+			app.util.debug('log', 'Setting up Friend Picker');
+
 			$('.find-a-friend').on('touchstart mousedown', function()
 			{
+				app.util.debug('log', 'Picking a Friend ...');
+
 				clearTimeout(gui.timeout.welcomeIn);
 				clearTimeout(gui.timeout.welcomeOut);
 
@@ -127,6 +137,8 @@ var gui = {
 					app.util.debug('warn', 'This Device does not support Contacts');
 					app.stats.event('Navigation', 'Contact Error', 'Device Does Not Support Contacts');
 					app.util.debug('debug', 'Generating Fake Contact for Dev Purposes');
+
+					app.uuid = 'B734FE43-F4FD-C884-A901-3ADD585D0C41'; // Fake GUID
 
 					var fake_contact = {
 						"id"           : 1,
@@ -224,6 +236,10 @@ var gui = {
 	},
 	animate: function()
 	{
+		clearTimeout(gui.timeout.message);
+		clearTimeout(gui.timeout.welcomeIn);
+		clearTimeout(gui.timeout.welcomeOut);
+
 		gui.timeout.message = setTimeout(function(){
 			$('.status .message').fadeOut('slow');
 		}, 100);
@@ -268,6 +284,16 @@ var gui = {
 		{
 			$('#dev-log .output ul').append('<li class="'+ level +'"><i class="fa fa-angle-right"></i>&nbsp; ' + message + '</li>');
 		},
+		io: function(message, fadeout)
+		{
+			var elm = $('#home .io .status');
+			elm.html(message).fadeIn();
+
+			if(fadeout === true)
+			{
+				elm.fadeOut('slow')
+			}
+		},
 		status: function(message, fadeout)
 		{
 			var elm = $('#home .message');
@@ -282,23 +308,62 @@ var gui = {
 		{
 			update: function(contact)
 			{
+				app.stats.event('Navigation', 'Contact', 'Displaying Selected Contact');
+
+				// Allow user to Stop
 				$('.reset-gui').fadeIn();
 
+				// Setup initial data
 				var name = contact.name.formatted;
+				var first_name = contact.name.givenName;
 				var invite_code = app.util.generateUID();
 
-				$('.contact-option').data('invite_code', invite_code);
-				$('.contact-option').data('firstname', contact.name.givenName);
+				// Leave if there was an issue with the contact
+				if(!contact || typeof contact.name == 'undefined' || contact.name.givenName == '')
+				{
+					app.util.debug('warn', 'Invalid Contact');
+					return false;
+				}
 
+				// Communicate with Socket that we want to initiate a session
 				app.io.createSpace(invite_code);
 				app.io.joinSpace(invite_code);
 
-				app.stats.event('Navigation', 'Contact', 'Displaying Selected Contact');
+				// Add data attributes to links for later use
+				$('.contact-option').data('invite_code', invite_code);
+				$('.contact-option').data('firstname', first_name);
 
+				// Update GUI
 				gui.render.status('Find ' + name);
 
+				// Remove Previous Event Bindings
+				$('#clipboard, #sms').off();
+
+				$('#clipboard').on('touchstart mousedown', function(){
+
+					var text = gui.base + '/invite/' + invite_code;
+
+					if(typeof cordova !== 'undefined')
+					{
+						cordova.plugins.clipboard.copy(text);
+
+						navigator.notification.alert(
+							text,
+							function(){},
+							'Copied to Clipboard',
+							'OK'
+						);
+					}
+					else
+					{
+						app.util.debug('warn', 'Unable to Copy to Device Clipboard');
+					}
+
+					return false;
+				});
+
 				var contact_image = $('.find-a-friend');
-				contact_image.removeClass('no-image default');
+					contact_image.removeClass('no-image default');
 
 				if(contact && contact.photos && contact.photos[0].value != '')
 				{
@@ -313,8 +378,9 @@ var gui = {
 				contact_image.addClass('contact');
 				contact_image.css('background-position', '0px 0px');
 
-				var subject = encodeURIComponent('Facing App Invite');
-				var message = encodeURIComponent('Your friend would like you to use Facing: https://app.youfacing.me/invite/' + invite_code);
+				var message = 'Hey ' + first_name + ', can you hop on Facing so I can find you? '+ gui.base +'/invite/' + invite_code;
+				var email_subject = encodeURIComponent('Facing App Invite');
+				var email_message = encodeURIComponent(message);
 
 				var number = (contact.phoneNumbers.length > 0)
 					? contact.phoneNumbers[0].value
@@ -322,17 +388,21 @@ var gui = {
 
 				if(number !== '')
 				{
-					var re = /[^0-9]/;
-					number = number.replace(re, '');
+					number = number.replace(/[^0-9]/g, '');
 
-					if(app.platform == 'Android')
-					{
-						$('#sms').attr('href', 'sms:' + number + '?body=' + message).show();
-					}
-					else if(app.platform == 'iPhone' || app.platform == 'desktop')
-					{
-						$('#sms').attr('href', 'sms:' + number + ';body=' + message).show();
-					}
+					$('#sms').on('touchstart mousedown', function(){
+
+						if(sms && typeof sms.send !== 'undefined')
+						{
+							sms.send(number, message, 'INTENT', function(){}, function(err){});
+						}
+						else
+						{
+							app.util.debug('warn', 'Device Unable to Send SMS');
+						}
+
+						return false;
+					});
 				}
 				else
 				{
@@ -345,7 +415,7 @@ var gui = {
 
 				if(email !== '')
 				{
-					$('#email').attr('href', 'mailto:' + email + '?subject=' + subject + '&body=' + message).show();
+					$('#email').attr('href', 'mailto:' + email + '?subject=' + email_subject + '&body=' + email_message).show();
 				}
 				else
 				{

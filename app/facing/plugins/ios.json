@@ -9,6 +9,18 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"UniversalAnalytics\"><param name=\"ios-package\" value=\"UniversalAnalyticsPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Clipboard\"><param name=\"ios-package\" value=\"CDVClipboard\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"BackgroundLocationEnabler\"><param name=\"ios-package\" value=\"CDVBackgroundLocationEnabler\" /></feature>",
                             "count": 1
                         },
@@ -69,15 +81,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"UniversalAnalytics\"><param name=\"ios-package\" value=\"UniversalAnalyticsPlugin\" /></feature>",
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"ios-package\" value=\"APPEmailComposer\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Clipboard\"><param name=\"ios-package\" value=\"CDVClipboard\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Sms\"><param name=\"ios-package\" value=\"Sms\" /></feature>",
+                            "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -129,7 +137,7 @@
                     "MessageUI.framework": [
                         {
                             "xml": "true",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "CoreData.framework": [
@@ -218,6 +226,12 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "org.apache.cordova.plugin.sms": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

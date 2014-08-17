@@ -1,6 +1,7 @@
 var gui = {
 
 	timeout: {},
+	touchEvents: 'touchstart mousedown',
 	currentPanel: 'home',
 	base: (config.app.env == 'dev') ? config.app.dev.base : config.app.prod.base,
 	initialize: function()
@@ -21,7 +22,9 @@ var gui = {
 			StatusBar.hide();
 		}
 
-		var platform = (typeof device != 'undefined') ? device.platform : 'desktop';
+		var platform = (typeof device !== 'undefined' && typeof device.platform !== 'undefined')
+			? device.platform
+			: 'desktop';
 
 		$('html').addClass(platform.toLowerCase());
 	},
@@ -34,7 +37,7 @@ var gui = {
 			var items = $('.slide');
 			var content = $('.content');
 
-			$('#navToggle').on('touchstart mousedown', function(event) {
+			$('#navToggle').on(gui.touchEvents, function(event) {
 				event.stopPropagation();
 				event.preventDefault();
 
@@ -52,7 +55,7 @@ var gui = {
 				return false;
 			});
 
-			content.on('touchstart mousedown', function(){
+			content.on(gui.touchEvents, function(){
 				if (content.hasClass('open'))
 				{
 					$(items).removeClass('open').addClass('close');
@@ -60,7 +63,7 @@ var gui = {
 				}
 			});
 
-			$('nav a').on('touchstart mousedown', function(){
+			$('nav a').on(gui.touchEvents, function(){
 
 				var panel = $(this).data('panel');
 				var label = $(this).html();
@@ -92,7 +95,7 @@ var gui = {
 				}
 				else
 				{
-					$('.logo').addClass('fadeOut');
+					$('.logo').hide();
 				}
 
 				if(panel == 'my-data' || panel == 'friends-data')
@@ -106,19 +109,25 @@ var gui = {
 
 				return false;
 			});
+
+			$('a.clear-log').on(gui.touchEvents, function(){
+				$('#dev-log .output ul').html('');
+				return false;
+			});
 		},
 		contacts: function()
 		{
 			app.util.debug('log', 'Setting up Friend Picker');
 
-			$('.find-a-friend').on('touchstart mousedown', function()
+			$('.find-a-friend').on(gui.touchEvents, function()
 			{
 				app.util.debug('log', 'Picking a Friend ...');
 
 				clearTimeout(gui.timeout.welcomeIn);
 				clearTimeout(gui.timeout.welcomeOut);
 
-				$('.contact-options').fadeTo("slow" , 1);
+				$('.contact-options').hide();
+				$('.contact-option').removeClass('animated swing');
 
 				$('#home .welcome').removeClass('animated fadeInUp fadeOutDown').hide();
 
@@ -128,6 +137,7 @@ var gui = {
 					{
 						console.log(JSON.stringify(contact));
 						gui.render.contact.update(contact);
+
 					}, function(err){ gui.render.contact.reset(err); });
 
 					app.stats.event('Navigation', 'Contact', 'Picking Contact');
@@ -220,38 +230,41 @@ var gui = {
 				friends.css({ 'background-position': position + 'px 0' });
 			}, 4000);
 
-			$('.force-reset-gui').on('touchstart mousedown', function(){
+			$('.force-reset-gui').on(gui.touchEvents, function(){
 				app.util.debug('log', 'Resetting GUI ...');
 				gui.reset();
 
 				return false;
 			});
-
-			$('.contact-option').on('touchstart mousedown', function(){
-				app.stats.event('Navigation', 'Contact', 'Using '+ $(this).attr('id') + ' with ID ' + $(this).data('invite_code'));
-				gui.render.status('<i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Waiting for '+ $(this).data('firstname') + ' to Connect');
-				$('.contact-options').fadeTo("slow" , 0.33);
-			});
 		}
 	},
 	animate: function()
 	{
+		clearTimeout(gui.timeout.message);
+		clearTimeout(gui.timeout.welcomeIn);
+		clearTimeout(gui.timeout.fadeLogo);
+		clearTimeout(gui.timeout.welcomeOut);
+
 		gui.timeout.message = setTimeout(function(){
 			$('.status .message').fadeOut('slow');
 		}, 100);
 
-		gui.timeout.welcomeIn =setTimeout(function(){
+		gui.timeout.welcomeIn = setTimeout(function(){
 			$('.welcome').addClass('animated fadeInUp').show();
 		}, 1500);
 
-		gui.timeout.welcomeOut =setTimeout(function(){
+		gui.timeout.welcomeOut = setTimeout(function(){
 			$('.welcome').addClass('animated fadeOutDown').show();
 		}, 6000);
+
+		gui.timeout.fadeLogo = setTimeout(function(){
+			$('.logo').addClass('fadeLogo');
+		}, 7000);
 	},
 	reset: function()
 	{
 		$('.reset-gui').fadeOut();
-		$('.logo').fadeIn(2500).removeClass('animated fadeInDown fadeOut');
+		$('.logo').removeClass('animated fadeInDown fadeOut');
 		$('.find-a-friend').attr('style', '').removeClass('animated flipInX no-image');
 		$('.contact-options').hide();
 		gui.render.status('', true);
@@ -265,7 +278,7 @@ var gui = {
 
 		setTimeout(function(){
 			$('.find-a-friend').addClass('default animated flipInX');
-			$('.logo').addClass('animated fadeInDown');
+			$('.logo').removeClass('fadeLogo').addClass('animated fadeInDown');
 		}, 100);
 
 		gui.animate();
@@ -279,6 +292,16 @@ var gui = {
 		debug: function(level, message)
 		{
 			$('#dev-log .output ul').append('<li class="'+ level +'"><i class="fa fa-angle-right"></i>&nbsp; ' + message + '</li>');
+		},
+		io: function(message, fadeout)
+		{
+			var elm = $('#home .io .status');
+			elm.html(message).fadeIn();
+
+			if(fadeout === true)
+			{
+				elm.fadeOut('slow')
+			}
 		},
 		status: function(message, fadeout)
 		{
@@ -294,16 +317,156 @@ var gui = {
 		{
 			update: function(contact)
 			{
+				app.stats.event('Navigation', 'Contact', 'Displaying Selected Contact');
+
+				// Allow user to Stop
 				$('.reset-gui').fadeIn();
 
+				// Setup initial data
 				var name = contact.name.formatted;
 				var first_name = contact.name.givenName;
 				var invite_code = app.util.generateUID();
 
+				// Leave if there was an issue with the contact
+				if(!contact || typeof contact.name == 'undefined' || contact.name.givenName == '')
+				{
+					app.util.debug('warn', 'Invalid Contact');
+					return false;
+				}
+
+				// Communicate with Socket that we want to initiate a session
+				app.io.createSpace(invite_code);
+				app.io.joinSpace(invite_code);
+
+				// Add data attributes to links for later use
 				$('.contact-option').data('invite_code', invite_code);
 				$('.contact-option').data('firstname', first_name);
 
-				$('#clipboard').on('touchstart mousedown', function(){
+				// Update GUI
+				gui.render.status('Find ' + name);
+
+				// Remove Previous Event Bindings
+				$('#clipboard, #sms, #email').off();
+
+				console.log(JSON.stringify(contact));
+
+				// Fetch Contact Details
+				var email = (contact && contact.emails && contact.emails.length > 0)
+					? contact.emails[0].value
+					: '';
+
+				var number = (contact && contact.phoneNumbers && contact.phoneNumbers.length > 0)
+					? contact.phoneNumbers[0].value
+					: '';
+
+				// Create Messages to Send
+				var message = 'Hey ' + first_name + ', can you hop on Facing so I can find you? '+ gui.base +'/invite/' + invite_code;
+				var html_message = 'Hey ' + first_name + ',<br><br>Can you hop on Facing so I can find you?<br><br><a href="'+ gui.base +'/invite/' + invite_code + '">'+ gui.base +'/invite/' + invite_code + '</a>';
+
+
+				// Setup SMS Button
+				if(number !== '')
+				{
+					number = number.replace(/[^0-9]/g, '');
+
+					$('#sms').on(gui.touchEvents, function(){
+
+						$('#sms').removeClass('animated swing');
+						setTimeout(function(){ $('#sms').addClass('animated swing'); }, 100);
+
+						if(sms && typeof sms.send !== 'undefined')
+						{
+							sms.send(number, message, '', function(){ gui.render.waitForFiend(); }, function(err){});
+						}
+						else
+						{
+							app.util.debug('warn', 'Device Unable to Send SMS');
+						}
+
+						return false;
+					});
+
+					// Show SMS button if it is hidden
+					$('#sms').fadeIn();
+				}
+				else
+				{
+					// Hide SMS Button since we can't use it
+					$('#sms').hide();
+				}
+
+
+				// Setup Email Button
+				if(email !== '')
+				{
+					$('#email').on(gui.touchEvents, function(){
+
+						$('#email').removeClass('animated swing');
+						setTimeout(function(){ $('#email').addClass('animated swing'); }, 100);
+
+						// Code for Devices
+						if(window.plugin && typeof window.plugin.email !== 'undefined')
+						{
+							// Create Email Contents
+							var email_options = {
+								to: [email],
+								subject: 'Facing App Invite',
+								body: html_message,
+								isHtml: true
+							};
+
+							// Check if the user has an existing email client
+							window.plugin.email.isServiceAvailable(
+
+								function (isAvailable)
+								{
+									// User has Email Service
+									if(isAvailable)
+									{
+										window.plugin.email.open(email_options, function(){
+											console.log('email view dismissed');
+										}, this);
+
+										gui.render.waitForFiend();
+									}
+									// User has No Email Service, alert them just in case its a new phone or something
+									else
+									{
+										navigator.notification.alert(
+											'You do not have any Email Clients setup to send Email.',
+											function(){},
+											'Unable to Send Email',
+											'OK'
+										);
+									}
+								}
+							);
+
+							return false;
+						}
+						// Fallback for Development
+						else
+						{
+							$('#email').attr('href', 'mailto:' + email + '?subject=' + encodeURIComponent('Facing App Invite') + '&body=' + encodeURIComponent(message)).show();
+							app.util.debug('warn', 'Device Unable to Send SMS');
+						}
+					});
+
+					// Show Email button if it is hidden
+					$('#email').fadeIn();
+				}
+				else
+				{
+					// Hide Email Button since we can't use it
+					$('#email').hide();
+				}
+
+
+				// Setup Clipboard Button
+				$('#clipboard').on(gui.touchEvents, function(){
+
+					$('#clipboard').removeClass('animated swing');
+					setTimeout(function(){ $('#clipboard').addClass('animated swing'); }, 100);
 
 					var text = gui.base + '/invite/' + invite_code;
 
@@ -313,24 +476,25 @@ var gui = {
 
 						navigator.notification.alert(
 							text,
-							function(){},
+							function(){
+								gui.render.waitForFiend();
+							},
 							'Copied to Clipboard',
 							'OK'
 						);
+					}
+					else
+					{
+						app.util.debug('warn', 'Unable to Copy to Device Clipboard');
 					}
 
 					return false;
 				});
 
-				app.io.createSpace(invite_code);
-				app.io.joinSpace(invite_code);
 
-				app.stats.event('Navigation', 'Contact', 'Displaying Selected Contact');
-
-				gui.render.status('Find ' + name);
-
+				// Update Contact Image
 				var contact_image = $('.find-a-friend');
-				contact_image.removeClass('no-image default');
+					contact_image.removeClass('no-image default');
 
 				if(contact && contact.photos && contact.photos[0].value != '')
 				{
@@ -343,56 +507,13 @@ var gui = {
 				}
 
 				contact_image.addClass('contact');
-				contact_image.css('background-position', '0px 0px');
 
-				var message = 'Hey ' + first_name + ', can you hop on Facing so I can find you? '+ gui.base +'/invite/' + invite_code;
-				var email_subject = encodeURIComponent('Facing App Invite');
-				var email_message = encodeURIComponent(message);
+				// Fade In Contact Options
+				$('.contact-options').show();
 
-				var number = (contact.phoneNumbers.length > 0)
-					? contact.phoneNumbers[0].value
-					: '';
-
-				if(number !== '')
-				{
-					number = number.replace(/[^0-9]/g, '');
-
-					$('#sms').on('touchstart mousedown', function(){
-
-						if(typeof sms !== 'undefined')
-						{
-							sms.send(number, message, 'INTENT', function(){}, function(err){
-								navigator.notification.alert(
-									err,
-									function(){},
-									'Failed to Send SMS',
-									'OK'
-								);
-							});
-						}
-
-						return false;
-					});
-				}
-				else
-				{
-					$('#sms').hide();
-				}
-
-				var email = (contact.emails.length > 0)
-					? contact.emails[0].value
-					: '';
-
-				if(email !== '')
-				{
-					$('#email').attr('href', 'mailto:' + email + '?subject=' + email_subject + '&body=' + email_message).show();
-				}
-				else
-				{
-					$('#email').hide();
-				}
-
-				$('.contact-options').fadeIn();
+				// Update Image
+				$('.find-a-friend').removeClass('animated flipInX');
+				setTimeout(function(){ $('.find-a-friend').addClass('animated flipInX'); }, 100);
 			},
 			reset: function(err)
 			{
@@ -476,6 +597,12 @@ var gui = {
 					$('.friend .compass ul').html(compass);
 				}
 			}
+		},
+		waitForFiend: function()
+		{
+			app.stats.event('Navigation', 'Contact', 'Using '+ $(this).attr('id') + ' with ID ' + $(this).data('invite_code'));
+			gui.render.status('<i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Waiting for '+ $(this).data('firstname') + ' to Connect');
+			$('.contact-options').fadeTo("slow" , 0.33);
 		}
 	}
 };

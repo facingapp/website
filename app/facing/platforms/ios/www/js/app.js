@@ -4,6 +4,7 @@ var app = {
     socket: null,
     uuid: null,
     initialized: false,
+	online: false,
     user_data: {
 	    app: {
 		    device: this.platform,
@@ -30,30 +31,83 @@ var app = {
     },
     bindEvents: function()
     {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    onDeviceReady: function()
-    {
-        app.receivedEvent('deviceready');
-    },
-    receivedEvent: function(id)
-    {
-        if(id == 'deviceready' && app.initialized === false)
-        {
-            app.initialized = true;
+        // The event fires when Cordova is fully loaded.
+        document.addEventListener('deviceready', app.events.deviceReady, false);
 
-            if(device)
-            {
-                app.uuid = device.uuid;
-            }
+	    // The event fires when an application is put into the background.
+	    document.addEventListener('pause', app.events.pause, false);
 
-            setTimeout(function() {
-                navigator.splashscreen.hide();
-            }, 2000);
+		// The event fires when an application is retrieved from the background.
+	    document.addEventListener('resume', app.events.resume, false);
 
-            app.hardware.start();
-        }
+	    document.addEventListener('batterycritical', app.events.batteryCritical, false);
+
+	    document.addEventListener('online', app.events.networkOnline, false);
+	    document.addEventListener('offline', app.events.networkOffline, false);
     },
+	events: {
+		deviceReady: function()
+		{
+			app.stats.event('App', 'Event', 'Device Ready');
+
+			app.initialized = true;
+
+			if(device)
+			{
+				app.uuid = device.uuid;
+			}
+
+			setTimeout(function() {
+				navigator.splashscreen.hide();
+			}, 2000);
+
+			app.hardware.start();
+		},
+		pause: function()
+		{
+			app.stats.event('App', 'Event', 'Application Paused');
+		},
+		resume: function()
+		{
+			app.stats.event('App', 'Event', 'Application Resumed');
+		},
+		batteryCritical: function(info)
+		{
+			app.stats.event('App', 'Event', 'Battery Critical: ' + info.level + '%');
+
+			gui.render.io('<i class="fa fa-bolt fa-fw"></i>');
+
+			navigator.notification.alert(
+				"Battery Level Critical " + info.level + "%\nRecharge Soon!",
+				function(){},
+				'Battery Level Critical',
+				'OK'
+			);
+		},
+		networkOnline: function()
+		{
+			app.stats.event('App', 'Event', 'Device Online');
+
+			gui.render.io('', true);
+
+			app.online = true;
+		},
+		networkOffline: function()
+		{
+			app.stats.event('App', 'Event', 'Device Offline');
+
+			gui.render.io('<i class="fa fa-exclamation-triangle fa-fw"></i>');
+
+			navigator.notification.alert(
+				'You won\'t be able to use Facing without a Network Connecting.',
+				function(){},
+				'Device Offline',
+				'OK'
+			);
+
+			app.online = false;
+		}
+	},
 	stats: {
 		init: function()
 		{
@@ -81,35 +135,35 @@ var app = {
 			app.util.debug('log', 'Socket Initialized');
 
 			app.socket.on('connect', function(){
-				gui.render.status('<i class="fa fa-check"></i>', true);
+				gui.render.io('<i class="fa fa-check"></i>', true);
 				app.util.debug('log', 'Socket Connected');
 
 				app.stats.event('Socket', 'Status', 'Connected');
 			});
 
 			app.socket.on('reconnect', function () {
-				gui.render.status('<i class="fa fa-history"></i>', true);
+				gui.render.io('<i class="fa fa-history"></i>', true);
 				app.util.debug('log', 'Socket Reconnected');
 
 				app.stats.event('Socket', 'Status', 'Reconnected');
 			});
 
 			app.socket.on('disconnect', function () {
-				gui.render.status('<i class="fa fa-times"></i>', true);
+				gui.render.io('<i class="fa fa-times"></i>', true);
 				app.util.debug('log', 'Socket Disconnected');
 
 				app.stats.event('Socket', 'Status', 'Disconnected');
 			});
 
 			app.socket.on('reconnecting', function () {
-				gui.render.status('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
+				gui.render.io('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
 				app.util.debug('log', 'Socket Reconnecting');
 
 				app.stats.event('Socket', 'Status', 'Reconnecting');
 			});
 
 			app.socket.on('error', function () {
-				gui.render.status('<i class="fa fa-exclamation-triangle"></i>', true);
+				gui.render.io('<i class="fa fa-exclamation-triangle"></i>', true);
 				app.util.debug('error', 'Socket Error');
 
 				app.stats.event('Socket', 'Status', 'Error');
@@ -120,7 +174,7 @@ var app = {
 				if(name != app.uuid)
 				{
 					gui.render.friend(data);
-					gui.render.status('<i class="fa fa-map-marker"></i>', true);
+					gui.render.io('<i class="fa fa-map-marker"></i>', true);
 					app.util.debug('log', 'Socket Received Data');
 					app.util.debug('log', data);
 				}
