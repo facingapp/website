@@ -1,5 +1,3 @@
-/* Copy & Rename File to: config.js */
-
 var config = {
 
 	/* General Application Settings */
@@ -10,22 +8,31 @@ var config = {
 
 		env: 'dev',
 
-		/* Socket IO */
-		socket: {
+		dev: {
 
-			dev: {
+			base: 'http://127.0.0.1:4000',
+
+			/* Development Socket IO */
+			socket: {
+
 				/* URL for Development Socket IO JavaScript File */
 				js: 'http://127.0.0.1:4000/socket.io/socket.io.js',
 
 				/* URL for Development Socket Server */
 				io: 'http://127.0.0.1:4000'
-			},
-			prod: {
-				/* URL for Socket IO JavaScript File */
-				js: 'https://app.myserver.com/socket.io/socket.io.js',
+			}
+		},
+		prod: {
 
-				/* URL for Socket Server */
-				io: 'https://app.myserver.com:443'
+			base: 'https://app.mywebsite.com',
+
+			/* Development Socket IO */
+			socket: {
+				/* URL for Production Socket IO JavaScript File */
+				js: 'https://app.mywebsite.com/socket.io/socket.io.js',
+
+				/* URL for Production Socket Server */
+				io: 'https://app.mywebsite.com:443'
 			}
 		}
 	},
@@ -34,6 +41,6 @@ var config = {
 	google: {
 
 		/* Analytics Code for Mobile App */
-		analytics: 'UA-53744207-2'
+		analytics: 'UA-XXXXXXXX-X'
 	}
 };
