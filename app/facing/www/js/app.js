@@ -44,6 +44,15 @@ var app = {
 
 	    document.addEventListener('online', app.events.networkOnline, false);
 	    document.addEventListener('offline', app.events.networkOffline, false);
+
+		/* Ad Specific Event Listeners */
+	    /*
+	    document.addEventListener('onReceiveAd', callback);
+	    document.addEventListener('onFailedToReceiveAd', callback);
+	    document.addEventListener('onDismissScreen', callback);
+	    document.addEventListener('onPresentScreen', callback);
+	    document.addEventListener('onLeaveApplication', callback);
+	    */
     },
 	events: {
 		deviceReady: function()
@@ -586,6 +595,105 @@ var app = {
 			}
 
 			return UID;
+		}
+	},
+	ad:
+	{
+		create:
+		{
+			newad: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Create', 'Creating New Ad Placeholder');
+
+				admob.createBannerView(
+					{
+						//'publisherId': config.google.admob.publisherId,
+						'publisherId': 'ca-app-pub-8493179978793685/2693809327',
+						'adSize': admob.AD_SIZE.SMART_BANNER
+					},
+					app.ad.create.success,
+					app.ad.create.error
+				);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Create', 'Successfully Created New Ad Placeholder');
+
+				// fix for weird glitch in ad placement
+				setTimeout(function(){
+					app.ad.request.newad();
+				}, 500);
+
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Create', 'Failed to Create New Ad Placeholder');
+			}
+		},
+		request:
+		{
+			newad: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Request', 'Requesting New Ad Content');
+
+				admob.requestAd(
+					{
+						'isTesting': false,
+						'extras': {
+							'color_bg': '222222',
+							'color_bg_top': '222222',
+							'color_border': '222222',
+							'color_link': '000080',
+							'color_text': 'ffffff',
+							'color_url': '008000'
+						},
+					},
+					app.ad.request.success,
+					app.ad.request.error
+				);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Request', 'Successfully Received New Ad Content');
+
+				gui.resize();
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Request', 'Failed to Receive New Ad Content');
+			}
+		},
+		remove:
+		{
+			killad: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Remove', 'Removing Ad Placeholder');
+
+				admob.killAd(app.ad.remove.success, app.ad.remove.error);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Remove', 'Successfully Removed Ad Placeholder');
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Remove', 'Failed to Remove Ad Placeholder');
+			}
 		}
 	}
 };

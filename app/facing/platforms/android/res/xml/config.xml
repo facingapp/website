@@ -125,4 +125,7 @@
     <feature name="Battery">
         <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
     </feature>
+    <feature name="AdMobPlugin">
+        <param name="android-package" value="com.google.cordova.plugin.AdMobPlugin" />
+    </feature>
 </widget>

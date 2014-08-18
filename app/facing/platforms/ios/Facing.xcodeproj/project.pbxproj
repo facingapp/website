@@ -69,6 +69,10 @@
 		FFFE86A5C70D4A1183A7A9D4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32892FA3DFCC480F83C6A11A /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6DC69076890944E3997B699B /* APPEmailComposer.m in Sources */ = {isa = PBXBuildFile; fileRef = 266A9FE27B8D4675A04D4176 /* APPEmailComposer.m */; };
 		5DEABDCBE6BD4D809331ED94 /* CDVBattery.m in Sources */ = {isa = PBXBuildFile; fileRef = D25B464CE3E640B5B734280C /* CDVBattery.m */; };
+		2A547ACF7FF54A59866A008E /* AdMobPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 48528F613FAD480DBFC3961A /* AdMobPlugin.m */; };
+		B38D1EAEDF5445569BAD1A93 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAE118757E845E2B58FEB5E /* libGoogleAdMobAds.a */; };
+		EF167191730D458B837C2E9F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E954885ACA884E18A13A9116 /* StoreKit.framework */; };
+		D2D3C8DB861D48899597D920 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6195D000AD5141988D8F02B1 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +203,20 @@
 		90ED9B92337944FC8280E4BB /* APPEmailComposer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "APPEmailComposer.h"; path = "de.appplant.cordova.plugin.email-composer/APPEmailComposer.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		D25B464CE3E640B5B734280C /* CDVBattery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVBattery.m"; path = "org.apache.cordova.battery-status/CDVBattery.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		B2385D53C2484F63962AC051 /* CDVBattery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVBattery.h"; path = "org.apache.cordova.battery-status/CDVBattery.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		48528F613FAD480DBFC3961A /* AdMobPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AdMobPlugin.m"; path = "com.google.cordova.plugin.AdMobPlugin/AdMobPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		9FAE118757E845E2B58FEB5E /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libGoogleAdMobAds.a"; path = "Facing/Plugins/com.google.cordova.plugin.AdMobPlugin/libGoogleAdMobAds.a"; sourceTree = "<group>"; fileEncoding = 4; };
+		E34C9AA5D53143928C608707 /* AdMobPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AdMobPlugin.h"; path = "com.google.cordova.plugin.AdMobPlugin/AdMobPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		BA99C3F8F1EB4488AA8C0CC2 /* GADAdMobExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADAdMobExtras.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADAdMobExtras.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		63209AD2841E486FB9C380DD /* GADAdNetworkExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADAdNetworkExtras.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADAdNetworkExtras.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7D51CABE206144DE97ACCB6E /* GADAdSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADAdSize.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADAdSize.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		B00FF200215B41D496A1C9C3 /* GADBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADBannerView.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADBannerView.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D9DB963D257A43258C2B5A0C /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADBannerViewDelegate.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADBannerViewDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9523235418CF46BDB17E9382 /* GADInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADInterstitial.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADInterstitial.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9B94EEC88F7A4B8FB9BBA802 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADInterstitialDelegate.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADInterstitialDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		81E56BB6BCC5453FB1498F0E /* GADRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADRequest.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADRequest.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		59B7AADA3FAF416A8B078BB0 /* GADRequestError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GADRequestError.h"; path = "com.google.cordova.plugin.AdMobPlugin/GADRequestError.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E954885ACA884E18A13A9116 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "StoreKit.framework"; path = "System/Library/Frameworks/StoreKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		6195D000AD5141988D8F02B1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AdSupport.framework"; path = "System/Library/Frameworks/AdSupport.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +239,9 @@
 				8BDBD74BE31C419B9B700A49 /* CoreData.framework in Frameworks */,
 				76CCC341DD19474BB0F4FDE2 /* libz.dylib in Frameworks */,
 				99397D55B51B41C3892AF8F8 /* libsqlite3.0.dylib in Frameworks */,
+				B38D1EAEDF5445569BAD1A93 /* libGoogleAdMobAds.a in Frameworks */,
+				EF167191730D458B837C2E9F /* StoreKit.framework in Frameworks */,
+				D2D3C8DB861D48899597D920 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +349,9 @@
 				32136D30930E4692B73FD819 /* CoreData.framework */,
 				AAAB285D03B948A580D21D97 /* libz.dylib */,
 				EDC8244335E944D9B74805D4 /* libsqlite3.0.dylib */,
+				9FAE118757E845E2B58FEB5E /* libGoogleAdMobAds.a */,
+				E954885ACA884E18A13A9116 /* StoreKit.framework */,
+				6195D000AD5141988D8F02B1 /* AdSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -395,6 +419,17 @@
 				90ED9B92337944FC8280E4BB /* APPEmailComposer.h */,
 				D25B464CE3E640B5B734280C /* CDVBattery.m */,
 				B2385D53C2484F63962AC051 /* CDVBattery.h */,
+				48528F613FAD480DBFC3961A /* AdMobPlugin.m */,
+				E34C9AA5D53143928C608707 /* AdMobPlugin.h */,
+				BA99C3F8F1EB4488AA8C0CC2 /* GADAdMobExtras.h */,
+				63209AD2841E486FB9C380DD /* GADAdNetworkExtras.h */,
+				7D51CABE206144DE97ACCB6E /* GADAdSize.h */,
+				B00FF200215B41D496A1C9C3 /* GADBannerView.h */,
+				D9DB963D257A43258C2B5A0C /* GADBannerViewDelegate.h */,
+				9523235418CF46BDB17E9382 /* GADInterstitial.h */,
+				9B94EEC88F7A4B8FB9BBA802 /* GADInterstitialDelegate.h */,
+				81E56BB6BCC5453FB1498F0E /* GADRequest.h */,
+				59B7AADA3FAF416A8B078BB0 /* GADRequestError.h */,
 			);
 			name = Plugins;
 			path = Facing/Plugins;
@@ -615,6 +650,7 @@
 				EEBA323F4AC742408E074D2F /* CDVClipboard.m in Sources */,
 				6DC69076890944E3997B699B /* APPEmailComposer.m in Sources */,
 				5DEABDCBE6BD4D809331ED94 /* CDVBattery.m in Sources */,
+				2A547ACF7FF54A59866A008E /* AdMobPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +720,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Facing/Plugins/com.danielcwilson.plugins.googleanalytics\"",
+					"\"$(SRCROOT)/Facing/Plugins/com.google.cordova.plugin.AdMobPlugin\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",
@@ -722,6 +759,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Facing/Plugins/com.danielcwilson.plugins.googleanalytics\"",
+					"\"$(SRCROOT)/Facing/Plugins/com.google.cordova.plugin.AdMobPlugin\"",
 				);
 				OTHER_LDFLAGS = (
 					"-weak_framework",

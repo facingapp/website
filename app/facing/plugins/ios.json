@@ -87,6 +87,10 @@
                         {
                             "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMobPlugin\"><param name=\"ios-package\" value=\"AdMobPlugin\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -108,7 +112,7 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": "false",
-                            "count": 2
+                            "count": 3
                         }
                     ],
                     "CoreMotion.framework": [
@@ -121,6 +125,10 @@
                         {
                             "xml": "true",
                             "count": 1
+                        },
+                        {
+                            "xml": "false",
+                            "count": 1
                         }
                     ],
                     "SystemConfiguration.framework": [
@@ -130,7 +138,7 @@
                         },
                         {
                             "xml": "false",
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "MapKit.framework": [],
@@ -138,6 +146,10 @@
                         {
                             "xml": "true",
                             "count": 2
+                        },
+                        {
+                            "xml": "false",
+                            "count": 1
                         }
                     ],
                     "CoreData.framework": [
@@ -153,6 +165,18 @@
                         }
                     ],
                     "libsqlite3.0.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "StoreKit.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AdSupport.framework": [
                         {
                             "xml": "false",
                             "count": 1
@@ -232,6 +256,9 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.google.cordova.plugin.AdMobPlugin": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

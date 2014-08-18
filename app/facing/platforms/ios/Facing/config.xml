@@ -75,6 +75,9 @@
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
+    <feature name="AdMobPlugin">
+        <param name="ios-package" value="AdMobPlugin" />
+    </feature>
     <name>Facing</name>
     <description>
         GPS &amp; Compass Frameworks to Connect People to Each Other http://youfacing.me

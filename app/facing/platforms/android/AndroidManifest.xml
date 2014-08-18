@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <provider android:authorities="com.manifestinteractive.facing.plugin.emailcomposer.attachmentprovider" android:name="de.appplant.cordova.plugin.emailcomposer.AttachmentProvider" />
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:name="com.google.ads.AdActivity" />
     </application>
     <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -27,4 +28,5 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

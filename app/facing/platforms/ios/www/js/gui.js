@@ -4,9 +4,19 @@ var gui = {
 	touchEvents: 'touchstart mousedown',
 	currentPanel: 'home',
 	base: (config.app.env == 'dev') ? config.app.dev.base : config.app.prod.base,
+	screen: {
+		width: screen.width,
+		height: screen.height
+	},
 	initialize: function()
 	{
 		app.util.debug('log', 'Setting up GUI');
+
+		if(screen.height <= 480)
+		{
+			$('.logo').css('top', '60px');
+			$('.information').css({ 'bottom': '60px', 'height': '60px' });
+		}
 
 		gui.prepareDevice();
 		gui.handle.navigation();
@@ -96,15 +106,16 @@ var gui = {
 				else
 				{
 					$('.logo').hide();
+					app.ad.remove.killad();
 				}
 
 				if(panel == 'my-data' || panel == 'friends-data')
 				{
-					app.hardware.start();
+					//app.hardware.start();
 				}
 				else
 				{
-					app.hardware.stop();
+					//app.hardware.stop();
 				}
 
 				return false;
@@ -232,6 +243,11 @@ var gui = {
 			});
 		}
 	},
+	resize: function()
+	{
+		$('.container, .content, .panel').width(gui.screen.width);
+		$('.container, .content, .panel').height(gui.screen.height);
+	},
 	animate: function()
 	{
 		clearTimeout(gui.timeout.message);
@@ -257,6 +273,8 @@ var gui = {
 	},
 	reset: function()
 	{
+		app.ad.remove.killad();
+
 		$('.reset-gui').fadeOut();
 		$('.logo').removeClass('animated fadeInDown fadeOut');
 		$('.find-a-friend').attr('style', '').removeClass('animated flipInX no-image contact');
@@ -596,7 +614,11 @@ var gui = {
 		{
 			app.stats.event('Navigation', 'Contact', 'Using '+ button_id + ' Button with ID ' + invite_code);
 			gui.render.status('<i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Waiting for '+ firstname + ' to Connect');
-			$('.contact-options').fadeTo("slow" , 0.33);
+			$('.contact-options').fadeOut();
+
+			setTimeout(function(){
+				app.ad.create.newad();
+			}, 250);
 		}
 	}
 };
