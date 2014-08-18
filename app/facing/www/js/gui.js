@@ -272,7 +272,7 @@ var gui = {
 
 		setTimeout(function(){
 			$('.find-a-friend').addClass('default animated flipInX');
-			$('.logo').removeClass('fadeLogo').addClass('animated fadeInDown');
+			$('.logo').removeClass('fadeLogo').addClass('animated fadeInDown').show();
 		}, 100);
 
 		gui.animate();
@@ -370,7 +370,7 @@ var gui = {
 
 						if(sms && typeof sms.send !== 'undefined')
 						{
-							sms.send(number, message, '', function(){ gui.render.waitForFiend(); }, function(err){});
+							sms.send(number, message, '', function(){ gui.render.waitForFiend('SMS', invite_code, first_name); }, function(err){});
 						}
 						else
 						{
@@ -421,7 +421,7 @@ var gui = {
 											console.log('email view dismissed');
 										}, this);
 
-										gui.render.waitForFiend();
+										gui.render.waitForFiend('Email', invite_code, first_name);
 									}
 									// User has No Email Service, alert them just in case its a new phone or something
 									else
@@ -471,7 +471,7 @@ var gui = {
 						navigator.notification.alert(
 							text,
 							function(){
-								gui.render.waitForFiend();
+								gui.render.waitForFiend('Clipboard', invite_code, first_name);
 							},
 							'Copied to Clipboard',
 							'OK'
@@ -592,10 +592,10 @@ var gui = {
 				}
 			}
 		},
-		waitForFiend: function()
+		waitForFiend: function(button_id, invite_code, firstname)
 		{
-			app.stats.event('Navigation', 'Contact', 'Using '+ $(this).attr('id') + ' with ID ' + $(this).data('invite_code'));
-			gui.render.status('<i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Waiting for '+ $(this).data('firstname') + ' to Connect');
+			app.stats.event('Navigation', 'Contact', 'Using '+ button_id + ' Button with ID ' + invite_code);
+			gui.render.status('<i class="fa fa-circle-o-notch fa-fw fa-spin"></i> Waiting for '+ firstname + ' to Connect');
 			$('.contact-options').fadeTo("slow" , 0.33);
 		}
 	}
