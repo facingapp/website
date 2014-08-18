@@ -614,6 +614,12 @@ var app = {
 					? config.google.admob.ad_units.android
 					: config.google.admob.ad_units.ios;
 
+				var options = {
+					adSize: AdMob.AD_SIZE.SMART_BANNER
+				};
+
+				AdMob.setOptions(options);
+
 				AdMob.createBanner(ad.banner, app.ad.create.success, app.ad.create.error);
 			},
 			success: function()
@@ -641,13 +647,8 @@ var app = {
 				}
 
 				app.stats.event('Advertising', 'Request', 'Requesting New Ad Content');
-				
-				var ad_position = {
-					top: (gui.screen.height - 160),
-					left: 0
-				};
-				
-				AdMob.showBannerAtXY(ad_position.left, ad_position.top, app.ad.display.success, app.ad.display.error);
+
+				AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTER, app.ad.display.success, app.ad.display.error);
 			},
 			success: function()
 			{

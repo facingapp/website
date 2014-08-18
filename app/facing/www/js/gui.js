@@ -12,6 +12,10 @@ var gui = {
 	{
 		app.util.debug('log', 'Setting up GUI');
 
+		// Force Width & Height on Elements that need it
+		gui.resize();
+
+		// reposition some elements for smaller screens
 		if(screen.height <= 480)
 		{
 			$('.logo').css('top', '60px');
