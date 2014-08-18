@@ -599,12 +599,24 @@ var app = {
 	},
 	ad:
 	{
+		generated: false,
+		showing: false,
 		create:
 		{
 			banner: function()
 			{
 				if(config.app.paidApp === true)
 				{
+					return false;
+				}
+
+				// Ad was already created, its just currently hidden
+				if(app.ad.generated)
+				{
+					setTimeout(function(){
+						app.ad.display.banner();
+					}, 250);
+
 					return false;
 				}
 
@@ -626,10 +638,9 @@ var app = {
 			{
 				app.stats.event('Advertising', 'Create', 'Successfully Created New Ad Placeholder');
 
-				// fix for weird glitch in ad placement
-				setTimeout(function(){
-					app.ad.display.banner();
-				}, 500);
+				app.ad.generated = true;
+
+				app.ad.display.banner();
 
 			},
 			error: function()
@@ -654,6 +665,8 @@ var app = {
 			{
 				app.stats.event('Advertising', 'Request', 'Successfully Received New Ad Content');
 
+				app.ad.showing = true;
+
 				gui.resize();
 			},
 			error: function()
@@ -677,6 +690,8 @@ var app = {
 			success: function()
 			{
 				app.stats.event('Advertising', 'Remove', 'Successfully Removed Ad Placeholder');
+
+				app.ad.showing = false;
 			},
 			error: function()
 			{
