@@ -601,7 +601,7 @@ var app = {
 	{
 		create:
 		{
-			newad: function()
+			banner: function()
 			{
 				if(config.app.paidApp === true)
 				{
@@ -610,15 +610,11 @@ var app = {
 
 				app.stats.event('Advertising', 'Create', 'Creating New Ad Placeholder');
 
-				admob.createBannerView(
-					{
-						//'publisherId': config.google.admob.publisherId,
-						'publisherId': 'ca-app-pub-8493179978793685/2693809327',
-						'adSize': admob.AD_SIZE.SMART_BANNER
-					},
-					app.ad.create.success,
-					app.ad.create.error
-				);
+				var ad = ( /(android)/i.test(navigator.userAgent) )
+					? config.google.admob.ad_units.android
+					: config.google.admob.ad_units.ios;
+
+				AdMob.createBanner(ad.banner, app.ad.create.success, app.ad.create.error);
 			},
 			success: function()
 			{
@@ -626,7 +622,7 @@ var app = {
 
 				// fix for weird glitch in ad placement
 				setTimeout(function(){
-					app.ad.request.newad();
+					app.ad.display.banner();
 				}, 500);
 
 			},
@@ -635,9 +631,9 @@ var app = {
 				app.stats.event('Advertising', 'Create', 'Failed to Create New Ad Placeholder');
 			}
 		},
-		request:
+		display:
 		{
-			newad: function()
+			banner: function()
 			{
 				if(config.app.paidApp === true)
 				{
@@ -645,22 +641,13 @@ var app = {
 				}
 
 				app.stats.event('Advertising', 'Request', 'Requesting New Ad Content');
-
-				admob.requestAd(
-					{
-						'isTesting': false,
-						'extras': {
-							'color_bg': '222222',
-							'color_bg_top': '222222',
-							'color_border': '222222',
-							'color_link': '000080',
-							'color_text': 'ffffff',
-							'color_url': '008000'
-						},
-					},
-					app.ad.request.success,
-					app.ad.request.error
-				);
+				
+				var ad_position = {
+					top: (gui.screen.height - 160),
+					left: 0
+				};
+				
+				AdMob.showBannerAtXY(ad_position.left, ad_position.top, app.ad.display.success, app.ad.display.error);
 			},
 			success: function()
 			{
@@ -675,7 +662,7 @@ var app = {
 		},
 		remove:
 		{
-			killad: function()
+			banner: function()
 			{
 				if(config.app.paidApp === true)
 				{
@@ -684,7 +671,7 @@ var app = {
 
 				app.stats.event('Advertising', 'Remove', 'Removing Ad Placeholder');
 
-				admob.killAd(app.ad.remove.success, app.ad.remove.error);
+				AdMob.hideBanner(app.ad.remove.success, app.ad.remove.error);
 			},
 			success: function()
 			{

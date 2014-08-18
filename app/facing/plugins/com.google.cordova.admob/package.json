@@ -1,0 +1,28 @@
+{
+    "version": "1.0.3",
+    "name": "com.google.cordova.admob",
+    "cordova_name": "AdMob Plugin Pro",
+    "description": "Best AdMob plugin for PhoneGap and Cordova, latest SDK for iOS and Android with Google Play Services. Most Flexible. Any size, Any position.",
+    "license": "MIT",
+    "repo": "https://github.com/floatinghotpot/cordova-admob-pro.git",
+    "issue": "https://github.com/floatinghotpot/cordova-admob-pro/issues",
+    "keywords": [
+        "ad",
+        "admob",
+        "google",
+        "play",
+        "services",
+        "iad",
+        "flurry"
+    ],
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=2.9"
+        }
+    ]
+}

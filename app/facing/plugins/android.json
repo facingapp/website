@@ -73,7 +73,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"AdMobPlugin\"><param name=\"android-package\" value=\"com.google.cordova.plugin.AdMobPlugin\" /></feature>",
+                            "xml": "<feature name=\"AdMob\"><param name=\"android-package\" value=\"com.google.cordova.admob.AdMob\" /></feature>",
                             "count": 1
                         }
                     ],
@@ -110,10 +110,6 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
                             "count": 2
-                        },
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 1
                         }
                     ],
                     "/*/application/activity": [
@@ -142,7 +138,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.ads.AdActivity\" />",
+                            "xml": "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.android.gms.ads.AdActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
                             "count": 1
                         }
                     ]
@@ -212,7 +212,7 @@
         "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
-        "com.google.cordova.plugin.AdMobPlugin": {
+        "com.google.cordova.admob": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },

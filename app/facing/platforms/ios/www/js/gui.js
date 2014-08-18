@@ -106,7 +106,7 @@ var gui = {
 				else
 				{
 					$('.logo').hide();
-					app.ad.remove.killad();
+					app.ad.remove.banner();
 				}
 
 				if(panel == 'my-data' || panel == 'friends-data')
@@ -273,7 +273,7 @@ var gui = {
 	},
 	reset: function()
 	{
-		app.ad.remove.killad();
+		app.ad.remove.banner();
 
 		$('.reset-gui').fadeOut();
 		$('.logo').removeClass('animated fadeInDown fadeOut');
@@ -617,7 +617,7 @@ var gui = {
 			$('.contact-options').fadeOut();
 
 			setTimeout(function(){
-				app.ad.create.newad();
+				app.ad.create.banner();
 			}, 250);
 		}
 	}
