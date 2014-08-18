@@ -8090,3 +8090,704 @@ objc[8531]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.ap
 2014-08-17 01:25:27.574 Facing[8531:70b] THREAD WARNING: ['Notification'] took '21.589844' ms. Plugin should use a background thread.
 2014-08-17 01:25:32.169 Facing[8531:70b] Resetting GUI ...
 2014-08-17 01:25:32.169 Facing[8531:70b] GUI Reset
+objc[31861]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 04:33:02.787 Facing[31861:70b] Cannot find executable for CFBundle 0xc18e220 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 04:33:02.790 Facing[31861:70b] Cannot find executable for CFBundle 0xc4aa330 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 04:33:02.793 Facing[31861:70b] Cannot find executable for CFBundle 0xc4b79d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 04:33:02.806 Facing[31861:70b] Cannot find executable for CFBundle 0xc072ea0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 04:33:02.831 Facing[31861:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 04:33:02.842 Facing[31861:70b] Unlimited access to network resources
+2014-08-18 04:33:02.877 Facing[31861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:33:02.878 Facing[31861:70b] [CDVTimer][splashscreen] 10.271966ms
+2014-08-18 04:33:02.880 Facing[31861:70b] [CDVTimer][statusbar] 2.351999ms
+2014-08-18 04:33:02.881 Facing[31861:70b] [CDVTimer][TotalPluginStartup] 13.665974ms
+2014-08-18 04:33:02.882 Facing[31861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:33:02.885 Facing[31861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:33:02.886 Facing[31861:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:33:02.982 Facing[31861:70b] Resetting plugins due to page load.
+2014-08-18 04:33:03.161 Facing[31861:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:33:42.450 Facing[31861:70b] Resetting plugins due to page load.
+2014-08-18 04:33:42.616 Facing[31861:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[32514]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 04:34:31.517 Facing[32514:70b] Cannot find executable for CFBundle 0xc62de60 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 04:34:31.542 Facing[32514:70b] Cannot find executable for CFBundle 0xbf3cb30 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 04:34:31.548 Facing[32514:70b] Cannot find executable for CFBundle 0xc03d0e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 04:34:31.554 Facing[32514:70b] Cannot find executable for CFBundle 0xc54f180 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 04:34:31.577 Facing[32514:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 04:34:31.587 Facing[32514:70b] Unlimited access to network resources
+2014-08-18 04:34:31.628 Facing[32514:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:34:31.629 Facing[32514:70b] [CDVTimer][splashscreen] 14.851987ms
+2014-08-18 04:34:31.632 Facing[32514:70b] [CDVTimer][statusbar] 2.810955ms
+2014-08-18 04:34:31.633 Facing[32514:70b] [CDVTimer][TotalPluginStartup] 18.791020ms
+2014-08-18 04:34:31.635 Facing[32514:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:34:31.639 Facing[32514:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:34:31.640 Facing[32514:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:34:31.732 Facing[32514:70b] Resetting plugins due to page load.
+2014-08-18 04:34:31.973 Facing[32514:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:35:10.356 Facing[32514:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 04:35:10.356 Facing[32514:70b] <GADBannerView: 0xc13b620; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc136b10>>
+2014-08-18 04:35:10.553 Facing[32514:70b] <Google> Invalid Request: {
+    "base_uri" = "http:";
+    "enable_auto_click_protection" = 0;
+    errors = "Cannot determine request type. Is your ad unit id correct?";
+    "google.afma.Notify_dt" = 1408350910541;
+    "request_id" = 1;
+    "request_scenario" = "online_request";
+    type = unknown;
+    "use_webview_loadurl" = 0;
+}
+2014-08-18 04:35:10.554 Facing[32514:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: Invalid ad request parameter(s).  Check the Xcode console for details.
+2014-08-18 04:35:10.644 Facing[32514:70b] <Google> Invalid Request: {
+    "base_uri" = "http:";
+    "enable_auto_click_protection" = 0;
+    errors = "Cannot determine request type. Is your ad unit id correct?";
+    "google.afma.Notify_dt" = 1408350910643;
+    "request_id" = 2;
+    "request_scenario" = "online_request";
+    type = unknown;
+    "use_webview_loadurl" = 0;
+}
+2014-08-18 04:35:10.645 Facing[32514:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: Invalid ad request parameter(s).  Check the Xcode console for details.
+objc[33318]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 04:38:11.265 Facing[33318:70b] Cannot find executable for CFBundle 0xc6237a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 04:38:11.269 Facing[33318:70b] Cannot find executable for CFBundle 0xc109210 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 04:38:11.273 Facing[33318:70b] Cannot find executable for CFBundle 0xc111260 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 04:38:11.290 Facing[33318:70b] Cannot find executable for CFBundle 0xc13b110 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 04:38:11.313 Facing[33318:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 04:38:11.322 Facing[33318:70b] Unlimited access to network resources
+2014-08-18 04:38:11.362 Facing[33318:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:38:11.363 Facing[33318:70b] [CDVTimer][splashscreen] 13.026953ms
+2014-08-18 04:38:11.366 Facing[33318:70b] [CDVTimer][statusbar] 2.730012ms
+2014-08-18 04:38:11.367 Facing[33318:70b] [CDVTimer][TotalPluginStartup] 16.905010ms
+2014-08-18 04:38:11.369 Facing[33318:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:38:11.372 Facing[33318:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:38:11.374 Facing[33318:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:38:11.493 Facing[33318:70b] Resetting plugins due to page load.
+2014-08-18 04:38:11.701 Facing[33318:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:38:23.750 Facing[33318:70b] Resetting plugins due to page load.
+2014-08-18 04:38:23.887 Facing[33318:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:38:52.499 Facing[33318:70b] Resetting plugins due to page load.
+2014-08-18 04:38:52.670 Facing[33318:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:38:53.113 Facing[33318:70b] THREAD WARNING: ['NetworkStatus'] took '16.020020' ms. Plugin should use a background thread.
+2014-08-18 04:39:04.310 Facing[33318:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 04:39:04.310 Facing[33318:70b] <GADBannerView: 0xc234860; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc234b10>>
+2014-08-18 04:39:04.326 Facing[33318:70b] THREAD WARNING: ['AdMobPlugin'] took '16.711914' ms. Plugin should use a background thread.
+2014-08-18 04:39:04.477 Facing[33318:70b] <Google> Invalid Request: {
+    "base_uri" = "http:";
+    "enable_auto_click_protection" = 0;
+    errors = "Cannot determine request type. Is your ad unit id correct?,Ad size (480,32) is too small.";
+    "google.afma.Notify_dt" = 1408351144465;
+    "request_id" = 1;
+    "request_scenario" = "online_request";
+    type = unknown;
+    "use_webview_loadurl" = 0;
+}
+2014-08-18 04:39:04.478 Facing[33318:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: Invalid ad request parameter(s).  Check the Xcode console for details.
+2014-08-18 04:39:04.570 Facing[33318:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:39:04.771 Facing[33318:70b] <Google> Invalid Request: {
+    "base_uri" = "http:";
+    "enable_auto_click_protection" = 0;
+    errors = "Cannot determine request type. Is your ad unit id correct?";
+    "google.afma.Notify_dt" = 1408351144770;
+    "request_id" = 2;
+    "request_scenario" = "online_request";
+    type = unknown;
+    "use_webview_loadurl" = 0;
+}
+2014-08-18 04:39:04.772 Facing[33318:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: Invalid ad request parameter(s).  Check the Xcode console for details.
+objc[34099]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 04:40:40.896 Facing[34099:70b] Cannot find executable for CFBundle 0xc5939c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 04:40:40.903 Facing[34099:70b] Cannot find executable for CFBundle 0xc08eb80 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 04:40:40.908 Facing[34099:70b] Cannot find executable for CFBundle 0xc097d90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 04:40:40.943 Facing[34099:70b] Cannot find executable for CFBundle 0xbf989e0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 04:40:40.960 Facing[34099:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 04:40:40.970 Facing[34099:70b] Unlimited access to network resources
+2014-08-18 04:40:41.013 Facing[34099:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:40:41.013 Facing[34099:70b] [CDVTimer][splashscreen] 12.367010ms
+2014-08-18 04:40:41.017 Facing[34099:70b] [CDVTimer][statusbar] 3.181994ms
+2014-08-18 04:40:41.018 Facing[34099:70b] [CDVTimer][TotalPluginStartup] 16.669035ms
+2014-08-18 04:40:41.020 Facing[34099:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:40:41.023 Facing[34099:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:40:41.025 Facing[34099:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:40:41.130 Facing[34099:70b] Resetting plugins due to page load.
+2014-08-18 04:40:41.493 Facing[34099:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:41:15.996 Facing[34099:70b] Resetting plugins due to page load.
+2014-08-18 04:41:16.145 Facing[34099:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html#
+2014-08-18 04:41:16.545 Facing[34099:70b] THREAD WARNING: ['NetworkStatus'] took '14.880859' ms. Plugin should use a background thread.
+Terminating in response to SpringBoard's termination.
+objc[34728]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 04:41:52.064 Facing[34728:70b] Cannot find executable for CFBundle 0xc4a4a00 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 04:41:52.081 Facing[34728:70b] Cannot find executable for CFBundle 0xc069bf0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 04:41:52.104 Facing[34728:70b] Cannot find executable for CFBundle 0xbf99290 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 04:41:52.107 Facing[34728:70b] Cannot find executable for CFBundle 0xc2d3890 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 04:41:52.118 Facing[34728:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 04:41:52.131 Facing[34728:70b] Unlimited access to network resources
+2014-08-18 04:41:52.172 Facing[34728:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:41:52.172 Facing[34728:70b] [CDVTimer][splashscreen] 12.180984ms
+2014-08-18 04:41:52.176 Facing[34728:70b] [CDVTimer][statusbar] 2.938986ms
+2014-08-18 04:41:52.176 Facing[34728:70b] [CDVTimer][TotalPluginStartup] 16.228020ms
+2014-08-18 04:41:52.178 Facing[34728:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:41:52.182 Facing[34728:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:41:52.183 Facing[34728:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 04:41:52.271 Facing[34728:70b] Resetting plugins due to page load.
+2014-08-18 04:41:52.464 Facing[34728:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 04:41:53.122 Facing[34728:70b] Socket Connected
+2014-08-18 04:42:09.973 Facing[34728:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 04:42:09.974 Facing[34728:70b] <GADBannerView: 0xc3759d0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc3704e0>>
+2014-08-18 04:42:09.985 Facing[34728:70b] THREAD WARNING: ['AdMobPlugin'] took '12.206055' ms. Plugin should use a background thread.
+2014-08-18 04:42:10.277 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:42:11.123 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:43:10.898 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:43:11.245 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:44:11.810 Facing[34728:70b] <GADBannerView: 0xc18e9e0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc18fbf0>>
+2014-08-18 04:44:11.833 Facing[34728:70b] THREAD WARNING: ['AdMobPlugin'] took '22.812012' ms. Plugin should use a background thread.
+2014-08-18 04:44:12.215 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:44:12.234 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:44:24.941 Facing[34728:70b] <GADBannerView: 0xc18e9e0; frame = (0 430; 320 50); clipsToBounds = YES; layer = <CALayer: 0xc18fbf0>>
+2014-08-18 04:44:24.953 Facing[34728:70b] THREAD WARNING: ['AdMobPlugin'] took '11.673096' ms. Plugin should use a background thread.
+2014-08-18 04:44:25.317 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:45:25.358 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:45:25.628 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:46:26.073 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:47:26.072 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:47:26.426 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:48:26.694 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:49:26.763 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:49:27.064 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:50:27.433 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:51:27.448 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:51:28.154 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:52:28.064 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:53:28.139 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:53:28.388 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:54:29.098 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:55:28.775 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:55:29.270 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:56:29.432 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:57:29.425 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:57:29.666 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:58:30.003 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 04:59:30.072 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 04:59:30.294 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:00:53.737 Facing[34728:70b] <GADBannerView: 0xc0a0980; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc08ee10>>
+2014-08-18 05:00:53.756 Facing[34728:70b] THREAD WARNING: ['AdMobPlugin'] took '19.494873' ms. Plugin should use a background thread.
+2014-08-18 05:00:54.123 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:00:54.129 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:00:56.374 Facing[34728:70b] <GADBannerView: 0xc0a0980; frame = (0 430; 320 50); clipsToBounds = YES; layer = <CALayer: 0xc08ee10>>
+2014-08-18 05:00:56.385 Facing[34728:70b] THREAD WARNING: ['AdMobPlugin'] took '11.238037' ms. Plugin should use a background thread.
+2014-08-18 05:00:56.937 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:01:56.792 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:01:57.010 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:02:57.443 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:03:57.477 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:03:57.912 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:04:58.009 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:05:58.099 Facing[34728:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:05:58.333 Facing[34728:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:06:45.312 Facing[34728:70b] Resetting plugins due to page load.
+2014-08-18 05:06:45.472 Facing[34728:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:06:45.973 Facing[34728:70b] Socket Connected
+objc[36832]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:09:15.165 Facing[36832:70b] Cannot find executable for CFBundle 0xc3824b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:09:15.172 Facing[36832:70b] Cannot find executable for CFBundle 0xc084890 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:09:15.196 Facing[36832:70b] Cannot find executable for CFBundle 0xbf95c90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:09:15.199 Facing[36832:70b] Cannot find executable for CFBundle 0xbf996b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:09:15.219 Facing[36832:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:09:15.232 Facing[36832:70b] Unlimited access to network resources
+2014-08-18 05:09:15.279 Facing[36832:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:09:15.280 Facing[36832:70b] [CDVTimer][splashscreen] 15.008032ms
+2014-08-18 05:09:15.283 Facing[36832:70b] [CDVTimer][statusbar] 2.793968ms
+2014-08-18 05:09:15.284 Facing[36832:70b] [CDVTimer][TotalPluginStartup] 19.042015ms
+2014-08-18 05:09:15.286 Facing[36832:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:09:15.290 Facing[36832:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:09:15.292 Facing[36832:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:09:15.408 Facing[36832:70b] Resetting plugins due to page load.
+2014-08-18 05:09:15.714 Facing[36832:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:09:55.056 Facing[36832:70b] Resetting plugins due to page load.
+2014-08-18 05:09:55.232 Facing[36832:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+objc[37506]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:11:13.409 Facing[37506:70b] Cannot find executable for CFBundle 0xc47e2a0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:11:13.429 Facing[37506:70b] Cannot find executable for CFBundle 0xc2a00f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:11:13.452 Facing[37506:70b] Cannot find executable for CFBundle 0xc07f650 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:11:13.459 Facing[37506:70b] Cannot find executable for CFBundle 0xc694b10 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:11:13.474 Facing[37506:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:11:13.486 Facing[37506:70b] Unlimited access to network resources
+2014-08-18 05:11:13.529 Facing[37506:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:11:13.530 Facing[37506:70b] [CDVTimer][splashscreen] 14.123976ms
+2014-08-18 05:11:13.534 Facing[37506:70b] [CDVTimer][statusbar] 2.871990ms
+2014-08-18 05:11:13.534 Facing[37506:70b] [CDVTimer][TotalPluginStartup] 18.162012ms
+2014-08-18 05:11:13.536 Facing[37506:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:11:13.539 Facing[37506:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:11:13.541 Facing[37506:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:11:13.656 Facing[37506:70b] Resetting plugins due to page load.
+2014-08-18 05:11:13.859 Facing[37506:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:11:14.467 Facing[37506:70b] Socket Connected
+2014-08-18 05:13:45.111 Facing[37506:70b] GUI Reset
+2014-08-18 05:14:00.232 Facing[37506:70b] Picking a Friend ...
+2014-08-18 05:14:00.242 Facing[37506:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:14:00.292 Facing[37506:70b] THREAD WARNING: ['Contacts'] took '59.995361' ms. Plugin should use a background thread.
+2014-08-18 05:14:01.608 Facing[37506:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_5HHhi","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:14:01.609 Facing[37506:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_5HHhi","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:14:01.739 Facing[37506:70b] Socket Disconnected
+2014-08-18 05:14:02.724 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:04.771 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:07.807 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:11.839 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:16.851 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:21.890 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:26.914 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:31.935 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:36.947 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:41.976 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:46.993 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:52.008 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:14:57.020 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:02.052 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:07.072 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:12.091 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:17.118 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:22.141 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:27.162 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:32.174 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:37.186 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:42.195 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:47.233 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:52.284 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:15:57.299 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:02.306 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:07.324 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:12.340 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:17.349 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:22.355 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:27.366 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:32.376 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:37.386 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:42.394 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:47.406 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:52.432 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:16:57.441 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:02.466 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:07.472 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:12.502 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:17.513 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:21.031 Facing[37506:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 05:17:21.032 Facing[37506:70b] <GADBannerView: 0xbf734a0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xbf9b7d0>>
+2014-08-18 05:17:21.061 Facing[37506:70b] THREAD WARNING: ['AdMobPlugin'] took '29.700195' ms. Plugin should use a background thread.
+2014-08-18 05:17:21.356 Facing[37506:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:17:21.944 Facing[37506:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:17:22.524 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:27.603 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:32.625 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:37.748 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:42.764 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:47.786 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:52.803 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:17:57.812 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:02.826 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:07.848 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:12.857 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:17.864 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:22.872 Facing[37506:70b] Socket Reconnecting
+2014-08-18 05:18:26.048 Facing[37506:70b] Resetting GUI ...
+2014-08-18 05:18:26.048 Facing[37506:70b] GUI Reset
+2014-08-18 05:18:27.882 Facing[37506:70b] Socket Reconnecting
+Terminating in response to SpringBoard's termination.
+objc[38509]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:18:47.903 Facing[38509:70b] Cannot find executable for CFBundle 0xc628bf0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:18:47.927 Facing[38509:70b] Cannot find executable for CFBundle 0xbf3d290 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:18:47.931 Facing[38509:70b] Cannot find executable for CFBundle 0xc0311b0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:18:47.937 Facing[38509:70b] Cannot find executable for CFBundle 0xbf4c5d0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:18:47.955 Facing[38509:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:18:47.965 Facing[38509:70b] Unlimited access to network resources
+2014-08-18 05:18:48.014 Facing[38509:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:18:48.014 Facing[38509:70b] [CDVTimer][splashscreen] 18.208027ms
+2014-08-18 05:18:48.018 Facing[38509:70b] [CDVTimer][statusbar] 3.323972ms
+2014-08-18 05:18:48.019 Facing[38509:70b] [CDVTimer][TotalPluginStartup] 23.167014ms
+2014-08-18 05:18:48.022 Facing[38509:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:18:48.027 Facing[38509:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:18:48.029 Facing[38509:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:18:48.132 Facing[38509:70b] Resetting plugins due to page load.
+2014-08-18 05:18:48.409 Facing[38509:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:19:12.538 Facing[38509:70b] Resetting plugins due to page load.
+2014-08-18 05:19:12.688 Facing[38509:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:19:36.266 Facing[38509:70b] Resetting plugins due to page load.
+2014-08-18 05:19:36.417 Facing[38509:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:19:36.999 Facing[38509:70b] Socket Connected
+2014-08-18 05:19:44.415 Facing[38509:70b] Picking a Friend ...
+2014-08-18 05:19:44.415 Facing[38509:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:19:44.438 Facing[38509:70b] THREAD WARNING: ['Contacts'] took '22.670898' ms. Plugin should use a background thread.
+2014-08-18 05:19:45.744 Facing[38509:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_lFbx3","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:19:45.744 Facing[38509:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_lFbx3","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:19:45.801 Facing[38509:70b] Socket Disconnected
+2014-08-18 05:19:46.807 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:19:48.306 Facing[38509:70b] THREAD WARNING: ['AdMobPlugin'] took '18.621826' ms. Plugin should use a background thread.
+2014-08-18 05:19:48.307 Facing[38509:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 05:19:48.308 Facing[38509:70b] <GADBannerView: 0xc22dff0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc233850>>
+2014-08-18 05:19:48.323 Facing[38509:70b] THREAD WARNING: ['AdMobPlugin'] took '15.737061' ms. Plugin should use a background thread.
+2014-08-18 05:19:48.567 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:19:48.858 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:19:49.164 Facing[38509:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: A network error occurred.
+2014-08-18 05:19:51.866 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:19:55.878 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:00.990 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:05.998 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:11.006 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:15.822 Facing[38509:70b] <GADBannerView: 0xc22dff0; frame = (0 430; 320 50); clipsToBounds = YES; layer = <CALayer: 0xc233850>>
+2014-08-18 05:20:15.837 Facing[38509:70b] THREAD WARNING: ['AdMobPlugin'] took '14.885010' ms. Plugin should use a background thread.
+2014-08-18 05:20:15.932 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:20:16.024 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:16.309 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:20:21.038 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:26.140 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:31.249 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:36.287 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:41.298 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:46.400 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:51.409 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:20:56.551 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:01.634 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:06.648 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:11.738 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:16.495 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:21:16.821 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:21.896 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:26.914 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:31.921 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:36.932 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:41.949 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:46.960 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:51.969 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:21:57.006 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:02.018 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:07.034 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:12.095 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:16.527 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:22:16.729 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:22:17.104 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:22.230 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:27.338 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:30.727 Facing[38509:70b] Resetting GUI ...
+2014-08-18 05:22:30.731 Facing[38509:70b] GUI Reset
+2014-08-18 05:22:32.419 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:33.984 Facing[38509:70b] Picking a Friend ...
+2014-08-18 05:22:33.984 Facing[38509:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:22:35.390 Facing[38509:70b] {"id":2,"rawId":null,"displayName":null,"name":{"givenName":"Karen","formatted":"Karen Gillan","middleName":null,"familyName":"Gillan","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_smMyb","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:22:35.390 Facing[38509:70b] {"id":2,"rawId":null,"displayName":null,"name":{"givenName":"Karen","formatted":"Karen Gillan","middleName":null,"familyName":"Gillan","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_smMyb","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:22:37.431 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:37.547 Facing[38509:70b] THREAD WARNING: ['Notification'] took '34.970703' ms. Plugin should use a background thread.
+2014-08-18 05:22:38.944 Facing[38509:70b] <GADBannerView: 0xc653810; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc678980>>
+2014-08-18 05:22:38.965 Facing[38509:70b] THREAD WARNING: ['AdMobPlugin'] took '21.052979' ms. Plugin should use a background thread.
+2014-08-18 05:22:39.382 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:22:39.687 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:22:42.439 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:47.458 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:52.555 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:22:57.646 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:02.655 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:07.749 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:12.884 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:17.891 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:22.900 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:27.923 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:32.932 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:37.946 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:39.872 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:23:42.959 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:48.057 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:53.158 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:23:58.172 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:03.191 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:08.199 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:13.210 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:18.217 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:23.225 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:28.258 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:33.264 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:38.278 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:39.953 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:24:41.289 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:24:43.301 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:48.468 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:53.477 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:24:58.496 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:03.508 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:08.526 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:13.542 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:18.550 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:23.580 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:28.597 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:33.609 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:38.617 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:40.522 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:25:43.630 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:48.754 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:53.774 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:25:58.794 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:03.806 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:08.839 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:13.858 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:18.880 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:23.894 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:28.919 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:33.927 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:38.939 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:40.562 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:26:41.209 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:26:43.951 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:49.185 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:54.194 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:26:59.209 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:04.232 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:09.242 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:14.254 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:19.274 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:24.284 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:29.309 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:34.332 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:39.350 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:41.079 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:27:44.393 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:49.505 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:54.527 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:27:59.537 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:04.547 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:09.587 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:14.631 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:19.639 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:24.669 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:29.705 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:34.710 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:39.728 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:41.166 Facing[38509:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:28:41.359 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:28:44.766 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:49.775 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:54.788 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:28:59.819 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:04.848 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:09.861 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:14.883 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:19.905 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:24.912 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:29.922 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:34.949 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:39.984 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:42.102 Facing[38509:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:29:45.002 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:50.103 Facing[38509:70b] Socket Reconnecting
+2014-08-18 05:29:55.116 Facing[38509:70b] Socket Reconnecting
+objc[39790]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:30:19.829 Facing[39790:70b] Cannot find executable for CFBundle 0xc554ac0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:30:19.845 Facing[39790:70b] Cannot find executable for CFBundle 0xbf8f630 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:30:19.870 Facing[39790:70b] Cannot find executable for CFBundle 0xbfb0170 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:30:19.873 Facing[39790:70b] Cannot find executable for CFBundle 0xc24e070 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:30:19.888 Facing[39790:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:30:19.901 Facing[39790:70b] Unlimited access to network resources
+2014-08-18 05:30:19.959 Facing[39790:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:30:19.960 Facing[39790:70b] [CDVTimer][splashscreen] 14.322042ms
+2014-08-18 05:30:19.964 Facing[39790:70b] [CDVTimer][statusbar] 3.305972ms
+2014-08-18 05:30:19.965 Facing[39790:70b] [CDVTimer][TotalPluginStartup] 19.034028ms
+2014-08-18 05:30:19.967 Facing[39790:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:30:19.972 Facing[39790:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:30:19.974 Facing[39790:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:30:20.088 Facing[39790:70b] Resetting plugins due to page load.
+2014-08-18 05:30:20.533 Facing[39790:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:30:20.932 Facing[39790:70b] Socket Connected
+2014-08-18 05:30:33.325 Facing[39790:70b] Picking a Friend ...
+2014-08-18 05:30:33.325 Facing[39790:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:30:33.351 Facing[39790:70b] THREAD WARNING: ['Contacts'] took '25.934814' ms. Plugin should use a background thread.
+2014-08-18 05:30:34.772 Facing[39790:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_yQS0H","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:30:34.773 Facing[39790:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_yQS0H","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:30:34.863 Facing[39790:70b] Socket Disconnected
+2014-08-18 05:30:35.884 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:30:36.473 Facing[39790:70b] THREAD WARNING: ['AdMobPlugin'] took '22.696045' ms. Plugin should use a background thread.
+2014-08-18 05:30:36.474 Facing[39790:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 05:30:36.475 Facing[39790:70b] <GADBannerView: 0xc468ee0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc46d130>>
+2014-08-18 05:30:36.500 Facing[39790:70b] THREAD WARNING: ['AdMobPlugin'] took '25.739014' ms. Plugin should use a background thread.
+2014-08-18 05:30:36.800 Facing[39790:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:30:37.284 Facing[39790:70b] -[AdMobPlugin adView:didFailToReceiveAdWithError:]: Failed to receive ad with error: Request Error: A network error occurred.
+2014-08-18 05:30:37.890 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:30:41.130 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:30:45.205 Facing[39790:70b] Resetting GUI ...
+2014-08-18 05:30:45.210 Facing[39790:70b] GUI Reset
+2014-08-18 05:30:45.358 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:30:46.692 Facing[39790:70b] Picking a Friend ...
+2014-08-18 05:30:46.693 Facing[39790:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:30:47.713 Facing[39790:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_kqyCj","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:30:47.713 Facing[39790:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_kqyCj","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:30:48.921 Facing[39790:70b] <GADBannerView: 0xc4749a0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc46ebd0>>
+2014-08-18 05:30:48.942 Facing[39790:70b] THREAD WARNING: ['AdMobPlugin'] took '20.639160' ms. Plugin should use a background thread.
+2014-08-18 05:30:49.030 Facing[39790:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:30:49.514 Facing[39790:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:30:50.452 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:30:55.467 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:31:00.604 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:31:05.711 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:31:10.871 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:31:15.881 Facing[39790:70b] Socket Reconnecting
+2014-08-18 05:31:21.054 Facing[39790:70b] Socket Reconnecting
+objc[40453]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:31:43.358 Facing[40453:70b] Cannot find executable for CFBundle 0xbf29f90 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:31:43.367 Facing[40453:70b] Cannot find executable for CFBundle 0xbf39c40 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:31:43.391 Facing[40453:70b] Cannot find executable for CFBundle 0xc23eba0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:31:43.408 Facing[40453:70b] Cannot find executable for CFBundle 0xc458eb0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:31:43.424 Facing[40453:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:31:43.438 Facing[40453:70b] Unlimited access to network resources
+2014-08-18 05:31:43.493 Facing[40453:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:31:43.494 Facing[40453:70b] [CDVTimer][splashscreen] 22.925973ms
+2014-08-18 05:31:43.498 Facing[40453:70b] [CDVTimer][statusbar] 3.640056ms
+2014-08-18 05:31:43.499 Facing[40453:70b] [CDVTimer][TotalPluginStartup] 28.317988ms
+2014-08-18 05:31:43.502 Facing[40453:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:31:43.506 Facing[40453:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:31:43.508 Facing[40453:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:31:43.630 Facing[40453:70b] Resetting plugins due to page load.
+2014-08-18 05:31:44.419 Facing[40453:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+Terminating in response to SpringBoard's termination.
+objc[41070]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:32:32.310 Facing[41070:70b] Cannot find executable for CFBundle 0xc1257c0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:32:32.322 Facing[41070:70b] Cannot find executable for CFBundle 0xc13d190 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:32:32.331 Facing[41070:70b] Cannot find executable for CFBundle 0xc114730 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:32:32.350 Facing[41070:70b] Cannot find executable for CFBundle 0xbf4ade0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:32:32.368 Facing[41070:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:32:32.379 Facing[41070:70b] Unlimited access to network resources
+2014-08-18 05:32:32.425 Facing[41070:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:32:32.426 Facing[41070:70b] [CDVTimer][splashscreen] 13.058007ms
+2014-08-18 05:32:32.430 Facing[41070:70b] [CDVTimer][statusbar] 3.248990ms
+2014-08-18 05:32:32.431 Facing[41070:70b] [CDVTimer][TotalPluginStartup] 17.773986ms
+2014-08-18 05:32:32.433 Facing[41070:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:32:32.437 Facing[41070:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:32:32.439 Facing[41070:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:32:32.552 Facing[41070:70b] Resetting plugins due to page load.
+2014-08-18 05:32:33.015 Facing[41070:70b] THREAD WARNING: ['NetworkStatus'] took '11.278809' ms. Plugin should use a background thread.
+2014-08-18 05:32:33.021 Facing[41070:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:32:33.548 Facing[41070:70b] Socket Connected
+2014-08-18 05:32:39.261 Facing[41070:70b] Picking a Friend ...
+2014-08-18 05:32:39.262 Facing[41070:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:32:39.295 Facing[41070:70b] THREAD WARNING: ['Contacts'] took '33.258057' ms. Plugin should use a background thread.
+2014-08-18 05:32:40.510 Facing[41070:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_HvvFi","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:32:40.510 Facing[41070:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_HvvFi","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:32:40.577 Facing[41070:70b] Socket Disconnected
+2014-08-18 05:32:41.604 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:32:43.156 Facing[41070:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 05:32:43.156 Facing[41070:70b] <GADBannerView: 0xc37f060; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc389ef0>>
+2014-08-18 05:32:43.175 Facing[41070:70b] THREAD WARNING: ['AdMobPlugin'] took '19.765137' ms. Plugin should use a background thread.
+2014-08-18 05:32:43.385 Facing[41070:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:32:43.634 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:32:43.973 Facing[41070:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:32:46.763 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:32:50.775 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:32:55.856 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:00.962 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:05.973 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:11.047 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:16.139 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:21.157 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:26.229 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:31.300 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:36.312 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:41.398 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:43.746 Facing[41070:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:33:44.055 Facing[41070:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:33:46.473 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:51.553 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:33:56.635 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:34:01.726 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:34:06.733 Facing[41070:70b] Socket Reconnecting
+2014-08-18 05:34:11.806 Facing[41070:70b] Socket Reconnecting
+Terminating in response to SpringBoard's termination.
+objc[41762]: Class AXEmojiUtilities is implemented in both /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities and /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libAXSpeechManager.dylib. One of the two will be used. Which one is undefined.
+2014-08-18 05:34:25.995 Facing[41762:70b] Cannot find executable for CFBundle 0xc281c40 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/MusicLibrary.axbundle> (not loaded)
+2014-08-18 05:34:26.000 Facing[41762:70b] Cannot find executable for CFBundle 0xc643e20 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/GeoServices.axbundle> (not loaded)
+2014-08-18 05:34:26.004 Facing[41762:70b] Cannot find executable for CFBundle 0xc54edd0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/StoreKitFramework.axbundle> (not loaded)
+2014-08-18 05:34:26.022 Facing[41762:70b] Cannot find executable for CFBundle 0xc6548f0 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
+2014-08-18 05:34:26.048 Facing[41762:70b] Multi-tasking -> Device: YES, App: YES
+2014-08-18 05:34:26.056 Facing[41762:70b] Unlimited access to network resources
+2014-08-18 05:34:26.096 Facing[41762:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:34:26.097 Facing[41762:70b] [CDVTimer][splashscreen] 14.072001ms
+2014-08-18 05:34:26.100 Facing[41762:70b] [CDVTimer][statusbar] 2.525985ms
+2014-08-18 05:34:26.101 Facing[41762:70b] [CDVTimer][TotalPluginStartup] 17.733037ms
+2014-08-18 05:34:26.102 Facing[41762:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:34:26.106 Facing[41762:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:34:26.107 Facing[41762:70b] WARNING: The splashscreen image named LaunchImage-Portrait was not found
+2014-08-18 05:34:26.195 Facing[41762:70b] Resetting plugins due to page load.
+2014-08-18 05:34:26.508 Facing[41762:70b] Finished load of: file:///Users/manifestinteractive/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/Facing.app/www/index.html
+2014-08-18 05:34:27.037 Facing[41762:70b] Socket Connected
+2014-08-18 05:34:30.269 Facing[41762:70b] Picking a Friend ...
+2014-08-18 05:34:30.270 Facing[41762:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:34:30.286 Facing[41762:70b] THREAD WARNING: ['Contacts'] took '16.133057' ms. Plugin should use a background thread.
+2014-08-18 05:34:32.118 Facing[41762:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_jNkrr","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:34:32.119 Facing[41762:70b] {"id":1,"rawId":null,"displayName":null,"name":{"givenName":"Peter","formatted":"Peter Schmalfeldt","middleName":null,"familyName":"Schmalfeldt","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":[{"type":"home","value":"(314) 920-9201","id":0,"pref":false},{"type":"work","value":"(314) 884-0301","id":1,"pref":false}],"emails":[{"type":"home","value":"manifestinteractive@gmail.com","id":0,"pref":false},{"type":"work","value":"me@peterschmalfeldt.com","id":1,"pref":false}],"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_jNkrr","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:34:32.173 Facing[41762:70b] Socket Disconnected
+2014-08-18 05:34:33.203 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:34.832 Facing[41762:70b] <Google> To get test ads on this device, call: request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID, nil];
+2014-08-18 05:34:34.832 Facing[41762:70b] <GADBannerView: 0xc237250; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc2f6780>>
+2014-08-18 05:34:34.851 Facing[41762:70b] THREAD WARNING: ['AdMobPlugin'] took '18.951904' ms. Plugin should use a background thread.
+2014-08-18 05:34:34.992 Facing[41762:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:34:35.217 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:35.495 Facing[41762:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:34:38.222 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:42.280 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:45.055 Facing[41762:70b] Resetting GUI ...
+2014-08-18 05:34:45.155 Facing[41762:70b] GUI Reset
+2014-08-18 05:34:46.453 Facing[41762:70b] Picking a Friend ...
+2014-08-18 05:34:46.453 Facing[41762:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:34:47.359 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:47.608 Facing[41762:70b] {"id":2,"rawId":null,"displayName":null,"name":{"givenName":"Karen","formatted":"Karen Gillan","middleName":null,"familyName":"Gillan","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_B8snJ","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:34:47.609 Facing[41762:70b] {"id":2,"rawId":null,"displayName":null,"name":{"givenName":"Karen","formatted":"Karen Gillan","middleName":null,"familyName":"Gillan","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":[{"pref":"false","value":"/Users/manifestinteractive/Library/Application Support/iPhone Simulator/7.1/Applications/2BC16225-800B-4107-A2FF-FDDE032BED4D/tmp/photo_B8snJ","type":"url"}],"categories":null,"urls":null}
+2014-08-18 05:34:49.535 Facing[41762:70b] THREAD WARNING: ['Notification'] took '17.547119' ms. Plugin should use a background thread.
+2014-08-18 05:34:52.364 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:34:52.903 Facing[41762:70b] <GADBannerView: 0xc54f3e0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc584540>>
+2014-08-18 05:34:52.923 Facing[41762:70b] THREAD WARNING: ['AdMobPlugin'] took '20.022949' ms. Plugin should use a background thread.
+2014-08-18 05:34:53.009 Facing[41762:70b] <Google:HTML> Google Mobile Ads SDK: You are currently using 6.5.1 of the SDK. A new version, 6.11.1, is available at http://goo.gl/Zc0BYt . Please consider updating your SDK to get the latest features and bug fixes
+2014-08-18 05:34:53.140 Facing[41762:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:34:53.496 Facing[41762:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:34:57.406 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:02.486 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:03.794 Facing[41762:70b] Resetting GUI ...
+2014-08-18 05:35:03.798 Facing[41762:70b] GUI Reset
+2014-08-18 05:35:05.983 Facing[41762:70b] Picking a Friend ...
+2014-08-18 05:35:05.983 Facing[41762:70b] Exception - Name: NSRangeException Reason: *** -[__NSArrayM objectAtIndex:]: index 0 beyond bounds for empty array
+2014-08-18 05:35:07.040 Facing[41762:70b] {"id":3,"rawId":null,"displayName":null,"name":{"givenName":"John","formatted":"John Doe","middleName":null,"familyName":"Doe","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":null,"categories":null,"urls":null}
+2014-08-18 05:35:07.040 Facing[41762:70b] {"id":3,"rawId":null,"displayName":null,"name":{"givenName":"John","formatted":"John Doe","middleName":null,"familyName":"Doe","honorificPrefix":null,"honorificSuffix":null},"nickname":null,"phoneNumbers":null,"emails":null,"addresses":null,"ims":null,"organizations":null,"birthday":null,"note":null,"photos":null,"categories":null,"urls":null}
+2014-08-18 05:35:07.492 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:11.855 Facing[41762:70b] <GADBannerView: 0xc2a0ce0; frame = (0 0; 480 32); clipsToBounds = YES; layer = <CALayer: 0xc29fe20>>
+2014-08-18 05:35:11.876 Facing[41762:70b] THREAD WARNING: ['AdMobPlugin'] took '21.400879' ms. Plugin should use a background thread.
+2014-08-18 05:35:12.529 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:12.697 Facing[41762:70b] -[AdMobPlugin adViewDidReceiveAd:]: Received ad successfully.
+2014-08-18 05:35:16.038 Facing[41762:70b] Resetting GUI ...
+2014-08-18 05:35:16.123 Facing[41762:70b] GUI Reset
+2014-08-18 05:35:17.533 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:22.538 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:27.548 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:32.624 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:37.700 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:42.777 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:47.784 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:52.860 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:35:57.938 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:03.014 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:08.083 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:13.152 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:18.236 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:23.242 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:28.318 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:33.386 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:38.469 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:43.476 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:48.552 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:53.631 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:36:58.716 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:03.722 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:08.797 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:13.867 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:18.942 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:24.016 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:29.096 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:34.175 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:39.204 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:44.280 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:49.426 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:54.432 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:37:59.440 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:38:04.515 Facing[41762:70b] Socket Reconnecting
+2014-08-18 05:38:09.590 Facing[41762:70b] Socket Reconnecting

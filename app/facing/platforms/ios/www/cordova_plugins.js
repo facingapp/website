@@ -256,6 +256,13 @@ module.exports = [
         "clobbers": [
             "navigator.battery"
         ]
+    },
+    {
+        "file": "plugins/com.google.cordova.plugin.AdMobPlugin/www/AdMobPlugin.js",
+        "id": "com.google.cordova.plugin.AdMobPlugin.AdMob",
+        "clobbers": [
+            "window.admob"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -280,7 +287,8 @@ module.exports.metadata =
     "com.verso.cordova.clipboard": "0.1.0",
     "org.apache.cordova.plugin.sms": "0.1.0",
     "de.appplant.cordova.plugin.email-composer": "0.8.1",
-    "org.apache.cordova.battery-status": "0.2.10"
+    "org.apache.cordova.battery-status": "0.2.10",
+    "com.google.cordova.plugin.AdMobPlugin": "0.0.2"
 }
 // BOTTOM OF METADATA
 });

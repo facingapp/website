@@ -71,6 +71,10 @@
                         {
                             "xml": "<feature name=\"Battery\"><param name=\"android-package\" value=\"org.apache.cordova.batterystatus.BatteryListener\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"AdMobPlugin\"><param name=\"android-package\" value=\"com.google.cordova.plugin.AdMobPlugin\" /></feature>",
+                            "count": 1
                         }
                     ],
                     "/widget": []
@@ -101,10 +105,14 @@
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
-                            "count": 2
+                            "count": 3
                         },
                         {
                             "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 2
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
                             "count": 1
                         }
                     ],
@@ -131,6 +139,10 @@
                     "/manifest/application": [
                         {
                             "xml": "<provider android:authorities=\"com.manifestinteractive.facing.plugin.emailcomposer.attachmentprovider\" android:name=\"de.appplant.cordova.plugin.emailcomposer.AttachmentProvider\"></provider>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:configChanges=\"keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize\" android:name=\"com.google.ads.AdActivity\" />",
                             "count": 1
                         }
                     ]
@@ -198,6 +210,9 @@
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
         "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "com.manifestinteractive.facing"
+        },
+        "com.google.cordova.plugin.AdMobPlugin": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },
