@@ -12,6 +12,10 @@ var gui = {
 	{
 		app.util.debug('log', 'Setting up GUI');
 
+		// Force Width & Height on Elements that need it
+		gui.resize();
+
+		// reposition some elements for smaller screens
 		if(screen.height <= 480)
 		{
 			$('.logo').css('top', '60px');
@@ -106,7 +110,7 @@ var gui = {
 				else
 				{
 					$('.logo').hide();
-					app.ad.remove.killad();
+					app.ad.remove.banner();
 				}
 
 				if(panel == 'my-data' || panel == 'friends-data')
@@ -273,7 +277,7 @@ var gui = {
 	},
 	reset: function()
 	{
-		app.ad.remove.killad();
+		app.ad.remove.banner();
 
 		$('.reset-gui').fadeOut();
 		$('.logo').removeClass('animated fadeInDown fadeOut');
@@ -617,7 +621,7 @@ var gui = {
 			$('.contact-options').fadeOut();
 
 			setTimeout(function(){
-				app.ad.create.newad();
+				app.ad.create.banner();
 			}, 250);
 		}
 	}

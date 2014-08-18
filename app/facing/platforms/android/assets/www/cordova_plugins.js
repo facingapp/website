@@ -202,10 +202,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.google.cordova.plugin.AdMobPlugin/www/AdMobPlugin.js",
-        "id": "com.google.cordova.plugin.AdMobPlugin.AdMob",
+        "file": "plugins/com.google.cordova.admob/www/AdMob.js",
+        "id": "com.google.cordova.admob.AdMob",
         "clobbers": [
-            "window.admob"
+            "window.AdMob"
         ]
     }
 ];
@@ -232,7 +232,7 @@ module.exports.metadata =
     "org.apache.cordova.plugin.sms": "0.1.0",
     "de.appplant.cordova.plugin.email-composer": "0.8.1",
     "org.apache.cordova.battery-status": "0.2.10",
-    "com.google.cordova.plugin.AdMobPlugin": "0.0.2"
+    "com.google.cordova.admob": "1.0.3"
 }
 // BOTTOM OF METADATA
 });

@@ -89,7 +89,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"AdMobPlugin\"><param name=\"ios-package\" value=\"AdMobPlugin\" /></feature>",
+                            "xml": "<feature name=\"AdMob\"><param name=\"ios-package\" value=\"CDVAdMob\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -181,6 +181,24 @@
                             "xml": "false",
                             "count": 1
                         }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "Foundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "UIKit.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -258,7 +276,7 @@
         "org.apache.cordova.battery-status": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         },
-        "com.google.cordova.plugin.AdMobPlugin": {
+        "com.google.cordova.admob": {
             "PACKAGE_NAME": "com.manifestinteractive.facing"
         }
     },
