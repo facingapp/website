@@ -22,6 +22,11 @@ var gui = {
 			$('.information').css({ 'bottom': '60px', 'height': '60px' });
 		}
 
+		if(config.app.env == 'dev')
+		{
+			$('.content').append('<div class="dev"><\/div>');
+		}
+
 		gui.prepareDevice();
 		gui.handle.navigation();
 		gui.handle.contacts();

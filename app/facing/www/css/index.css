@@ -400,7 +400,16 @@ a.tooltip span b {
     text-align: center;
     text-transform: uppercase;
 }
-
+.dev
+{
+    background-image: url(../img/dev.png);
+    width: 52px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 @media only screen and (min-width: 600px)
 {
     .find-a-friend {

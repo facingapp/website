@@ -13,6 +13,7 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/res/drawable-port-xhdpi/screen.png \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/res/drawable-xhdpi/icon.png \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/res/values/strings.xml \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/res/values/version.xml \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/res/xml/config.xml \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/res/drawable/icon.png \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/res/drawable-hdpi/icon.png \

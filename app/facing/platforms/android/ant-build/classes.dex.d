@@ -6,6 +6,7 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/Manifest.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$attr.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$drawable.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$integer.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$string.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R$xml.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/manifestinteractive/facing/R.class \
@@ -16,12 +17,18 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/ququplay/websocket/WebSocket$2.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/ququplay/websocket/WebSocket$3.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/ququplay/websocket/WebSocket.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/com/verso/cordova/clipboard/Clipboard.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/de/appplant/cordova/plugin/emailcomposer/AttachmentProvider.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/de/appplant/cordova/plugin/emailcomposer/EmailComposer$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/de/appplant/cordova/plugin/emailcomposer/EmailComposer.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/Flashlight$1.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/Flashlight.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/Insomnia$1.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/Insomnia$2.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/Insomnia.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/nl/xservices/plugins/LaunchMyApp.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/batterystatus/BatteryListener$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/batterystatus/BatteryListener.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/camera/CameraLauncher.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/camera/ExifHelper.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/camera/FileHelper.class \
@@ -59,6 +66,8 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/dialogs/Notification.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager$1.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/networkinformation/NetworkManager.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/plugin/sms/Sms$1.class \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/plugin/sms/Sms.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/java_websocket/AbstractWrappedByteChannel.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/java_websocket/client/AbstractClientProxyChannel.class \
@@ -118,3 +127,5 @@
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/classes/org/java_websocket/WrappedByteChannel.class \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/classes-25249d529e84d3ab8048897021052327.jar \
 /Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/libGoogleAnalyticsServices-f7f6f12867eec09a5ade58d91d177e92.jar \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/cordova-admob-fae174a9d109fd91daac1d838422453c.jar \
+/Volumes/Storage/Github/facing/app/facing/platforms/android/ant-build/dexedLibs/google-play-services-b0f1685e0739a4bb7a34b3c3029a3a7c.jar \

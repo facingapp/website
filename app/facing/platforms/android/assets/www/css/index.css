@@ -87,9 +87,15 @@
     height: 63px;
     background-size: 210px 63px;
     position: absolute;
-    top: 12%;
-    opacity: 0.75;
+    top: 80px;
     z-index: 500;
+}
+.fadeLogo
+{
+    -webkit-animation: fadeLogo 2s;
+    -moz-animation: fadeLogo 2s;
+    animation: fadeLogo 2s;
+    opacity: 0.35;
 }
 .io
 {
@@ -217,7 +223,7 @@ ul.menu a
     background-position: 0 0;
     margin: auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 5 !important;
+    z-index: 999 !important;
     background-size: 200px 200px;
 
     -webkit-box-shadow:
@@ -236,32 +242,33 @@ ul.menu a
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    /* border-radius: 50% has issues on some mobile browsers */
-
-    -webkit-animation: nopulse 4s linear infinite;
-    -moz-animation: nopulse 4s linear infinite;
-    animation: nopulse 4s linear infinite;
 }
 .find-a-friend.default
 {
     background-image: url(../img/default-user-200.jpg);
     background-size: 2000px 200px;
+    background-position: 0px 0px;
 }
 .find-a-friend.contact
 {
     background-size: cover;
-    background-position: 0px 0px;
+    background-position: center center;
 }
 .find-a-friend.no-image
 {
     background-image: url(../img/no-image-200.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 .pulse1 {
     position: absolute;
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1 !important;
     opacity: 0;
     border: 3px solid rgba(255,255,255,.1);
@@ -285,7 +292,10 @@ ul.menu a
     width: 220px;
     height: 220px;
     margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 2 !important;
     opacity: 0;
     border: 1px solid rgba(255,255,255,0);
@@ -407,12 +417,13 @@ a.tooltip span b {
     .find-a-friend.no-image
     {
         background-image: url(../img/no-image-350.jpg);
-        background-size: 350px 350px;
+        background-size: cover;
+        background-position: center center;
     }
     .find-a-friend.contact
     {
         background-size: cover;
-        background-position: 0px 0px;
+        background-position: center center;
     }
     .pulse1 {
         width: 370px;

@@ -2,8 +2,8 @@ AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.youfacing\.me$
-RewriteRule ^/?$ "https\:\/\/youfacing\.me\/" [R=301,L]
 
-RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
-RewriteRule .* – [F,L]
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^invite/([A-Za-z0-9]+)$ invite.html?id=$1
