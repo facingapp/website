@@ -2,6 +2,4 @@
 *.perspectivev3
 *.pbxuser
 .DS_Store
-build/*
-Facing/Plugins/*
-www/plugins/*
+build/
