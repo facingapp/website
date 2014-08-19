@@ -1,0 +1,4 @@
+ant-build/classes/*
+assets/www/*
+res/*
+src/*
