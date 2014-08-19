@@ -1558,6 +1558,12 @@
           <string>facing</string>
         </array>
       </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>facing</string>
+        </array>
+      </dict>
     </array>
     <key>CFBundleVersion</key>
     <string>0.0.1</string>
