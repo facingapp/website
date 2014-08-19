@@ -4,6 +4,7 @@ var app = {
     socket: null,
     uuid: null,
     initialized: false,
+	online: false,
     user_data: {
 	    app: {
 		    device: this.platform,
@@ -30,30 +31,92 @@ var app = {
     },
     bindEvents: function()
     {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    onDeviceReady: function()
-    {
-        app.receivedEvent('deviceready');
-    },
-    receivedEvent: function(id)
-    {
-        if(id == 'deviceready' && app.initialized === false)
-        {
-            app.initialized = true;
+        // The event fires when Cordova is fully loaded.
+        document.addEventListener('deviceready', app.events.deviceReady, false);
 
-            if(device)
-            {
-                app.uuid = device.uuid;
-            }
+	    // The event fires when an application is put into the background.
+	    document.addEventListener('pause', app.events.pause, false);
 
-            setTimeout(function() {
-                navigator.splashscreen.hide();
-            }, 2000);
+		// The event fires when an application is retrieved from the background.
+	    document.addEventListener('resume', app.events.resume, false);
 
-            app.hardware.start();
-        }
+	    document.addEventListener('batterycritical', app.events.batteryCritical, false);
+
+	    document.addEventListener('online', app.events.networkOnline, false);
+	    document.addEventListener('offline', app.events.networkOffline, false);
+
+		/* Ad Specific Event Listeners */
+	    /*
+	    document.addEventListener('onReceiveAd', callback);
+	    document.addEventListener('onFailedToReceiveAd', callback);
+	    document.addEventListener('onDismissScreen', callback);
+	    document.addEventListener('onPresentScreen', callback);
+	    document.addEventListener('onLeaveApplication', callback);
+	    */
     },
+	events: {
+		deviceReady: function()
+		{
+			app.stats.event('App', 'Event', 'Device Ready');
+
+			app.initialized = true;
+
+			if(device)
+			{
+				app.uuid = device.uuid;
+			}
+
+			setTimeout(function() {
+				navigator.splashscreen.hide();
+			}, 2000);
+
+			app.hardware.start();
+		},
+		pause: function()
+		{
+			app.stats.event('App', 'Event', 'Application Paused');
+		},
+		resume: function()
+		{
+			app.stats.event('App', 'Event', 'Application Resumed');
+		},
+		batteryCritical: function(info)
+		{
+			app.stats.event('App', 'Event', 'Battery Critical: ' + info.level + '%');
+
+			gui.render.io('<i class="fa fa-bolt fa-fw"></i>');
+
+			navigator.notification.alert(
+				"Battery Level Critical " + info.level + "%\nRecharge Soon!",
+				function(){},
+				'Battery Level Critical',
+				'OK'
+			);
+		},
+		networkOnline: function()
+		{
+			app.stats.event('App', 'Event', 'Device Online');
+
+			gui.render.io('', true);
+
+			app.online = true;
+		},
+		networkOffline: function()
+		{
+			app.stats.event('App', 'Event', 'Device Offline');
+
+			gui.render.io('<i class="fa fa-exclamation-triangle fa-fw"></i>');
+
+			navigator.notification.alert(
+				'You won\'t be able to use Facing without a Network Connecting.',
+				function(){},
+				'Device Offline',
+				'OK'
+			);
+
+			app.online = false;
+		}
+	},
 	stats: {
 		init: function()
 		{
@@ -532,6 +595,93 @@ var app = {
 			}
 
 			return UID;
+		}
+	},
+	ad:
+	{
+		create:
+		{
+			banner: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Create', 'Creating New Ad Placeholder');
+
+				var ad = ( /(android)/i.test(navigator.userAgent) )
+					? config.google.admob.ad_units.android
+					: config.google.admob.ad_units.ios;
+
+				var options = {
+					adSize: AdMob.AD_SIZE.SMART_BANNER
+				};
+
+				AdMob.setOptions(options);
+
+				AdMob.createBanner(ad.banner, app.ad.create.success, app.ad.create.error);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Create', 'Successfully Created New Ad Placeholder');
+
+				// fix for weird glitch in ad placement
+				setTimeout(function(){
+					app.ad.display.banner();
+				}, 500);
+
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Create', 'Failed to Create New Ad Placeholder');
+			}
+		},
+		display:
+		{
+			banner: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Request', 'Requesting New Ad Content');
+
+				AdMob.showBanner(AdMob.AD_POSITION.BOTTOM_CENTER, app.ad.display.success, app.ad.display.error);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Request', 'Successfully Received New Ad Content');
+
+				gui.resize();
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Request', 'Failed to Receive New Ad Content');
+			}
+		},
+		remove:
+		{
+			banner: function()
+			{
+				if(config.app.paidApp === true)
+				{
+					return false;
+				}
+
+				app.stats.event('Advertising', 'Remove', 'Removing Ad Placeholder');
+
+				AdMob.hideBanner(app.ad.remove.success, app.ad.remove.error);
+			},
+			success: function()
+			{
+				app.stats.event('Advertising', 'Remove', 'Successfully Removed Ad Placeholder');
+			},
+			error: function()
+			{
+				app.stats.event('Advertising', 'Remove', 'Failed to Remove Ad Placeholder');
+			}
 		}
 	}
 };

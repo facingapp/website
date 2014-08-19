@@ -40,6 +40,7 @@ body {
 {
 	font-weight: normal;
 	line-height: 40px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 }
 .header p
 {
@@ -100,6 +101,18 @@ body {
 .btn-default.woohoo:hover
 {
 	background: #222222;
+}
+#launch
+{
+    background: #89CEDD;
+    color: #fff;
+    margin-left: 10px;
+}
+#launch:hover
+{
+    background: #222222;
+    color: #fff;
+    margin-left: 10px;
 }
 html.svg .logo a
 {

@@ -1,5 +1,6 @@
 var app = {
 
+	timeout: {},
 	platform: (typeof device != 'undefined') ? device.platform : 'desktop',
     socket: null,
     uuid: null,
@@ -21,10 +22,18 @@ var app = {
 			    ? config.app.dev.socket.io
 			    : config.app.prod.socket.io;
 
-		    app.socket = io.connect(io_url);
-		    app.io.init();
+		    try
+		    {
+			    app.socket = io.connect(io_url);
+			    app.io.init();
 
-		    app.util.debug('debug', 'Connecting to Socket on ' + io_url);
+			    app.util.debug('debug', 'Connecting to Socket on ' + io_url);
+		    }
+		    catch(err)
+		    {
+			    app.util.debug('debug', 'Failed to Connect to Socket on ' + io_url);
+		    }
+
 	    }
 
 	    app.stats.init();
@@ -84,7 +93,10 @@ var app = {
 		{
 			app.stats.event('App', 'Event', 'Battery Critical: ' + info.level + '%');
 
-			gui.render.io('<i class="fa fa-bolt fa-fw"></i>');
+			clearTimeout(app.timeout.io);
+			app.timeout.io = setTimeout(function(){
+				gui.render.io('<i class="fa fa-bolt fa-fw"></i>');
+			}, 0);
 
 			navigator.notification.alert(
 				"Battery Level Critical " + info.level + "%\nRecharge Soon!",
@@ -97,7 +109,10 @@ var app = {
 		{
 			app.stats.event('App', 'Event', 'Device Online');
 
-			gui.render.io('', true);
+			clearTimeout(app.timeout.io);
+			app.timeout.io = setTimeout(function(){
+				gui.render.io('', true);
+			}, 0);
 
 			app.online = true;
 		},
@@ -105,7 +120,10 @@ var app = {
 		{
 			app.stats.event('App', 'Event', 'Device Offline');
 
-			gui.render.io('<i class="fa fa-exclamation-triangle fa-fw"></i>');
+			clearTimeout(app.timeout.io);
+			app.timeout.io = setTimeout(function(){
+				gui.render.io('<i class="fa fa-exclamation-triangle fa-fw"></i>');
+			}, 0);
 
 			navigator.notification.alert(
 				'You won\'t be able to use Facing without a Network Connecting.',
@@ -144,37 +162,57 @@ var app = {
 			app.util.debug('log', 'Socket Initialized');
 
 			app.socket.on('connect', function(){
-				gui.render.io('<i class="fa fa-check"></i>', true);
-				app.util.debug('log', 'Socket Connected');
 
+				clearTimeout(app.timeout.io);
+				app.timeout.io = setTimeout(function(){
+					gui.render.io('<i class="fa fa-check"></i>', true);
+				}, 0);
+
+				app.util.debug('log', 'Socket Connected');
 				app.stats.event('Socket', 'Status', 'Connected');
 			});
 
 			app.socket.on('reconnect', function () {
-				gui.render.io('<i class="fa fa-history"></i>', true);
-				app.util.debug('log', 'Socket Reconnected');
 
+				clearTimeout(app.timeout.io);
+				app.timeout.io = setTimeout(function(){
+					gui.render.io('<i class="fa fa-history"></i>', true);
+				}, 0);
+
+				app.util.debug('log', 'Socket Reconnected');
 				app.stats.event('Socket', 'Status', 'Reconnected');
 			});
 
 			app.socket.on('disconnect', function () {
-				gui.render.io('<i class="fa fa-times"></i>', true);
-				app.util.debug('log', 'Socket Disconnected');
 
+				clearTimeout(app.timeout.io);
+				app.timeout.io = setTimeout(function(){
+					gui.render.io('<i class="fa fa-times"></i>', true);
+				}, 0);
+
+				app.util.debug('log', 'Socket Disconnected');
 				app.stats.event('Socket', 'Status', 'Disconnected');
 			});
 
 			app.socket.on('reconnecting', function () {
-				gui.render.io('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
-				app.util.debug('log', 'Socket Reconnecting');
 
+				clearTimeout(app.timeout.io);
+				app.timeout.io = setTimeout(function(){
+					gui.render.io('<i class="fa fa-circle-o-notch fa-spin"></i>', true);
+				}, 0);
+
+				app.util.debug('log', 'Socket Reconnecting');
 				app.stats.event('Socket', 'Status', 'Reconnecting');
 			});
 
 			app.socket.on('error', function () {
-				gui.render.io('<i class="fa fa-exclamation-triangle"></i>', true);
-				app.util.debug('error', 'Socket Error');
 
+				clearTimeout(app.timeout.io);
+				app.timeout.io = setTimeout(function(){
+					gui.render.io('<i class="fa fa-exclamation-triangle"></i>', true);
+				}, 0);
+
+				app.util.debug('error', 'Socket Error');
 				app.stats.event('Socket', 'Status', 'Error');
 			});
 
@@ -183,7 +221,12 @@ var app = {
 				if(name != app.uuid)
 				{
 					gui.render.friend(data);
-					gui.render.io('<i class="fa fa-map-marker"></i>', true);
+
+					clearTimeout(app.timeout.io);
+					app.timeout.io = setTimeout(function(){
+						gui.render.io('<i class="fa fa-map-marker"></i>', true);
+					}, 0);
+
 					app.util.debug('log', 'Socket Received Data');
 					app.util.debug('log', data);
 				}
@@ -191,13 +234,19 @@ var app = {
 		},
 		createSpace: function(invite_code)
 		{
-			app.socket.emit('createSpace', invite_code, app.uuid);
+			if(app.socket && typeof app.socket.emit !== 'null')
+			{
+				app.socket.emit('createSpace', invite_code, app.uuid);
+			}
 
 			app.stats.event('Socket', 'Create', 'New Space ' + invite_code + ' created by ' + app.uuid);
 		},
 		joinSpace: function(invite_code)
 		{
-			app.socket.emit('switchSpace', invite_code, app.uuid);
+			if(app.socket && typeof app.socket.emit !== 'null')
+			{
+				app.socket.emit('switchSpace', invite_code, app.uuid);
+			}
 
 			app.stats.event('Socket', 'Join', app.uuid + ' joined ' + invite_code);
 		}
@@ -615,7 +664,17 @@ var app = {
 					: config.google.admob.ad_units.ios;
 
 				var options = {
-					adSize: AdMob.AD_SIZE.SMART_BANNER
+					adSize: AdMob.AD_SIZE.SMART_BANNER,
+					isTesting: (config.app.env == 'dev'),
+					adExtras:
+					{
+						color_bg: '00151c',
+						color_bg_top: '00151c',
+						color_border: '00151c',
+						color_link: '5c8064',
+						color_text: 'FFFFFF',
+						color_url: '5c8064'
+					}
 				};
 
 				AdMob.setOptions(options);
@@ -672,7 +731,10 @@ var app = {
 
 				app.stats.event('Advertising', 'Remove', 'Removing Ad Placeholder');
 
-				AdMob.hideBanner(app.ad.remove.success, app.ad.remove.error);
+				if(typeof AdMob !== 'undefined')
+				{
+					AdMob.hideBanner(app.ad.remove.success, app.ad.remove.error);
+				}
 			},
 			success: function()
 			{
