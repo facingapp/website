@@ -5,7 +5,7 @@ html, body
 }
 body
 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
 }
@@ -36,6 +36,22 @@ ul, li
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.video-player
+{
+    width: 238px;
+    height: 500px;
+    background: url(../img/feature.png) center center no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+.video-player iframe
+{
+    position: absolute;
+    left: 18px;
+    top: 71px;
+    width: 205px;
+    height: 361px;
 }
 .main-header
 {
@@ -90,7 +106,6 @@ html.svg .logo a
     font-size: 36.492px;
     color: #fff;
     line-height: 1.2;
-    text-transform: uppercase;
     font-weight: 200;
 }
 .button
