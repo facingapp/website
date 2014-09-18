@@ -45,13 +45,22 @@ ul, li
     position: relative;
     margin: 0 auto;
 }
-.video-player iframe
+.video-player .video-wrapper
 {
     position: absolute;
     left: 18px;
     top: 71px;
     width: 205px;
     height: 361px;
+    overflow: hidden;
+}
+.video-player .video-wrapper iframe
+{
+    position: absolute;
+    left: -212px;
+    top: 0;
+    width: 629px;
+    height: 363px;
 }
 .main-header
 {
