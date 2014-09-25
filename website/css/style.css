@@ -161,15 +161,16 @@ html.svg .logo a
     border-radius: 5px;
     -webkit-transition: background .5s ease-in;
     transition: background .5s ease-in;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 .social a
 {
     color: #fff;
-    background: #f68e21;
+    font-size: 40px;
 }
 .social a:hover
 {
-    background: #da7e1d;
+    color: #87ccdc;
 }
 .main-nav
 {
