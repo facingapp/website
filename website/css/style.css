@@ -201,7 +201,10 @@ html.svg .logo a
 }
 .subscribe
 {
-    margin: 3.2em 0 4.8em;
+    margin: 0 auto;
+    width: 400px;
+    padding: 3.2em 0 4.8em;
+    white-space: nowrap;
 }
 #mc-notification, .contact-form .error
 {
@@ -348,6 +351,13 @@ small.copyright a
     {
         width: 250px;
         height: 73px;
+    }
+    .subscribe
+    {
+        margin: 0 auto;
+        width: 200px;
+        padding: 2.2em 0 3.8em;
+        white-space: normal;
     }
 }
 @media (max-width: 991px)
