@@ -161,15 +161,16 @@ html.svg .logo a
     border-radius: 5px;
     -webkit-transition: background .5s ease-in;
     transition: background .5s ease-in;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
 }
 .social a
 {
     color: #fff;
-    background: #f68e21;
+    font-size: 40px;
 }
 .social a:hover
 {
-    background: #da7e1d;
+    color: #87ccdc;
 }
 .main-nav
 {
@@ -200,7 +201,10 @@ html.svg .logo a
 }
 .subscribe
 {
-    margin: 3.2em 0 4.8em;
+    margin: 0 auto;
+    width: 400px;
+    padding: 3.2em 0 4.8em;
+    white-space: nowrap;
 }
 #mc-notification, .contact-form .error
 {
@@ -347,6 +351,13 @@ small.copyright a
     {
         width: 250px;
         height: 73px;
+    }
+    .subscribe
+    {
+        margin: 0 auto;
+        width: 200px;
+        padding: 2.2em 0 3.8em;
+        white-space: normal;
     }
 }
 @media (max-width: 991px)
